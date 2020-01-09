@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Laboratory-identified Organism Numerator (LIO) sample report
+        Original Filename: lio-num.xml
+        $LastChangedDate: 2016-09-24 11:23:35 +1000 (Sat, 24 Sep 2016) $
+        $Author: sarah.gaunt $
+        Specification: CDAR2_IG_HAIRPT_R3_D1.1_2016AUG (HAI R3D1.1) 
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information on the "HL7 Implementation Guide for CDA Release 2:
+        NHSN Healthcare Associated Infection (HAI) Reports"
+        see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a single-person report. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R2D2.1 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.2.2.1" />
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to HAI Single-Person Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" />
+
+  <!-- Conformant to the HAI Laboratory-Identified Organism (LIO) Report (V2) -->
+  <templateId root="2.16.840.1.113883.10.20.5.38" extension="2014-12-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Lab-identified Organism (LIO) Report</title>
+  <effectiveTime value="20080807" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- Patient ID - scoped by facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="M" />
+        <birthTime value="19541125" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author/authenticator may be software or may be
+       someone in the role of "infection control professional".
+       This author is scoped by facility. -->
+  <author>
+    <time value="20080807" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20080807" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="IMP" displayName="Inpatient" />
+      <effectiveTime>
+        <!-- Date Admitted to Facility -->
+        <!-- Or, if outpatient, use (copy) Date Specimen Collected -->
+        <low value="20090115" />
+      </effectiveTime>
+      <!-- facility id -->
+      <!-- (The in-facility location where specimen was collected,
+              and date specimen collected, are recorded with the
+              specimen/micro-organism information in the body.) -->
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+  <component>
+    <structuredBody>
+
+      <!-- ********************************************************
+     Encounters Section in an LIO Report (V2)
+     ******************************************************** -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.44" extension="2014-12-01" />
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="History of Encounters" />
+          <title>Encounters</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Prior Discharge from this Facility (past 4 wks)</td>
+                  <td>December 5, 2008</td>
+                </tr>
+                <tr>
+                  <td>Discharged from another facility (past 4 wks)</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Other facility encounter type: Inpatient</td>
+                  <td>Other facility: Nursing Home/Skilled Nursing Facility</td>
+                </tr>
+                <tr>
+                  <td>Other facility encounter type: Inpatient</td>
+                  <td>Other facility: Other Inpatient Healthcare Setting (e.g., Acute Care Hospital, LTAC, Rehabilitation, etc.)</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Prior Discharge Encounter (V2)  -->
+            <encounter classCode="ENC" moodCode="EVN">
+
+              <!-- [C-CDA R1.1] Encounter activity -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+
+              <!-- [HAI R2D2.1] Prior Discharge Encounter (V2) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.151" extension="2014-12-01" />
+              <id nullFlavor="NA" />
+              <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="IMP" displayName="Inpatient encounter" />
+              <effectiveTime>
+                <high value="20081205" />
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Other Facility Discharge Act  -->
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.228" extension="2014-12-01" />
+              <code code="3004-9" displayName="Patient discharged from another facility in the past four weeks" codeSystem="2.16.840.1.113883.6.277"
+                codeSystemName="cdcNHSN" />
+              <!-- Check all that apply - can have more than one discharge from different facilities in the 
+                   past four weeks each represented by a different encounter -->
+              <!-- First encounter -->
+              <entryRelationship typeCode="COMP">
+                <!-- Other Facility Discharge Encounter  -->
+                <encounter classCode="ENC" moodCode="EVN">
+
+                  <!-- [C-CDA R1.1] Encounter activity -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+
+                  <!-- Other Facility Discharge Encounter -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.218" extension="2014-12-01" />
+                  <id nullFlavor="NA" />
+                  <code code="IMP" displayName="inpatient encounter" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" />
+                  <effectiveTime nullFlavor="NA" />
+                  <participant typeCode="LOC">
+                    <participantRole classCode="SDLOC">
+                      <code code="3005-6" displayName="Nursing Home/Skilled Nursing Facility" codeSystem="2.16.840.1.113883.6.277"
+                        codeSystemName="cdcNHSN" />
+                    </participantRole>
+                  </participant>
+                </encounter>
+              </entryRelationship>
+              <!-- Second encounter -->
+              <entryRelationship typeCode="COMP">
+                <!-- Other Facility Discharge Encounter  -->
+                <encounter classCode="ENC" moodCode="EVN">
+
+                  <!-- [C-CDA R1.1] Encounter activity -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+
+                  <!-- Other Facility Discharge Encounter -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.218" extension="2014-12-01" />
+                  <id nullFlavor="NA" />
+                  <code code="IMP" displayName="inpatient encounter" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" />
+                  <effectiveTime nullFlavor="NA" />
+                  <participant typeCode="LOC">
+                    <participantRole classCode="SDLOC">
+                      <code code="3009-4" displayName="Other Inpatient Healthcare Setting (e.g., Acute Care Hospital, LTAC, Rehabilitation, etc.)"
+                        codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                    </participantRole>
+                  </participant>
+                </encounter>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Last Physical Overnight Location Act -->
+            <act classCode="ACT" moodCode="EVN">
+              <!-- Last Physical Overnight Location Act -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.227" extension="2014-12-01" />
+              <code code="3002-3" displayName="Last physical overnight location of patient immediately prior to arrival into facility"
+                codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+              <entryRelationship typeCode="COMP">
+                <!-- Last Physical Overnight Location Encounter -->
+                <encounter classCode="ENC" moodCode="EVN">
+
+                  <!-- [C-CDA R1.1] Encounter activity -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+
+                  <!-- Last Physical Overnight Location Encounter -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.220" extension="2014-12-01" />
+                  <id nullFlavor="NA" />
+
+                  <!-- If the last physical overnight location was a nursing home/skilled nursing facility or 
+                    other inpatient healthcare setting, the encounter code will be "IMP". If the last physical 
+                    overnight location is a personal residence/residential care then the encounter code will be "HH". -->
+                  <code code="HH" displayName="home health" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" />
+                  <effectiveTime nullFlavor="NA" />
+                  <participant typeCode="LOC">
+                    <participantRole classCode="SDLOC">
+                      <code code="3007-2" displayName="Personal Residence/Residential Care" codeSystem="2.16.840.1.113883.6.277"
+                        codeSystemName="cdcNHSN" />
+                    </participantRole>
+                  </participant>
+                </encounter>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+
+      <!-- ********************************************************
+            Findings Section in an LIO Report (V2)
+         ******************************************************** -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.46" extension="2014-12-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18769-0" displayName="Findings" />
+          <title>Lab-identified organism</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Microorganism Identified</td>
+                  <td> CRE-Klebsiella (CREKLEB)</td>
+                </tr>
+                <tr>
+                  <td>Specimen type</td>
+                  <td>Pericardial fluid specimen</td>
+                </tr>
+                <tr>
+                  <td>Date specimen collected</td>
+                  <td>January 21, 2009</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>January 21, 2009</td>
+                </tr>
+                <tr>
+                  <td>In-facility location where patient was when specimen was drawn</td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>Date admitted/transferred to the location where the specimen was drawn</td>
+                  <td>January 17, 2009</td>
+                </tr>
+                <tr>
+                  <td>Bacterial isolate tested for carbapenemase</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Carbapenemase Test Performed</td>
+                  <td>(PCR-KPC) Polymerase chain reaction - Klebsiella pneumoniae carbapenemase</td>
+                </tr>
+                <tr>
+                  <td>Carbapenemase Test Performed</td>
+                  <td>(MBLs) Metallo-beta-lactamase screen</td>
+                </tr>
+                <tr>
+                  <td>Carbapenemase Test Performed</td>
+                  <td>Other : Other carbapenemase test not in value set</td>
+                </tr>
+                <tr>
+                  <td>Isolate tested positive for carbapenemase</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Carbapenemase Type Identified</td>
+                  <td>(IMP) Imipenemase</td>
+                </tr>
+                <tr>
+                  <td>Carbapenemase Type Identified</td>
+                  <td>Other : Other carbapenemase type not in value set</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Pathogen Identified Observation (LIO)  -->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [C-CDA R1.1] Result Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <!-- [HAI R2D2.1] PAthogen Identified Observation (LIO) (V2) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.146" extension="2014-12-01" />
+              <id nullFlavor="NA" />
+              <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism Identified" />
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NA" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2017-2" displayName="CRE-Klebsiella (CREKLEB)" />
+              <!-- Specimen collection procedure contains specimen collection encounter -->
+              <entryRelationship typeCode="COMP">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <!-- Specimen Collection Procedure (LIO)  -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.165" />
+                  <!-- Date specimen collected -->
+                  <effectiveTime value="20090121" />
+                  <!-- Specimen type -->
+                  <participant typeCode="PRD">
+                    <participantRole classCode="SPEC">
+                      <playingEntity>
+                        <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="122571007" displayName="Pericardial fluid"> </code>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <!-- if inpatient -->
+                  <!--Specimen Collection Encounter (LIO) -->
+                  <entryRelationship typeCode="COMP" inversionInd="true">
+                    <!-- Specimen Collection Encounter (LIO) -->
+                    <encounter classCode="ENC" moodCode="EVN">
+
+                      <!-- [C-CDA R1.1] Encounter Activities -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+
+                      <!-- HIA Specimen Collection Encounter (LIO) -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.164" />
+                      <id nullFlavor="NA" />
+
+                      <!-- If person was an inpatient at the in-facility location
+                                      where the specimen was taken, this will be the date
+                                      admitted/transferred there -->
+                      <effectiveTime>
+                        <low value="20090117" />
+                      </effectiveTime>
+
+                      <!-- The in-facility location where the specimen was taken -->
+
+                      <!-- [C-CDA R1.1] Encounter Location Template-->
+                      <participant typeCode="LOC">
+                        <participantRole classCode="SDLOC">
+                          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                          <playingEntity classCode="PLC">
+                            <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+                              displayName="Medical/Surgical Critical Care" />
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                    </encounter>
+                  </entryRelationship>
+                </procedure>
+              </entryRelationship>
+              <!-- If value is CRE-Klebsiella (CREKLEB), CRE-Ecoli (CREECOLI), or CRE-Enterobacter (CREENTERO) 
+                                 then this entryRelationship SHALL be present. -->
+              <!-- [HAI] Bacterial Isolate Tested for Carbapenemase Observation -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [HAI] Bacterial Isolate Tested for Carbapenemase Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.222" extension="2014-12-01" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="2037-0" displayName="Bacterial isolate tested for carbapenemase" codeSystem="2.16.840.1.113883.6.277"
+                    codeSystemName="cdcNHSN" />
+                  <!-- If the value of negationInd="false" for Bacterial 
+                       Isolate Tested for Carbapenemase (meaning it was tested) 
+                       then the following entryRelationship is required
+                  -->
+                  <entryRelationship typeCode="COMP">
+                    <!-- [HAI] Carbapenemase Test Organizer -->
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <!-- [C-CDA R1.1] Result Organizer -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+                      <!-- [HAI] Carbapenemase Test Organizer-->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.223" extension="2014-12-01" />
+                      <id nullFlavor="NA" />
+                      <code code="18725-2" displayName="Microbiology Studies" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <statusCode code="completed" />
+                      <component typeCode="COMP">
+                        <!-- [HAI] Carbapenemase Test Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                          <!-- [C-CDA R1.1] Result Observation -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                          <!-- [HAI] Carbapenemase Test Observation-->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.224" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <code code="2039-6" displayName="(PCR-KPC) Polymerase chain reaction - Klebsiella pneumoniae carbapenemase"
+                            codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NA" />
+                          <value xsi:type="CD" nullFlavor="NA" />
+                        </observation>
+                      </component>
+                      <component>
+                        <observation classCode="OBS" moodCode="EVN">
+                          <!-- [C-CDA R1.1] Result Observation -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                          <!-- [HAI] Carbapenemase Test Observation-->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.224" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <code code="2047-9" displayName="(MBLs) Metallo-beta-lactamase screen" codeSystem="2.16.840.1.113883.6.277"
+                            codeSystemName="cdcNHSN" />
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NA" />
+                          <value xsi:type="CD" nullFlavor="NA" />
+                        </observation>
+                      </component>
+                      <component>
+                        <observation classCode="OBS" moodCode="EVN">
+                          <!-- [C-CDA R1.1] Result Observation -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                          <!-- [HAI] Carbapenemase Test Observation-->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.224" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <code nullFlavor="OTH">
+                            <originalText>Other carbapenemase test not in value set</originalText>
+                          </code>
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NA" />
+                          <value xsi:type="CD" nullFlavor="NA" />
+                        </observation>
+                      </component>
+                    </organizer>
+                  </entryRelationship>
+                  <!-- If any tests were performed, this entryRelationship is required -->
+                  <entryRelationship typeCode="COMP">
+                    <!-- Positive Test for Carbapenamase Observation -->
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Result Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                      <!-- Positive Test for Carbapenemase Observation-->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.225" extension="2014-12-01" />
+                      <id nullFlavor="NA" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="NA" />
+                      <value xsi:type="CD" code="2048-7" displayName="Isolate tested positive for carbapenemase" codeSystem="2.16.840.1.113883.6.277"
+                        codeSystemName="cdcNHSN" />
+                      <entryRelationship typeCode="COMP">
+                        <!-- [HAI] Carbapenemase Type Identified Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                          <!-- [C-CDA R1.1] Result Observation -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                          <!-- [HAI] Carbapenemase Type Identified Observation-->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.226" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277"
+                            codeSystemName="cdcNHSN" />
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NA" />
+                          <value xsi:type="CD" code="2052-9" displayName="(IMP) Imipenemase" codeSystem="2.16.840.1.113883.6.277"
+                            codeSystemName="cdcNHSN" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <!-- [HAI] Carbapenemase Type Identified Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                          <!-- [C-CDA R1.1] Result Observation -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                          <!-- [HAI] Carbapenemase Type Identified Observation-->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.226" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277"
+                            codeSystemName="cdcNHSN" />
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NA" />
+                          <value xsi:type="CD" nullFlavor="OTH">
+                            <originalText>Other carbapenemase type not in value set</originalText>
+                          </value>
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <!-- end of information about this particular specimen -->
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

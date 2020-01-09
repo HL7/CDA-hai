@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Denominator for Healthcare Personnel Influenza Vaccination Summary
+        Filename: pop_sum-denom-HP-FLU.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R3_D4_2019DEC (HAI R3D4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a population-summary report. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R3D2 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.3.2" />
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to the NHSN Constraints for Population Summary Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+
+  <!-- Conformant to the Healthcare Personnel Influenza Vaccination Summary -->
+  <templateId root="2.16.840.1.113883.10.20.5.50" extension="2017-04-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Healthcare Personnel Influenza Vaccination Summary</title>
+
+  <!-- Document-creation date -->
+  <effectiveTime value="20161201" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- This is a population summary report -->
+      <id nullFlavor="NA" />
+    </patientRole>
+  </recordTarget>
+
+  <!-- The author of a population summary report is the software forming the message. -->
+  <author>
+    <time value="20080701" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1" extension="aSoftwareID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- Legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20080701" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+
+  <!-- In a population summary report, a participant element represents the group -->
+  <participant typeCode="SBJ" contextControlCode="OP">
+    <associatedEntity classCode="PRS">
+      <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
+    </associatedEntity>
+  </participant>
+
+  <!-- The location participant -->
+  <participant typeCode="LOC" contextControlCode="OP">
+    <associatedEntity classCode="SDLOC">
+      <!--ID of facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+      <!-- Location -->
+      <!-- code MAY contain nullFlavor="NA" -->
+      <code code="1263-3" codeSystem="2.16.840.1.113883.6.259" codeSystemName="cdcNHSN" displayName="Non-CMS Hospital Unit(s)" />
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode="CASE">
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86558-4"
+        displayName="Summary data reporting healthcare personnel influenza vaccinations" />
+      <effectiveTime>
+        <!-- Influenza season start year -->
+        <low value="2015" />
+        <!-- Influenza season end year -->
+        <high value="2016" />
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- 
+        ********************************************************
+        Structured Body
+        ******************************************************** 
+    -->
+  <component>
+    <structuredBody>
+
+      <!-- 
+                ********************************************************
+                Population Summary Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] Summary Data Section (HP-FLU) -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.58" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Section" />
+          <title>Summary Data</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Vaccination Type</td>
+                  <td>Influenza</td>
+                </tr>
+                <tr>
+                  <td>... Subtype</td>
+                  <td>... Seasonal</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Employees (staff on facility payroll)</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became
+                                        available this season</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare
+                                        facility since influenza vaccine became available this season</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who have a medical contraindication to the influenza vaccine</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who declined to receive the influenza vaccine</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Licensed independent practitioners: Physicians, advanced practice nurses, &amp; physician assistants</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became
+                                        available this season</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare
+                                        facility since influenza vaccine became available this season</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who have a medical contraindication to the influenza vaccine</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who declined to receive the influenza vaccine</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Adult students/trainees &amp; volunteers</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became
+                                        available this season</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare
+                                        facility since influenza vaccine became available this season</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who have a medical contraindication to the influenza vaccine</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who declined to receive the influenza vaccine</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Other contract personnel</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became
+                                        available this season</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare
+                                        facility since influenza vaccine became available this season</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who have a medical contraindication to the influenza vaccine</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP who declined to receive the influenza vaccine</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)</td>
+                  <td>5</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [HAI R3D2] Vaccination Type Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.242" extension="2017-04-01" />
+              <code code="30956-7" displayName="Type [Identifier] Vaccine" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <value xsi:type="CD" code="6142004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Influenza">
+                <qualifier>
+                  <!-- name is how value "qualifies" the code - Seasonal is a subtype of Influenza -->
+                  <name code="260837004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="subtype" />
+                  <value code="21864008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Seasonal" />
+                </qualifier>
+              </value>
+            </observation>
+          </entry>
+          <!-- Employees (staff on facility payroll) -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <!-- [HAI R3D2] Summary Encounter (HP-FLU) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.241" extension="2017-04-01" />
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PART">
+
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2366-3"
+                    displayName="Employees (staff on facility payroll)" />
+                </participantRole>
+              </participant>
+
+              <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86552-7"
+                    displayName="Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="100" />
+                </observation>
+              </entryRelationship>
+
+              <!-- Each of the following summary observations report the number of HCP in that vaccination category -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86553-5"
+                    displayName="Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="55" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86554-3"
+                    displayName="Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86555-0"
+                    displayName="Number of HCP who have a medical contraindication to the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86556-8"
+                    displayName="Number of HCP who declined to receive the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="10" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86557-6"
+                    displayName="Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="5" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <!-- Licensed independent practitioners -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <!-- [HAI R3D2] Summary Encounter (HP-FLU) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.241" extension="2017-04-01" />
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PART">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2367-1"
+                    displayName="Licensed independent practitioners: Physicians, advanced practice nurses, &amp; physician assistants" />
+                </participantRole>
+              </participant>
+
+              <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86552-7"
+                    displayName="Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="100" />
+                </observation>
+              </entryRelationship>
+
+              <!-- Each of the following summary observations report the number of HCP in that vaccination category -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86553-5"
+                    displayName="Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="55" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86554-3"
+                    displayName="Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86555-0"
+                    displayName="Number of HCP who have a medical contraindication to the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86556-8"
+                    displayName="Number of HCP who declined to receive the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="10" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86557-6"
+                    displayName="Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="5" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <!-- Adult students/trainees & volunteers -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <!-- [HAI R3D2] Summary Encounter (HP-FLU) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.241" extension="2017-04-01" />
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PART">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2368-9"
+                    displayName="Adult students/trainees &amp; volunteers" />
+                </participantRole>
+              </participant>
+
+              <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86552-7"
+                    displayName="Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="100" />
+                </observation>
+              </entryRelationship>
+
+              <!-- Each of the following summary observations report the number of HCP in that vaccination category -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86553-5"
+                    displayName="Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="55" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86554-3"
+                    displayName="Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86555-0"
+                    displayName="Number of HCP who have a medical contraindication to the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86556-8"
+                    displayName="Number of HCP who declined to receive the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="10" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86557-6"
+                    displayName="Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="5" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+          <!-- Other contract personnel -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <!-- [HAI R3D2] Summary Encounter (HP-FLU) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.241" extension="2017-04-01" />
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PART">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2369-7" displayName="Other contract personnel" />
+                </participantRole>
+              </participant>
+
+              <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86552-7"
+                    displayName="Number of HCP who worked at this healthcare facility for at least 1 day between October 1 and March 31" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="100" />
+                </observation>
+              </entryRelationship>
+
+              <!-- Each of the following summary observations report the number of HCP in that vaccination category -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86553-5"
+                    displayName="Number of HCP who received an influenza vaccination at this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="55" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86554-3"
+                    displayName="Number of HCP who provided a written report or documentation of influenza vaccination outside this healthcare facility since influenza vaccine became available this season" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86555-0"
+                    displayName="Number of HCP who have a medical contraindication to the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="15" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86556-8"
+                    displayName="Number of HCP who declined to receive the influenza vaccine" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="10" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Summary Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86557-6"
+                    displayName="Number of HCP with unknown vaccination status (or criteria not met for questions 2-5)" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="5" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+        </section>
+
+      </component>
+      <!-- 
+      ********************************************************
+      NHSN Comment Section
+      ******************************************************** 
+      -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] NHSN Comment Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.61" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86468-6" displayName="Report comment Section" />
+          <title>Comment</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Comment</td>
+                  <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D2] NHSN Comment -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.243" extension="2017-04-01" />
+              <code code="86467-8" displayName="Report comment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <!-- Less than 2000 characters -->
+              <text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</text>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

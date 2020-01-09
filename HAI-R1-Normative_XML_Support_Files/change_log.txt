@@ -1,0 +1,4 @@
+20190815
+	Schematron: Changed 22401, 22825, 22874, 21657, 23003, 23027, 30827, 22959 from STATIC to DYNAMIC
+20190820
+	Vocabulary: Added 1269-0 NICU IV to HealthcareServiceLocationCode value set

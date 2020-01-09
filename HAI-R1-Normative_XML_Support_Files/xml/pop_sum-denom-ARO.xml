@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hai-display.xsl"?>
+<!--
+  Title: Denominator for Antimicrobial Resistance Option (ARO) sample report
+  Original Filename: pop_sum-denom-ARO.xml
+
+  $LastChangedDate: 2013-06-14 15:54:06 +1000 (Fri, 14 Jun 2013) $ Revision History:
+
+Specification: HL7 CDAR2_IG_HAIRPT_R1_N1_2013JUN 
+
+  This sample document was created by Lantana Consulting Group
+  on behalf of the Centers for Disease Control and Prevention
+  to meet the needs of the National Healthcare Safety Network (NHSN)
+  Healthcare Associated Infection reporting.
+  
+  For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+  For more information on the "HL7 Implementation Guide for CDA Release 2:
+  NHSN Healthcare Associated Infection (HAI) Reports"
+  see www.hl7.org, Structured Documents Working Group
+-->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:hl7-org:v3 ../../CDA/infrastructure/cda/CDA.xsd">
+
+	<!-- Comments precede their subject -->
+	<!-- This is a population-summary report. -->
+
+
+	<realmCode code="US"/>
+
+
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+
+	<!-- Conformant to Healthcare Associated Infection Report Normative Release constraints -->
+
+	<templateId root="2.16.840.1.113883.10.20.5.4.25"/>
+
+	<!-- Conformant to the HAI Population Summary Report Generic Constraints -->
+
+	<templateId root="2.16.840.1.113883.10.20.5.4.28"/>
+
+	<!-- Conformant to Antimicrobial Resistance Option (ARO) Summary Report (R1) -->
+
+	<templateId root="2.16.840.1.113883.10.20.5.46"/>
+
+	<!-- Document ID (extension) is scoped by vendor/software -->
+
+	<id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201"/>
+
+
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7"
+		displayName="Healthcare Associated Infection Report"/>
+
+
+	<title>Denominator for Antimicrobial Resistance Option (ARO)</title>
+
+	<!-- Document-creation date -->
+
+	<effectiveTime value="20080701"/>
+
+
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+
+
+	<languageCode code="en-US"/>
+
+
+	<setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33"/>
+	<!-- the original -->
+
+	<versionNumber value="1"/>
+
+
+	<recordTarget>
+		<patientRole>
+			<!-- This is a population summary report -->
+			<id nullFlavor="NA"/>
+		</patientRole>
+	</recordTarget>
+
+	<!-- The author of a population summary report is the software forming the message. -->
+
+	<author>
+		<time value="20080701"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.3.117.1.1.5.2.1.1" extension="aSoftwareID"/>
+		</assignedAuthor>
+	</author>
+
+	<!-- The custodian of the CDA document is NHSN -->
+
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.114222.4.3.2.11"/>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+
+	<!-- Legal authenticator is scoped by facility -->
+
+	<legalAuthenticator>
+		<time value="20080701"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID"/>
+		</assignedEntity>
+	</legalAuthenticator>
+
+	<!-- In a population summary report, a participant element represents the group -->
+
+	<participant typeCode="SBJ" contextControlCode="OP">
+
+		<associatedEntity classCode="PRS">
+
+			<code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group"/>
+
+		</associatedEntity>
+
+	</participant>
+
+	<!-- The location participant -->
+
+	<participant typeCode="LOC" contextControlCode="OP">
+
+		<associatedEntity classCode="SDLOC">
+			<!--ID of facility -->
+
+			<id root="2.111.111.111.10709"/>
+
+		</associatedEntity>
+
+	</participant>
+
+
+	<documentationOf>
+
+		<serviceEvent classCode="CASE">
+
+			<code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2410-9"
+				displayName="Summary data reporting antimicrobial resistance patterns at a facility"/>
+
+			<effectiveTime>
+				<!-- the first day of the period reported -->
+				<low value="20080601"/>
+				<!-- the last day of the period reported -->
+				<high value="20080630"/>
+			</effectiveTime>
+
+		</serviceEvent>
+
+	</documentationOf>
+
+
+	<!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+
+
+	<component>
+		<structuredBody>
+
+			<!-- ********************************************************
+     Population Summary Section
+     ******************************************************** -->
+
+
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.5.4.26"/>
+					<templateId root="2.16.840.1.113883.10.20.5.5.52"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9"
+						displayName="Summary Data Section"/>
+					<title xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">Summary
+						Data</title>
+					<text xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<content styleCode="Bold">Facility Location</content>
+									</td>
+									<td>FACWIDEIN All Inpatient Locations [FACWIDEIN]</td>
+								</tr>
+								<tr>
+									<td valign="top">Patient Days</td>
+									<td valign="top">235 d</td>
+								</tr>
+								<tr>
+									<td valign="top">Admission count</td>
+									<td valign="top">46</td>
+								</tr>
+								<tr>
+									<td valign="top">Blood cultures performed</td>
+									<td valign="top">24</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<encounter classCode="ENC" moodCode="EVN">
+							<!--  Summary Encounter (ARO) -->
+
+							<templateId root="2.16.840.1.113883.10.20.5.6.199"/>
+
+							<!-- the location id and type -->
+
+							<participant typeCode="LOC">
+
+								<participantRole classCode="SDLOC">
+
+									<id root="2.111.111.111.10709" extension="FACWIDEIN"/>
+
+									<code codeSystem="2.16.840.1.113883.6.259"
+										codeSystemName="HL7 Healthcare Service Location Code" code="1250-0"
+										displayName="Facility Wide Inpatient"/>
+
+								</participantRole>
+
+							</participant>
+
+
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Summary Data Observation -->
+									<templateId root="2.16.840.1.113883.10.20.5.6.185"/>
+									<code code="1851-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+										displayName="Patient Days"/>
+									<statusCode code="completed"/>
+									<value xsi:type="PQ" unit="d" value="235"/>
+								</observation>
+							</entryRelationship>
+
+
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Summary Data Observation -->
+									<templateId root="2.16.840.1.113883.10.20.5.6.185"/>
+									<code code="1862-2" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+										displayName="Admission count"/>
+									<statusCode code="completed"/>
+									<value xsi:type="INT" value="46"/>
+								</observation>
+							</entryRelationship>
+
+
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Summary Data Observation -->
+									<templateId root="2.16.840.1.113883.10.20.5.6.185"/>
+									<code code="2409-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+										displayName="Blood cultures performed"/>
+									<statusCode code="completed"/>
+									<value xsi:type="INT" value="24"/>
+								</observation>
+							</entryRelationship>
+
+
+						</encounter>
+					</entry>
+				</section>
+			</component>
+
+
+		</structuredBody>
+	</component>
+
+
+</ClinicalDocument>

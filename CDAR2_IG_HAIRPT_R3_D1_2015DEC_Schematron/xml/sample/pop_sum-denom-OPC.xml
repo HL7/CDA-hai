@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+        Title: Denominator for Outpatient Procedure Component (OPC) sample report
+        Original Filename: pop_sum-denom-OPC.xml
+        $LastChangedDate: 2015-12-02 06:56:26 +1000 (Wed, 02 Dec 2015) $
+        $Author: sarah.gaunt $
+        Specification: CDAR2_IG_HAIRPT_R3_D1_2015DEC (HAI R3D1) 
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Centers for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information on the "HL7 Implementation Guide for CDA Release 2:
+        NHSN Healthcare Associated Infection (HAI) Reports"
+        see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+
+
+  <!-- Comments precede their subject -->
+
+
+  <!-- This is a population-summary report. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+
+  <!-- Published in HAI IG R2D2 Normative -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.2.2" />
+
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+
+  <!-- Conformant to the HAI Population Summary Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+
+
+  <!-- Conformant to Denominator for Outpatient Procedure Component (OPC) -->
+  <templateId root="2.16.840.1.113883.10.20.5.48" />
+
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Denominator for Outpatient Procedure Component (OPC)</title>
+
+
+  <!-- Document-creation date -->
+  <effectiveTime value="20130701" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
+
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+
+      <!-- This is a population summary report -->
+      <id nullFlavor="NA" />
+    </patientRole>
+  </recordTarget>
+
+
+  <!-- The author of a population summary report is the software forming the message. -->
+  <author>
+    <time value="20130701" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1" extension="aSoftwareID" />
+    </assignedAuthor>
+  </author>
+
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+
+  <!-- Legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20130701" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+
+
+  <!-- In a population summary report, a participant element represents the group -->
+  <participant typeCode="SBJ" contextControlCode="OP">
+    <associatedEntity classCode="PRS">
+      <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
+    </associatedEntity>
+  </participant>
+
+
+  <!-- The location participant -->
+  <participant typeCode="LOC" contextControlCode="OP">
+    <associatedEntity classCode="SDLOC">
+
+
+      <!--ID of facility -->
+      <id root="2.111.111.111.10709" />
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode="CASE">
+      <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1657-6"
+        displayName="Summary data reporting outpatient procedure component events at a facility" />
+      <effectiveTime>
+
+        <!-- the first day of the period reported -->
+        <low value="20130601" />
+
+        <!-- the last day of the period reported -->
+        <high value="20130630" />
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+
+
+  <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+  <component>
+    <structuredBody>
+
+
+      <!-- ********************************************************
+     Summary Data Section (OPC)
+     ******************************************************** -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.56" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Data Section" />
+          <title>Summary Data Section (OPC)</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td valign="top">Number of admissions</td>
+                  <td valign="top">150</td>
+                </tr>
+                <tr>
+                  <td valign="top">Number of admission with an order for a prophylactic IV antibiotic that was administered on time</td>
+                  <td valign="top">120</td>
+                </tr>
+                <tr>
+                  <td valign="top">Number of admission with an order for a prophylactic IV antibiotic that was NOT administered on time</td>
+                  <td valign="top">5</td>
+                </tr>
+                <tr>
+                  <td valign="top">Number of admission with no order for a prophylactic IV antibiotic</td>
+                  <td valign="top">25</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Breast surgery</td>
+                  <td valign="top">12</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Gallbladder surgery</td>
+                  <td valign="top">24</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Colon surgery</td>
+                  <td valign="top">3</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Open reduction of fracture</td>
+                  <td valign="top">3</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Hip Replacement</td>
+                  <td valign="top">54</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Hip Replacement</td>
+                  <td valign="top">54</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Abdominal hysterectomy</td>
+                  <td valign="top">0</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Knee prosthesis</td>
+                  <td valign="top">0</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Knee prosthesis</td>
+                  <td valign="top">0</td>
+                </tr>
+                <tr>
+                  <td valign="top">Total number of admissions with a primary CPT code for this Procedure Category: Vaginal hysterectomy</td>
+                  <td valign="top">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+
+            <!-- Summary Encounter (OPC)  -->
+            <encounter classCode="ENC" moodCode="EVN">
+
+
+              <!--  Summary Encounter (OPC) templateId -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.213" />
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1862-2" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" displayName="Number of admissions" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="150" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1641-0" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Number of admission with an order for a prophylactic IV antibiotic that was administered on time" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="120" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1642-8" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Number of admission with an order for a prophylactic IV antibiotic that was NOT administered on time" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="5" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1643-6" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Number of admission with no order for a prophylactic IV antibiotic" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="25" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="12" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2110-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Breast surgery"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="24" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2119-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Gallbladder surgery"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="3" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2116-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Colon surgery"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="3" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2129-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Open reduction of fracture"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="54" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2101-4" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Herniorrhaphy"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="54" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2101-4" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Hip prosthesis"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="0" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2107-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Abdominal hysterectomy"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="0" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2124-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Knee prosthesis"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="0" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2124-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Laminectomy"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+
+                <!-- Summary Data Observation (OPC) -->
+                <observation classCode="OBS" moodCode="EVN">
+
+                  <!-- Summary Data Observation (OPC) templateId -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.214" />
+                  <code code="1644-4" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN"
+                    displayName="Total number of admissions with a primary CPT code for this Procedure Category" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="0" />
+                  <entryRelationship typeCode="REFR">
+
+                    <!-- Procedure Category -->
+                    <procedure classCode="PROC" moodCode="EVN">
+
+                      <!-- C-CDA Procedure Activity Procedure templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+
+                      <!-- Procedure Category templateId -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.215" />
+                      <id nullFlavor="NA" />
+                      <code code="2141-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Vaginal hysterectomy"> </code>
+                      <statusCode code="completed" />
+                    </procedure>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

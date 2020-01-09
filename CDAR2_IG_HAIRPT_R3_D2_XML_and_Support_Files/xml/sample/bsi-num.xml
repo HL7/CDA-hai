@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Blood Stream Infection Numerator (BSI) sample report
+        Filename: bsi-num.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R3_D2_2017MAY (HAI R3D2) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a single-patient record. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R3D2 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.3.2" />
+
+  <!-- Conformant to Healthcare Associated Infection Report-->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to HAI Single-Person Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" />
+
+  <!-- Conformant to the HAI Bloodstream Infection Report (BSI) Numerator Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.32" extension="2017-04-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Blood Stream Infection Report (BSI)</title>
+  <effectiveTime value="20080807" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- Fake root for sample. -->
+      <id extension="12345" root="2.16.840.1.113883.19.5" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19541125" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author/authenticator may be software or may be
+         someone in the role of "infection control professional".
+         This author is scoped by facility. -->
+  <author>
+    <time value="20080807" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20080807" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <!-- Facility-generated Event/Procedure number -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" extension="31" />
+      <effectiveTime>
+        <!-- Date Admitted to Facility -->
+        <low value="20080805" />
+        <!-- Optional Discharge Date -->
+        <high value="20080806" />
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+          <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+            displayName="Medical/Surgical Critical Care" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!-- 
+        ********************************************************
+        Structured Body
+        ******************************************************** 
+    -->
+  <component>
+    <structuredBody>
+
+      <!-- 
+                ********************************************************
+                Risk Factors Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.33" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51898-5" displayName="Risk Factors" />
+          <title>Risk Factors</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>(unspecified) central line</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Type of procedure</td>
+                  <td>Insertion procedure</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>August 8, 2012</td>
+                </tr>
+                <tr>
+                  <td>Location of the patient when device was inserted</td>
+                  <td>Facility 123456 of type Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>Birth weight</td>
+                  <td>700 g</td>
+                </tr>
+                <tr>
+                  <td>Hemodialysis catheter</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Extracorporeal membrane oxygenation circuit</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ventricular assist device</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!--  [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- [HAI] Infection Risk Factors Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.138" />
+              <id nullFlavor="NA" />
+              <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1002-5"
+                displayName="(unspecified) central line" />
+              <!-- MAY contain the related device insertion procedure time and location of where the procedure took place -->
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <!-- Device Insertion Time and Location Procedure -->
+                <procedure classCode="PROC" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                  <!-- [HAI] Device Insertion Time and Location Procedure -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.122" />
+                  <id nullFlavor="NA" />
+                  <code code="71861002" displayName="Insertion procedure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20120808" />
+                  </effectiveTime>
+                  <participant typeCode="LOC">
+                    <participantRole classCode="SDLOC">
+                      <!-- root = facility assigned OID; extension = NHSN location ("your code") -->
+                      <id root="2.16.840.1.114222.4.3.2.11" extension="123456" />
+                      <playingEntity classCode="PLC">
+
+                        <!-- This is an ICU or Other location -->
+                        <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+                          displayName="Medical/Surgical Critical Care" />
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </procedure>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Vital Sign Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+              <!-- [HAI] Infection Risk Factors Measurement Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.137" />
+              <id nullFlavor="NA" />
+              <code code="364589006" codeSystem="2.16.840.1.113883.6.96" displayName="Birth weight" />
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NA" />
+              <value xsi:type="PQ" value="700" unit="g" />
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN" negationInd="false">
+              <!-- [HAI R3D2] Hemodialysis Catheter Present-->
+              <templateId root="2.16.840.1.113883.10.20.5.6.245" extension="2017-04-01" />
+              <code nullFlavor="UNK" />
+              <statusCode code="completed" />
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <playingDevice>
+                    <code code="450866001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hemodialysis catheter" />
+                  </playingDevice>
+                </participantRole>
+              </participant>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN" negationInd="false">
+              <!-- [HAI R3D2] Extracorporeal Life Support Present -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.246" extension="2017-04-01" />
+              <code nullFlavor="UNK" />
+              <statusCode code="completed" />
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <playingDevice>
+                    <code code="261258006" displayName="Extracorporeal membrane oxygenation circuit" codeSystem="2.16.840.1.113883.6.96"
+                      codeSystemName="SNOMED CT" />
+                  </playingDevice>
+                </participantRole>
+              </participant>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN" negationInd="false">
+              <!-- [HAI R3D2] Ventricular Assist Device (VAD) Present -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.247" extension="2017-04-01" />
+              <code nullFlavor="UNK" />
+              <statusCode code="completed" />
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <playingDevice>
+                    <code code="360064003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ventricular assist device" />
+                  </playingDevice>
+                </participantRole>
+              </participant>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+
+      <!-- 
+                ********************************************************
+                Infection Details Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.38" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Details" />
+          <title>Details</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Infection type</td>
+                  <td>Blood Stream Infection</td>
+                </tr>
+                <tr>
+                  <td>Date of infection</td>
+                  <td>August 7, 2008</td>
+                </tr>
+                <tr>
+                  <td>Criteria of diagnosis</td>
+                  <td>Apnea: Yes<br />Blood culture not done or no organisms detected in blood: No<br />Bradycardia: Yes<br />Chills: Yes<br />Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant): No<br />Fever: No<br />Hypothermia: No<br />Physician institutes appropriate antimicrobial therapy: Yes<br />Recognized pathogen from one or more blood cultures: No<br />Hypotension: No</td>
+                </tr>
+                <tr>
+                  <td>Bloodstream infection evidence type</td>
+                  <td>LCBI</td>
+                </tr>
+                <tr>
+                  <td>Dead</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Infection Contributed to Death</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Infection occurred post-procedure</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Type of procedure</td>
+                  <td>Appendix surgery</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>August 5, 2008</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Infection Type Observation -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- [HAI] Infection Type Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.139" />
+              <!-- UUID for the infection being reported-->
+              <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20080807" />
+              </effectiveTime>
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="431193003"
+                displayName="Blood Stream Infection" />
+              <!-- [HAI] Criteria of Diagnosis Organizer -->
+              <entryRelationship typeCode="SPRT">
+                <organizer classCode="CLUSTER" moodCode="EVN">
+                  <!-- [HAI] Criteria of Diagnosis Organizer -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.180" />
+                  <statusCode code="completed" />
+                  <!-- Criterion of Diagnosis Observations -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criterion of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1023001" displayName="Apnea" />
+                    </observation>
+                  </component>
+                  <component>
+                    <!-- Criterion of Diagnosis Observation -->
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1902-6"
+                        displayName="Blood Culture Not Done" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48867003" displayName="Bradycardia" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43724002" displayName="Chill" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1944-8"
+                        displayName="Common skin contaminant from &lt;=2 blood cultures" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386661006" displayName="Fever" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386689009" displayName="Hypothermia"
+                       />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1962-0"
+                        displayName="Physician Institutes Appropriate antimicrobial therapy" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1951-3"
+                        displayName="Recognized pathogen" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45007003" displayName="Hypotension" />
+                    </observation>
+                  </component>
+                </organizer>
+                <!-- End of Criteria of Diagnosis Organizer -->
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <!-- [HAI] Bloodstream Infection Evidence Type Observation -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI] Bloodstream Infection Evidence Type Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.114" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1613-9" displayName="LCBI" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Death Observation -->
+            <!-- not negated: this patient died -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Deceased Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.79" />
+              <!-- Death Observation in an Infection-type -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.120" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low nullFlavor="NA" />
+              </effectiveTime>
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="419099009" displayName="Dead" />
+              <entryRelationship typeCode="CAUS" inversionInd="true" negationInd="true">
+                <!-- Infection Contributed to Death Observation -->
+                <!-- negated: the infection did not contribute to the death -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Infection Contributed to Death Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.136" />
+                  <!-- ID corresponds to value reported in Infection Type Observation -->
+                  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Post-procedure Observation -->
+            <!-- negationInd = false: the infection was post-procedure -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- Post-procedure Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.150" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3188-0"
+                displayName="Infection occurred post-procedure" />
+              <entryRelationship typeCode="REFR">
+                <!-- Procedure Details Clinical Statement in an Infection-type Report -->
+                <procedure classCode="PROC" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                  <!-- Procedure Details Clinical Statement in an Infection-Type Report -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.154" />
+                  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+                  <code code="2108-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Appendix surgery">
+                    <translation code="47.0" displayName="Appendectomy" codeSystem="2.16.840.1.113883.6.2" codeSystemName="ICD9CM" />
+                  </code>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20080805" />
+                  </effectiveTime>
+                </procedure>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- 
+                ********************************************************
+                Findings Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.45" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18769-0" displayName="Findings" />
+          <title>Findings</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Clostridium symbiosum</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Clarithro Susc Islt</td>
+                  <td> Not Applicable Resistant</td>
+                </tr>
+                <tr>
+                  <td>MDRO Infection or C.difficile infection</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer moodCode="EVN" classCode="CLUSTER">
+              <!-- [HAI] Findings Organizer -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+              <id nullFlavor="NA" />
+              <statusCode code="completed" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- [HAI] Pathogen Identified Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism Identified" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48321006"
+                    displayName="Clostridium symbiosum" />
+                </observation>
+              </component>
+              <component>
+                <!-- Pathogen Ranking Observation -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- Pathogen Ranking Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- Drug-Susceptibility Test Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.126" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18907-6" displayName="Clarithro Susc Islt" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" nullFlavor="NA" />
+                  <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" code="R"
+                    displayName="Resistant" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- MDRO/CDI Observation -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- MDRO/CDI Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.142" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2318-4"
+                displayName="MDRO Infection or C.difficile infection" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- 
+                ********************************************************
+                NHSN Comment Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- NHSN Comment Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] NHSN Comment Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.61" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86468-6" displayName="Report comment Section" />
+          <title>Comment</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Comment</td>
+                  <td>NHSN text comment that is less than 2000 characters.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D2] NHSN Comment -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.243" extension="2017-04-01" />
+              <code code="86467-8" displayName="Report comment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <!-- Less than 2000 characters -->
+              <text>NHSN text comment that is less than 2000 characters.</text>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

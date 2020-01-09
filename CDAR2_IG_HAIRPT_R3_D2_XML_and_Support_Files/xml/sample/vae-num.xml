@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Ventilator Associated Event (VAE) sample report
+        Filename: vae-num.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R3_D2_2017MAY (HAI R3D2) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a single-patient record. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R3D2 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.3.2" />
+
+  <!-- Conformant to Healthcare Associated Infection Report-->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to HAI Single-Person Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" />
+
+  <!-- Conformant to the Ventilator Associated Event (VAE) Numerator Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.51" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Ventilator Associated Event (VAE)</title>
+  <effectiveTime value="20170110" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- Fake root for sample. -->
+      <id extension="12345" root="2.16.840.1.113883.19.5" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19541125" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author/authenticator may be software or may be someone in the role of 
+        "infection control professional". This author is scoped by facility. -->
+  <author>
+    <time value="20170110" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20170110" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <!-- Facility-generated Event/Procedure number -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" extension="31" />
+      <effectiveTime>
+        <!-- Date Admitted to Facility -->
+        <low value="20170101" />
+        <!-- Optional Discharge Date -->
+        <high value="20170131" />
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+          <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+            displayName="Medical/Surgical Critical Care" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!-- 
+        ********************************************************
+         Structured Body
+        ******************************************************** 
+    -->
+  <component>
+    <structuredBody>
+
+      <!-- 
+                ********************************************************
+                Infection Risk Factors Section in a VAE Report
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] Infection Risk Factors Section in a VAE Report -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.60" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51898-5" displayName="Risk Factors" />
+          <title>Risk Factors</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mechanical Ventilation Initiation Date</td>
+                  <td>January 12, 2017</td>
+                </tr>
+                <tr>
+                  <td>Location of the patient when mechanical ventilation was initiated</td>
+                  <td>Facility 123456 of type Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>Patient on Airway Pressure Release Ventilation (APRV) or a related mode of mechanical ventilation at the time of VAE</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Contains the mechanical ventilation initiation time and location of where the initiation took place -->
+            <!-- Mechanical Ventilation Initiation Act -->
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [C-CDA R1.1] Procedure Activity Act -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.12" />
+              <!-- [HAI] Mechanical Ventilation Initiation Act -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.244" extension="2017-04-01" />
+              <id nullFlavor="NA" />
+              <code code="2341-2" displayName="Mechanical ventilation initiation" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20170112" />
+              </effectiveTime>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <!-- root = facility assigned OID; extension = NHSN location ("your code") -->
+                  <id root="2.16.840.1.114222.4.3.2.11" extension="123456" />
+                  <playingEntity classCode="PLC">
+                    <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+                      displayName="Medical/Surgical Critical Care" />
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+          <!-- APRV or Related at Time of VAE Observation is optional -->
+          <entry typeCode="DRIV">
+            <!-- Setting negationInd="false" indicates that the Patient on Airway Pressure Release Ventilation (APRV) 
+                              or a related mode of mechanical ventilation at the time of VAE -->
+            <observation moodCode="EVN" classCode="OBS" negationInd="false">
+              <!-- [HAI R3D2] APRV or Related at Time of VAE Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.248" extension="2017-04-01" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2342-6"
+                displayName="Patient on Airway Pressure Release Ventilation (APRV) or a related mode of mechanical ventilation at the time of VAE" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- 
+                ********************************************************
+                Infection Details Section in a VAE Report
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] Infection Details Section in a VAE Report -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.59" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Details" />
+          <title>Details</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Infection type</td>
+                  <td>Ventilator Associated Event</td>
+                </tr>
+                <tr>
+                  <td>Date of infection</td>
+                  <td>January 15, 2017</td>
+                </tr>
+                <tr>
+                  <td>Infection condition</td>
+                  <td>PVAP - Possible Ventilator-Associated Pneumonia</td>
+                </tr>
+                <tr>
+                  <td>Criteria of diagnosis</td>
+                  <td>
+                    <content styleCode="Bold">Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days</content>: <content styleCode="Bold"
+                      >Yes</content>
+                    <br />Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days: No<br />
+                    <content styleCode="Bold">Temperature &gt; 380 C or &lt; 360 C</content>: <content styleCode="Bold">Yes</content>
+                    <br />White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3: No<br />
+                    <content styleCode="Bold">A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days</content>: <content
+                      styleCode="Bold">Yes</content>
+                    <br />Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions: No<br />Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions: No<br />
+                    <content styleCode="Bold"
+                      >Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions</content>: <content styleCode="Bold"
+                      >Yes</content>
+                    <br />Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions: No<br />Criterion 2 - Purulent respiratory secretions plus organism(s): No<br />Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions: No<br />Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions: No<br />Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions: No<br />Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions: No<br />Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions: No<br />
+                    <content styleCode="Bold">Criterion 3 - Positive test Organism(s) identified from pleural fluid</content>: <content
+                      styleCode="Bold">Yes</content>
+                    <br />Criterion 3 - Positive test for Lung histopathology: No<br />Criterion 3 - Positive Diagnostic test for Legionella species: No<br />Criterion 3 - Positive Diagnostic test for selected viral pathogens: No</td>
+                </tr>
+                <tr>
+                  <td>Secondary bloodstream infection</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Dead</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Infection Contributed to Death</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Infection occurred post-procedure</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Type of procedure</td>
+                  <td>Abdominal aortic aneurysm repair</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>January 2, 2017</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Infection Type Observation -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- [HAI] Infection Type Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.139" />
+              <!-- UUID for the infection being reported-->
+              <!-- **TODO** -->
+              <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20170115" />
+              </effectiveTime>
+              <!-- This will always be 2340-3: Ventilator Associated Event -->
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2340-3"
+                displayName="Ventilator Associated Event" />
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Infection Condition Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.135" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                  <statusCode code="completed" />
+                  <!-- This is one of VAC, IVAC, or PVAP  -->
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2345-0"
+                    displayName="PVAP - Possible Ventilator-Associated Pneumonia" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SPRT">
+                <organizer classCode="CLUSTER" moodCode="EVN">
+                  <!-- [HAI] Criteria of Diagnosis Organizer -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.180" />
+                  <statusCode code="completed" />
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2346-5"
+                        displayName="Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2347-3"
+                        displayName="Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2348-1"
+                        displayName="Temperature &gt; 380 C or &lt; 360 C" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2349-9"
+                        displayName="White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2350-2"
+                        displayName="A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2351-1"
+                        displayName="Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2352-5"
+                        displayName="Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2353-3"
+                        displayName="Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2354-1"
+                        displayName="Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2355-9"
+                        displayName="Criterion 2 - Purulent respiratory secretions plus organism(s)" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2356-4"
+                        displayName="Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2357-2"
+                        displayName="Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2358-0"
+                        displayName="Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2359-8"
+                        displayName="Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2360-1"
+                        displayName="Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2361-0"
+                        displayName="Criterion 3 - Positive test Organism(s) identified from pleural fluid" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2362-4"
+                        displayName="Criterion 3 - Positive test for Lung histopathology" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2363-2"
+                        displayName="Criterion 3 - Positive Diagnostic test for Legionella species" />
+                    </observation>
+                  </component>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2364-0"
+                        displayName="Criterion 3 - Positive Diagnostic test for selected viral pathogens" />
+                    </observation>
+                  </component>
+                </organizer>
+                <!-- End of Criteria of Diagnosis Organizer -->
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <!-- negationInd="true" so no secondary bloodstream infection obaservated -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI] Secondary Bloodstream Infection Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.160" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="3111-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                    displayName="Secondary bloodstream infection" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Death Observation -->
+            <!-- Not negated: this patient died -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Deceased Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.79" />
+              <!-- Death Observation in an Infection-type -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.120" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low nullFlavor="NA" />
+              </effectiveTime>
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="419099009" displayName="Dead" />
+              <entryRelationship typeCode="CAUS" inversionInd="true" negationInd="false">
+                <!-- Infection Contributed to Death Observation -->
+                <!-- negationInd=false: the infection did contribute to death -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- Infection Contributed to Death Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.136" />
+                  <!-- ID corresponds to value reported in Infection Type Observation -->
+                  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Post-procedure Observation -->
+            <!-- negationInd = false: the infection was post-procedure -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- [HAI] Post-procedure Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.150" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3188-0"
+                displayName="Infection occurred post-procedure" />
+              <entryRelationship typeCode="REFR">
+                <!-- Procedure Details Clinical Statement in an Infection-type Report -->
+                <procedure classCode="PROC" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                  <!-- Procedure Details Clinical Statement in an Infection-Type Report -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.154" />
+                  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+                  <code code="2105-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Abdominal aortic aneurysm repair">
+                    <translation code="04B00ZZ" displayName="AAA - Abdominal aortic aneurysm repair" codeSystem="2.16.840.1.113883.6.4"
+                      codeSystemName="ICD10PCS" />
+                  </code>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20170102" />
+                  </effectiveTime>
+                </procedure>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+
+      <!-- 
+                ********************************************************
+                Findings Section in an Infection-Type Report
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.45" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18769-0" displayName="Findings" />
+          <title>Findings</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Streptococcus pneumoniae</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Clarithro Susc Islt</td>
+                  <td> Not Applicable Resistant</td>
+                </tr>
+                <tr>
+                  <td>MDRO Infection or C.difficile infection</td>
+                  <td>No</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer moodCode="EVN" classCode="CLUSTER">
+              <!-- [HAI] Findings Organizer -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+              <id nullFlavor="NA" />
+              <statusCode code="completed" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- [HAI] Pathogen Identified Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism Identified" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="9861002"
+                    displayName="Streptococcus pneumoniae" />
+                </observation>
+              </component>
+              <component>
+                <!-- Pathogen Ranking Observation -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- Pathogen Ranking Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- Drug-Susceptibility Test Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.126" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18907-6" displayName="Clarithro Susc Islt" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" nullFlavor="NA" />
+                  <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" code="R"
+                    displayName="Resistant" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- MDRO/CDI Observation -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="true">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- MDRO/CDI Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.142" />
+              <id nullFlavor="NA" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2318-4"
+                displayName="MDRO Infection or C.difficile infection" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <!-- 
+                ********************************************************
+                NHSN Comment Section
+                ******************************************************** 
+            -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] NHSN Comment Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.61" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86468-6" displayName="Report comment Section" />
+          <title>Comment</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Comment</td>
+                  <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D2] NHSN Comment -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.243" extension="2017-04-01" />
+              <code code="86467-8" displayName="Report comment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <!-- Less than 2000 characters -->
+              <text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</text>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

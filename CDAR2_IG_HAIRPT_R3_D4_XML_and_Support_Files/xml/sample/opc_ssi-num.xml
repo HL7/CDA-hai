@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Outpatient Procedure Component Surgical Site Infection Report (SSI)
+        Filename: opc_ssi-num.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R3_D4_2019DEC (HAI R3D4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 ../../../../../../../../SVN/strucdoc/CDA_SDTC/infrastructure/cda/CDA_SDTC.xsd" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3"
+  xmlns:voc="http://www.lantanagroup.com/voc">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a single-patient record. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R3D4 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.3.4" />
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to HAI Single-Person Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" />
+
+  <!-- [HAI R3D4] Outpatient Procedure Surgical Site Infection (SSI) Event -->
+  <templateId root="2.16.840.1.113883.10.20.5.57" extension="2019-04-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Outpatient Procedure Surgical Site Infection (SSI) Event</title>
+  <effectiveTime value="201808061219" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+
+  <recordTarget>
+    <patientRole>
+      <!-- Patient ID - scoped by facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
+      <!-- Secondary ID - scoped by facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654321" />
+      <!-- Medicare # -->
+      <id root="2.16.840.1.113883.3" extension="987654321" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19541125" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author/authenticator may be software or may be
+ someone in the role of "infection control professional".
+ This author is scoped by facility. -->
+  <author>
+    <time value="20180806" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- Legal Authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20180806" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="AMB" displayName="Outpatient" />
+      <effectiveTime>
+        <!-- Date of the encounter (admission) at the outpatient procedure facility. Encounter is defined as the completion of the registration process for the facility -->
+        <low value="20180805" />
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!-- ********************************************************
+ Structured Body
+ ******************************************************** -->
+  <component>
+    <structuredBody>
+
+      <!-- ********************************************************
+           Infection Details Section in an SSI OPC Report
+           ******************************************************** -->
+      <component>
+        <section>
+          <!-- HAI Generic Section template -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D4] HAI Infection Details Section in an OPC SSI Report -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.69" extension="2019-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Event Details" />
+          <title>Event Details</title>
+          <text xmlns:sdtc="urn:hl7-org:sdtc">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Infection type</td>
+                  <td>Surgical Site Infection</td>
+                </tr>
+                <tr>
+                  <td>Date of infection</td>
+                  <td>August 6, 2018</td>
+                </tr>
+                <tr>
+                  <td>SSI Level</td>
+                  <td>Superficial incisional primary SSI</td>
+                </tr>
+                <tr>
+                  <td>Criteria of diagnosis</td>
+                  <td>Abscess: No<br />Redness: No<br />Fever: No<br />Heat: Yes<br />Incision deliberately opened or otherwise drained by physician: No<br />Other evidence of infection found on direct exam, during surgery, or by diagnostic tests: No<br />Localized swelling: No<br />Pain or tenderness: No<br />Purulent drainage or material: Yes<br />Wound spontaneously dehisces: No<br />Positive culture: No<br />Not cultured: No<br />Radiographic evidence of infection: No<br />Physician diagnosis of this event type: No</td>
+                </tr>
+                <tr>
+                  <td>SSI Detection Method Type</td>
+                  <td>Active SSI Detection Method</td>
+                </tr>
+                <tr>
+                  <td>SSI Detection Method</td>
+                  <td>Review of patient's medical record</td>
+                </tr>
+                <tr>
+                  <td>Type of procedure</td>
+                  <td>Appendix surgery</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>August 5, 2018</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Infection-Type Observation in an OPC SSI Event -->
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <!-- [C-CDA R1.1] Problem Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <!-- [HAI R2.1] Infection-Type Observation in an OPC SSI Event-->
+              <templateId root="2.16.840.1.113883.10.20.5.6.263" extension="2019-04-01" />
+              <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+              <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+              <statusCode code="completed" />
+              <!-- Record the date when the first element used to meet the SSI infection criterion occured for the first time during the surveillance period. 
+                Synonyms: infection date, date of infection. -->
+              <effectiveTime>
+                <low value="20180806" />
+              </effectiveTime>
+              <!-- Infection Type -->
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="433202001" displayName="Surgical Site Infection" />
+              <!-- Infection Condition Observation (SSI Level)-->
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Infection Condition Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.135" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1620-4" displayName="Superficial incisional primary SSI" />
+                </observation>
+              </entryRelationship>
+              <!-- [HAI] Criteria of Diagnosis Organizer -->
+              <entryRelationship typeCode="SPRT">
+                <organizer classCode="CLUSTER" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.180" />
+                  <statusCode code="completed" />
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128477000" displayName="Abcess" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386713009" displayName="Redness" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386661006" displayName="Fever" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="304214002" displayName="Heat" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1967-9"
+                        displayName="Incision deliberately opened or otherwise drained by physician" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1905-9"
+                        displayName="Other evidence of infection found on direct exam, during surgery,or by diagnostic tests per organ/space specific site criteria" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1920-8" displayName="Localized Swelling" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1960-4" displayName="Pain or Tenderness " />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255320000" displayName="Purulent Discharge" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="225553008" displayName="Wound spontaneously dehisces" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation: Organism Identified -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1952-1" displayName="Positive culture" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation: Culture or non-culture based testing not performed -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1901-8" displayName="Not cultured" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1924-0" displayName="Radiographic evidence of infection" />
+                    </observation>
+                  </component>
+                  <!-- Criterion of Diagnosis Observation -->
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                      <!-- [C-CDA R1.1] Indication -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                      <!-- [HAI R1] Criteria of Diagnosis Observation -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1963-8"
+                        displayName="Physician Diagnosis of this event type" />
+                    </observation>
+                  </component>
+                </organizer>
+                <!-- End of Criteria of Diagnosis Organizer -->
+              </entryRelationship>
+              <!-- SSI Detection Method -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [HAI R3D4] SSI Detection Method -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.261" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.277" code="1309-4" codeSystemName="cdcNHSN" displayName="Active SSI Detection Method" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1321-9" displayName="Review of patient's medical record" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- Procedure Details in an OPC SSI Event -->
+            <procedure classCode="PROC" moodCode="EVN">
+              <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+              <!-- [HAI R3D4] Procedure Details in an OPC SSI Event -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.265" extension="2019-04-01" />
+              <!-- NHSN uses the procedure id, along with other data, to establish a link between 
+                an OPC Denominator for Procedure and an OPC SSI Event; the value of the procedure id 
+                must be the same in both the report of a procedure and the report of a 
+                surgical-site infection resulting from that procedure. -->
+              <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
+              <code code="2108-9" displayName="Appendix surgery" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN">
+                <translation code="44970" displayName="Laparoscopic Procedures on the Appendix" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4" />
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20180805" />
+              </effectiveTime>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+
+      <!-- ********************************************************
+            Findings Section in an OPC SSI Report
+            ******************************************************** -->
+      <component>
+        <section>
+          <!-- HAI Generic section template -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D4] HAI Findings Section in an OPC SSI report -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.70" extension="2019-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18769-0" displayName="Findings" />
+          <title>Findings</title>
+          <text xmlns:sdtc="urn:hl7-org:sdtc">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Staphylococcus, coagulase negative</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Parasite</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Acid-fast bacillus</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <!-- If there were no pathogens identified the following commented out template
+               would be present here and the above Findings Organizer would not be present -->
+          <!--<entry>
+            <!-\- Pathogen Identified Observation -\->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-\- [C-CDA R1.1] Result Observation -\->
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <!-\- [HAI R1] Pathogen Identified Observation -\->
+              <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+              <id nullFlavor="NA" />
+              <code code="41852-5" displayName="Microorganism identified" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NA" />
+              <value xsi:type="CD" code="3119-7" displayName="No pathogen identified" codeSystem="2.16.840.1.113883.6.96" codeSystemName="cdcNHSN" />
+            </observation>
+          </entry>-->
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+              <id nullFlavor="NA" />
+              <statusCode code="completed" />
+              <!-- The organism -->
+              <component>
+                <!-- Pathogen Identified Observation -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- [HAI R1] Pathogen Identified Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism identified" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="116197008"
+                    displayName="Staphylococcus, coagulase negative (organism)" />
+                </observation>
+              </component>
+              <!-- pathogen ranking -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Pathogen Ranking Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                </observation>
+              </component>
+            </organizer>
+            <!-- end of Findings organizer for the first organism -->
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+              <id nullFlavor="NA" />
+              <statusCode code="completed" />
+              <!-- The organism -->
+              <component>
+                <!-- Pathogen Identified Observation -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- [HAI R1] Pathogen Identified Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism identified" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103535006" displayName="Parasite" />
+                </observation>
+              </component>
+              <!-- pathogen ranking -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Pathogen Ranking Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2" displayName="Pathogen rank 2" />
+                </observation>
+              </component>
+            </organizer>
+            <!-- end of Findings organizer for the second organism -->
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+              <id nullFlavor="NA" />
+              <statusCode code="completed" />
+              <!-- The organism -->
+              <component>
+                <!-- Pathogen Identified Observation -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Result Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <!-- [HAI R1] Pathogen Identified Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism identified" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="243365003" displayName="Acid-fast bacillus" />
+                </observation>
+              </component>
+              <!-- pathogen ranking -->
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Pathogen Ranking Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                  <id nullFlavor="NA" />
+                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3" displayName="Pathogen rank 3" />
+                </observation>
+              </component>
+            </organizer>
+            <!-- end of Findings organizer for the third organism -->
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

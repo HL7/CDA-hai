@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lantanagroup.com/voc">
+  <system valueSetOid="2.16.840.1.113883.1.11.1" valueSetName="Administrative Gender (HL7 V3)">
+    <code value="F" displayName="Female" codeSystemName="AdministrativeGender" codeSystem="2.16.840.1.113883.5.1" />
+    <code value="M" displayName="Male" codeSystemName="AdministrativeGender" codeSystem="2.16.840.1.113883.5.1" />
+    <code value="UN" displayName="Undifferentiated" codeSystemName="AdministrativeGender" codeSystem="2.16.840.1.113883.5.1" />
+  </system>
+  <system valueSetOid="AROSummaryData" valueSetName="Codes for Antimicrobial Resistance Option (ARO) Summary Data">
+    <code value="1851-5" displayName="Number of patient days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1862-2" displayName="Number of admissions" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2409-1" displayName="Number of blood cultures performed" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="AUPSummaryData" valueSetName="Codes for Antimicrobial Usage, Pharmacy (AUP) Summary Data">
+    <code value="2524-7" displayName="Number of therapy days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2525-4" displayName="Number of patient-present days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1862-2" displayName="Number of admissions (for facility-wide inpatient reporting)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="ICUSummaryData" valueSetName="Codes for Intensive Care Unit (ICU) Summary Data">
+    <code value="1833-3" displayName="Number of central line days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1851-5" displayName="Number of patient days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1852-3" displayName="Number of ventilator days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1853-1" displayName="Number of urinary catheter days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1834-1" displayName="Number of APRV days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1826-7" displayName="Number of new episodes of mechanical ventilation" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="NICUSummaryData" valueSetName="Codes for Neonatal Intensive Care Unit (NICU) Summary Data">
+    <code value="1851-5" displayName="Number of patient days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1852-3" displayName="Number of ventilator days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1854-9" displayName="Number of central line days including umbilical catheter" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3307-6" displayName="Number of umbilical catheter days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="OPCSummaryData" valueSetName="Codes for Outpatient Procedure Component (OPC) Summary">
+    <code value="1641-0" displayName="Number of admission with an order for a prophylactic IV antibiotic that was administered on time" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1642-8" displayName="Number of admission with an order for a prophylactic IV antibiotic that was NOT administered on time" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1643-6" displayName="Number of admission with no order for a prophylactic IV antibiotic" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1644-4" displayName="Total number of admissions with a primary CPT code for this Procedure Category" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1862-2" displayName="Number of admissions" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="POMSummaryData" valueSetName="Codes for Prevention Process and Outcome Measures (POM) Summary Data">
+    <code value="1888-7" displayName="Number of Total Facility Patient days (for inpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1889-5" displayName="Number of Total Facility Admissions (for inpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1830-9" displayName="Number of patient days as adjusted for C.diff reporting (for inpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1890-3" displayName="Number of Total Facility Encounters (for outpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1832-5" displayName="Number of encounters as adjusted for C.diff reporting (for outpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1864-8" displayName="Number of observations in which hand hygiene was indicated" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1865-5" displayName="Number of observations in which hand hygiene was performed" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1866-3" displayName="Number of observations in which the use of gown and gloves was indicated" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1867-1" displayName="Number of observations in which gown and gloves were used" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3193-0" displayName="AST organism monitored" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1870-5" displayName="Timing" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1871-3" displayName="Eligibility" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1872-1" displayName="Number of patients eligible for monitoring at admission/transfer in" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1873-9" displayName="Number of patients on which monitoring was performed at admission/transfer in" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1874-7" displayName="Number of patients eligible for monitoring at discharge/transfer out" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1875-4" displayName="Number of patients on which monitoring was performed at discharge/transfer out" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1827-5" displayName="Number of Patient Days adjusted for MDRO reporting (for inpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1828-3" displayName="Number of Admissions adjusted for MDRO reporting (for inpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1829-1" displayName="Number of Encounters adjusted for MDRO reporting (for outpatient location)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="SCASummaryData" valueSetName="Codes for Specialty Care Area (SCA) Summary Data">
+    <code value="1851-5" displayName="Number of patient days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1852-3" displayName="Number of ventilator days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1853-1" displayName="Number of urinary catheter days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3306-8" displayName="Number of permanent central line days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3305-0" displayName="Number of temporary central line days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1834-1" displayName="Number of APRV days" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1826-7" displayName="Number of new episodes of mechanical ventilation" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="http://VATDialysisSummaryData" valueSetName="Codes for Vascular Access Type (Dialysis) Summary Data">
+    <code value="2310-1" displayName="Number of chronic hemodialysis patients, vascular access type is fistula" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2311-9" displayName="Number of chronic hemodialysis patients, vascular access type is fistula, buttonhole cannulation" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2312-7" displayName="Number of chronic hemodialysis patients, vascular access type is graft" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2313-5" displayName="Number of chronic hemodialysis patients, vascular access type is tunnelled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2314-3" displayName="Number of chronic hemodialysis patients, vascular access type is non-tunnelled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2315-0" displayName="Number of chronic hemodialysis patients, vascular access type is other than fistula, graft, or tunneled central line" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2338-2" displayName="Number of Chronic Hemodialysis Patients, with vascular access, for whom diazlyers are reused" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.837" valueSetName="Ethnicity">
+    <code value="2135-2" displayName="Hispanic or Latino" codeSystemName="Race &amp; Ethnicity - CDC" codeSystem="2.16.840.1.113883.6.238" />
+    <code value="2186-5" displayName="Not Hispanic or Latino" codeSystemName="Race &amp; Ethnicity - CDC" codeSystem="2.16.840.1.113883.6.238" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.1.11.20275" valueSetName="HealthcareServiceLocation">
+    <code value="1162-7" displayName="24-Hour observation area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1184-1" displayName="Administrative area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1210-4" displayName="Adult Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1099-1" displayName="Adult step down unit [post-critical care]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1110-6" displayName="Allergy clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1166-8" displayName="Ambulatory surgical setting" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1212-0" displayName="Any Age Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1106-4" displayName="Assisted living area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1145-2" displayName="Behavioral health clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1185-8" displayName="Blood bank" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1195-7" displayName="Blood collection [Blood drive campaign]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1147-8" displayName="Blood collection center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1022-3" displayName="Bone marrow transplant unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1026-4" displayName="Burn critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1005-8" displayName="Cardiac catheterization lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1112-2" displayName="Cardiac rehabilitation center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1113-0" displayName="Cardiology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1186-6" displayName="Central sterile supply" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1187-4" displayName="Central trash area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1095-9" displayName="Cesarean section room/suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1011-6" displayName="Clinical chemistry" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1010-8" displayName="Clinical laboratory" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1148-6" displayName="Continence clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1115-5" displayName="Dermatology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1198-1" displayName="Dialysis SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1207-0" displayName="Donor Apheresis Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1108-0" displayName="Emergency department" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1116-3" displayName="Endocrinology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1007-4" displayName="Endoscopy lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1188-2" displayName="Facility grounds" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1117-1" displayName="Family medicine clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1206-2" displayName="Float" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1118-9" displayName="Gastroenterology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1120-5" displayName="General internal medicine clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1121-3" displayName="Gynecology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1012-4" displayName="Hematology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1200-5" displayName="Hematology/oncology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1088-4" displayName="Hematology/Oncology SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1013-2" displayName="Histology/Surgical pathology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1161-9" displayName="Holistic medicine center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1194-0" displayName="Home-based hospice" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1182-5" displayName="Housekeeping/environmental services" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1017-3" displayName="Hyperbaric oxygen center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1018-1" displayName="Infusion center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1071-0" displayName="Inpatient acute stroke ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1075-1" displayName="Inpatient adolescent behavioral health ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1205-4" displayName="Inpatient antenatal care ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1051-2" displayName="Inpatient behavioral Health/Psych Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1052-0" displayName="Inpatient burn ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1053-8" displayName="Inpatient ear/nose/throat ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1054-6" displayName="Inpatient gastrointestinal ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1055-3" displayName="Inpatient genitourinary ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1056-1" displayName="Inpatient gerontology ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1057-9" displayName="Inpatient gynecology ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1165-0" displayName="Inpatient hospice" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1171-8" displayName="Inpatient jail unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1060-3" displayName="Inpatient medical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1061-1" displayName="Inpatient medical/surgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1062-9" displayName="Inpatient neurology ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1063-7" displayName="Inpatient neurosurgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1096-7" displayName="Inpatient operating room/suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1064-5" displayName="Inpatient ophthalmology ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1066-0" displayName="Inpatient orthopedic trauma ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1065-2" displayName="Inpatient orthopedic ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1077-7" displayName="Inpatient pediatric behavioral health ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1078-5" displayName="Inpatient pediatric burn ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1079-3" displayName="Inpatient pediatric ear, nose, throat ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1080-1" displayName="Inpatient pediatric genitourinary ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1076-9" displayName="Inpatient pediatric medical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1081-9" displayName="Inpatient pediatric medical/surgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1082-7" displayName="Inpatient pediatric neurology ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1083-5" displayName="Inpatient pediatric neurosurgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1084-3" displayName="Inpatient pediatric orthopedic ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1085-0" displayName="Inpatient pediatric rehabilitation ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1086-8" displayName="Inpatient pediatric surgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1067-8" displayName="Inpatient plastic surgery ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1068-6" displayName="Inpatient postpartum ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1069-4" displayName="Inpatient pulmonary ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1070-2" displayName="Inpatient rehabilitation ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1172-6" displayName="Inpatient school infirmary" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1072-8" displayName="Inpatient surgical ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1073-6" displayName="Inpatient vascular surgery ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1038-9" displayName="Inpatient well baby nursery [Level I]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1170-0" displayName="Institutional infirmary" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1203-9" displayName="Interventional radiology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1058-7" displayName="Labor and delivery ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1059-5" displayName="Labor, Delivery, Recovery, Postpartum suite [LDRP]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1183-3" displayName="Laundry room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1204-7" displayName="Location outside facility" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1090-0" displayName="Long-term acute care [LTAC]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1103-1" displayName="Long-Term care alzheimer's unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1104-9" displayName="Long-Term care behavioral health/psych unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1105-6" displayName="Long-Term care rehabilitation unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1102-3" displayName="Long-Term care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1028-0" displayName="Medical cardiac critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1027-2" displayName="Medical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1122-1" displayName="Medical genetics clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1029-8" displayName="Medical/Surgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1014-0" displayName="Microbiology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1176-7" displayName="Mobile blood collection center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1174-2" displayName="Mobile emergency services/EMS" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1175-9" displayName="Mobile MRI/CT" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1189-0" displayName="Morgue/Autopsy room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1039-7" displayName="Neonatal critical care unit [Level II/III]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1040-5" displayName="Neonatal critical care unit [Level III]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1135-3" displayName="Nephrology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1123-9" displayName="Neurology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1035-5" displayName="Neurology critical care and stroke unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1031-4" displayName="Neurosurgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1151-0" displayName="Occupational health clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1152-8" displayName="Occupational therapy clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1124-7" displayName="Opthalmology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1125-4" displayName="Orthopedics clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1149-4" displayName="Ostomy clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1126-2" displayName="Otorhinolaryngology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1150-2" displayName="Outpatient dental clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1153-6" displayName="Outpatient hemodialysis clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1154-4" displayName="Outpatient HIV clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1167-6" displayName="Outpatient pediatric surgery center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1168-4" displayName="Outpatient plastic surgery center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1155-1" displayName="Outpatient rehabilitation clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1169-2" displayName="Outpatient surgery recovery room/post-anesthesia care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1127-0" displayName="Pain clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1192-4" displayName="Patient's residence [Home care]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1146-0" displayName="Pediatric behavioral health clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1023-1" displayName="Pediatric bone marrow transplant unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1042-1" displayName="Pediatric burn critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1129-6" displayName="Pediatric cardiology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1128-8" displayName="Pediatric clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1130-4" displayName="Pediatric dental clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1131-2" displayName="Pediatric dermatology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1132-0" displayName="Pediatric diabetes/endocrinology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1091-8" displayName="Pediatric dialysis SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1109-8" displayName="Pediatric emergency department" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1119-7" displayName="Pediatric gastroenterology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1136-1" displayName="Pediatric hematology/oncology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1089-2" displayName="Pediatric hematology/oncology SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1213-8" displayName="Pediatric long-term acute care (LTAC)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1044-7" displayName="Pediatric medical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1045-4" displayName="Pediatric medical/surgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1211-2" displayName="Pediatric Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1137-9" displayName="Pediatric nephrology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1046-2" displayName="Pediatric neurosurgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1133-8" displayName="Pediatric orthopedic clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1047-0" displayName="Pediatric respiratory critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1138-7" displayName="Pediatric rheumatology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1134-6" displayName="Pediatric scoliosis clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1093-4" displayName="Pediatric solid organ transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1100-7" displayName="Pediatric step  down unit [post-critical care]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1043-9" displayName="Pediatric surgical cardiothoracic critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1048-8" displayName="Pediatric surgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1049-6" displayName="Pediatric trauma critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1074-4" displayName="Pediatric ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1179-1" displayName="Pharmacy" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1181-7" displayName="Physical plant operations center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1202-1" displayName="Physical therapy clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1140-3" displayName="Podiatry clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1097-5" displayName="Post-Anesthesia care unit/recovery Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1156-9" displayName="Prenatal clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1034-8" displayName="Prenatal critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1141-1" displayName="Provider's office" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1180-9" displayName="Public area in healthcare facility" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1157-7" displayName="Pulmonary clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1009-0" displayName="Pulmonary function testing" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1008-2" displayName="Radiology diagnostics or therapeutics unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1033-0" displayName="Respiratory critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1142-9" displayName="Rheumatology clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1201-3" displayName="Scoliosis clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1015-7" displayName="Serology lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1020-7" displayName="Sleep disorders unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1190-8" displayName="Soiled utility area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1092-6" displayName="Solid organ transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1196-5" displayName="Specimen collection area [Community]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1019-9" displayName="Specimen collection area [Healthcare]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1158-5" displayName="Speech therapy clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1041-3" displayName="Step down neonatal ICU [Level II]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1143-7" displayName="Surgery clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1032-2" displayName="Surgical cardiothoracic critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1030-6" displayName="Surgical critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1208-8" displayName="Telemetry Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1178-3" displayName="Transport services" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1025-6" displayName="Trauma critical care unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1209-6" displayName="Treatment Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1160-1" displayName="Urgent care center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1164-3" displayName="Ventilator dependent unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1016-5" displayName="Virology lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1139-5" displayName="Well baby clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1144-5" displayName="Wound clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1159-3" displayName="Wound ostomy continence clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.11.20.9.18" valueSetName="MoodCodeEvnInt">
+    <code value="EVN" displayName="Event" codeSystemName="ActMood" codeSystem="2.16.840.1.113883.5.1001" />
+    <code value="INT" displayName="Intent" codeSystemName="ActMood" codeSystem="2.16.840.1.113883.5.1001" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.10" valueSetName="NHSNASAClassCode">
+    <code value="413495001" displayName="Normally healthy patient" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="413496000" displayName="Patient with mild systemic disease" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="413497009" displayName="Patient with severe systemic disease, not incapacitating" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="413498004" displayName="Patient with incapacitating systemic disease, constant threat to life" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="413499007" displayName="Moribund patient, &amp;lt; 24-hour life expectancy" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.7240" valueSetName="NHSNCarbaTestMethod">
+    <code value="2039-6" displayName="(PCR-KPC) Polymerase chain reaction – Klebsiella pneumoniae carbapenemase" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2040-4" displayName="(PCR-NDM) Polymerase chain reaction – New Delhi metallo-β-lactamase" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2041-2" displayName="(PCR-IMP)Polymerase chain reaction - Imipenemase" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2042-0" displayName="PCR-VIM) Polymerase chain reaction - Verona Integron-encoded metallo-β-lactamase" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2043-8" displayName="(PCR-OXA-48-like) Polymerase chain reaction – Oxacillinase-48 like" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2044-6" displayName="(MHT) Modified Hodge Test" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2045-3" displayName="(CNP) Carba NP" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2046-1" displayName="(MBLe) Metallo-β-lactamase E-test" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2047-9" displayName="(MBLs) Metallo-β-lactamase screen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3185" valueSetName="NHSNCatheterTypeCode">
+    <code value="1116-3" displayName="Umbilical" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1117-1" displayName="Tunneled, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1118-9" displayName="Tunneled, other than dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1119-7" displayName="Non-tunneled, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1120-5" displayName="Non-tunneled, other than dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3115-3" displayName="PICC" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.6051" valueSetName="NHSNClosureTechniqueCode">
+    <code value="2406-7" displayName="Primary" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2407-5" displayName="Other than Primary" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3195" valueSetName="NHSNCriterionOfDiagnosisCode">
+    <code value="1901-8" displayName="Not cultured" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1964-6" displayName="Allo-SCT with Grade &gt; 3 GI GVHD" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1965-3" displayName="Allo- SCT with diarrhea" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="165517008" displayName="Neutropenia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1966-1" displayName="Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1902-6" displayName="Blood culture not done or no organisms detected in blood" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1929-9" displayName="&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1931-5" displayName="&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1923-3" displayName="&amp;gt;=5% BAL cells w/bacteria" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1942-2" displayName="&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1927-3" displayName="1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2403-4" displayName="1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1930-7" displayName="1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1938-0" displayName="4-fold rise in L. pneumophila antibody titer" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1935-6" displayName="4-fold rise in paired sera for pathogen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1944-8" displayName="Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1937-2" displayName="L pneumophila serogroup 1 antigens in urine" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1939-8" displayName="Matching positive blood and sputum cultures w/ Candida spp" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1941-4" displayName="Other positive laboratory tests" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1955-4" displayName="Positive blood culture" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1952-1" displayName="Positive culture" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1953-9" displayName="Positive culture of pathogen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1954-7" displayName="Positive culture of skin contaminant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1948-9" displayName="Positive culture of virus or Chlamydia" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1936-4" displayName="Positive culture or micro-IF of Legionella spp" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1934-9" displayName="Positive detection of viral antigen or antibody" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1928-1" displayName="Positive dipstick for leukocyte esterase or nitrate" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1943-0" displayName="Positive Gram stain when culture is negative or not done" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1950-5" displayName="Positive micro-IF test for Chlamydia" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1949-7" displayName="Positive PCR for Chlamydia or Mycoplasma" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1946-3" displayName="Positive pleural fluid culture" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1947-1" displayName="Positive quantitative culture from LRT specimen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1924-0" displayName="Radiographic evidence of infection" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1951-3" displayName="Recognized pathogen from one or more blood cultures" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="21522001" displayName="Abdominal pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="128477000" displayName="Abscess" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1957-0" displayName="Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="419284004" displayName="Altered mental status (in &amp;gt;=70 y.o.)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1023001" displayName="Apnea" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1959-6" displayName="Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="161891005" displayName="Back pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="2513-0" displayName="Bilateral infiltrates on chest x-ray" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="48867003" displayName="Bradycardia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1908-3" displayName="Bradycardia or tachycardia" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="301863008" displayName="Cavitation" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="128045006" displayName="Cellulitis" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="29857009" displayName="Chest pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="43724002" displayName="Chills" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="95436008" displayName="Consolidation" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="102830001" displayName="Costovertebral angle tenderness or pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="49727002" displayName="Cough" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="2516-3" displayName="Criterion not otherwise specified" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2514-8" displayName="Diffuse hemorrhage" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="49650001" displayName="Dysuria" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="267038008" displayName="Edema" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="386661006" displayName="Fever" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="12763006" displayName="Blood pressure decrease" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="24184005" displayName="Blood pressure increase" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="247355005" displayName="Flank pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="248213001" displayName="Flushing" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="162116003" displayName="Frequency of urination" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1940-6" displayName="Fungi or Pneumocytis carinii from LRT specimen" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="25064002" displayName="Headache" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="304214002" displayName="Heat" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="34436003" displayName="Hematuria" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="123767004" displayName="Hemoglobinemia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="66857006" displayName="Hemoptysis" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1956-2" displayName="Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="247472004" displayName="Hives" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="45007003" displayName="Hypotension" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="386689009" displayName="Hypothermia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="389087006" displayName="hypoxemia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1967-9" displayName="Incision deliberately opened or otherwise drained by physician" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="165775009" displayName="Positive antibody screen" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="95388000" displayName="Injection site pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="418290006" displayName="Itching" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="18165001" displayName="Jaundice" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="214264003" displayName="Lethargy" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1920-8" displayName="Localized swelling" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="422587007" displayName="Nausea" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="2515-5" displayName="Nausea/vomiting" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1903-4" displayName="New onset/change in sputum" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1907-5" displayName="New onset/change in sputum, increased secretions   or increased suctioning" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1904-2" displayName="New onset/worsening cough, dyspnea, tachypnea" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1925-7" displayName="New or progressive and persistent infiltrate" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="83128009" displayName="oliguria" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1905-9" displayName="Other evidence of infection found on direct exam, during surgery, or by diagnostic tests" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1906-7" displayName="Other signs and symptoms" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2517-1" displayName="Pain not otherwise specified" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1960-4" displayName="Pain or tenderness" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1909-1" displayName="Persistent microscopic or gross blood in stools" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1963-8" displayName="Physician diagnosis of this event type" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1962-0" displayName="Physician institutes appropriate antimicrobial therapy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2237002" displayName="Pleuritic chest pain" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1926-5" displayName="Pneumatoceles (in &amp;lt;=1 y.o.)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="255320000" displayName="Purulent drainage or material" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="4800001" displayName="Pyuria" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1921-6" displayName="Rales or bronchial breath sounds" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2518-9" displayName="Rash not otherwise specified" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="386713009" displayName="Redness" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="128601007" displayName="Respiratory infection (including pneumonia)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="38880002" displayName="Rigors" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="89138009" displayName="Shock" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1968-7" displayName="Sinus tract" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="267036007" displayName="SOB - Shortness of breath" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="162053006" displayName="Suprapubic tenderness" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="3424008" displayName="Tachycardia" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="85623003" displayName="Temperature instability" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="75088002" displayName="Urgency" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="39575007" displayName="Dark urine" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="126485001" displayName="Urticaria" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="422400008" displayName="Vomiting" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="56018004" displayName="Wheezing" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1922-4" displayName="Wheezing, rales or rhonchi" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1958-8" displayName="Worsening gas exchange" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2320-0" displayName="Wound (not related to vascular access) with pus or increased redness" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="225553008" displayName="Wound spontaneously dehisces" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="68566005" displayName="Urinary tract infection" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1971-1" displayName="Acute pain, swelling, or tenderness of testes, epididymis, or prostate" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1972-9" displayName="Urine not tested for WBC" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="414478003" displayName="Leukocytosis" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.13" valueSetName="NHSNDrugSusceptibilityFindingCode">
+    <code value="I" displayName="Intermediate" codeSystemName="HL7ObservationInterpretation" codeSystem="2.16.840.1.113883.5.83" />
+    <code value="R" displayName="Resistant" codeSystemName="HL7ObservationInterpretation" codeSystem="2.16.840.1.113883.5.83" />
+    <code value="S" displayName="Susceptible" codeSystemName="HL7ObservationInterpretation" codeSystem="2.16.840.1.113883.5.83" />
+    <code value="NS" displayName="Non-Susceptible" codeSystemName="HL7ObservationInterpretation" codeSystem="2.16.840.1.113883.5.83" />
+    <code value="S-DD" displayName="Susceptible-dose dependant" codeSystemName="HL7ObservationInterpretation" codeSystem="2.16.840.1.113883.5.83" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3248" valueSetName="NHSNEligibilityCode">
+    <code value="2301-0" displayName="All patients" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2302-8" displayName="Only patients with no prior documentation of colonization or infection" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.1" valueSetName="NHSNEncounterTypeCode">
+    <code value="AMB" displayName="Outpatient" codeSystemName="ActCode" codeSystem="2.16.840.1.113883.5.4" />
+    <code value="IMP" displayName="Inpatient" codeSystemName="ActCode" codeSystem="2.16.840.1.113883.5.4" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.19" valueSetName="NHSNHealthcareServiceLocationCode">
+    <code value="1250-0" displayName="All Inpatient Locations [FACWIDEIN]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1251-8" displayName="All Outpatient Locations [FACWIDEOUT]" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1025-6" displayName="Trauma Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1026-4" displayName="Burn Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1027-2" displayName="Medical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1028-0" displayName="Medical Cardiac Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1029-8" displayName="Medical/Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1030-6" displayName="Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1031-4" displayName="Neurosurgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1032-2" displayName="Surgical Cardiothoracic Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1033-0" displayName="Respiratory Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1034-8" displayName="Prenatal Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1035-5" displayName="Neurologic Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1038-9" displayName="Inpatient Well Baby Nursery (Level I)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1039-7" displayName="Neonatal Critical Care(Level II/III)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1040-5" displayName="Neonatal Critical Care (Level III)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1041-3" displayName="Step down Neonatal ICU (Level II)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1042-1" displayName="Pediatric Burn Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1043-9" displayName="Pediatric Cardiothoracic Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1044-7" displayName="Pediatric Medical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1045-4" displayName="Pediatric Medical/Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1046-2" displayName="Pediatric Neurosurgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1047-0" displayName="Pediatric Respiratory Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1048-8" displayName="Pediatric Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1049-6" displayName="Pediatric Trauma Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1022-3" displayName="Bone Marrow Transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1023-1" displayName="Pediatric Bone Marrow Transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1088-4" displayName="Hematology/Oncology SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1089-2" displayName="Pediatric Hematology/Oncology SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1091-8" displayName="Pediatric Dialysis SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1092-6" displayName="Solid Organ Transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1093-4" displayName="Pediatric Solid Organ Transplant SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1198-1" displayName="Inpatient Acute Dialysis SCA" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1051-2" displayName="Inpatient Behavioral Health/Psych Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1052-0" displayName="Inpatient Burn Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1053-8" displayName="Inpatient Ear/Nose/Throat Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1054-6" displayName="Inpatient Gastrointestinal Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1055-3" displayName="Inpatient Genitourinary Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1056-1" displayName="Inpatient Gerontology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1057-9" displayName="Inpatient Gynecology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1058-7" displayName="Labor and Delivery Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1059-5" displayName="Labor, Delivery, Recovery, Postpartum Suite (LDRP)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1060-3" displayName="Inpatient Medical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1061-1" displayName="Inpatient Medical/Surgical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1062-9" displayName="Inpatient Neurology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1063-7" displayName="Inpatient Neurosurgical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1064-5" displayName="Inpatient Ophthalmology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1065-2" displayName="Inpatient Orthopedic Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1066-0" displayName="Inpatient Orthopedic Trauma Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1067-8" displayName="Inpatient Plastic Surgery Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1068-6" displayName="Inpatient Postpartum Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1069-4" displayName="Inpatient Pulmonary Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1070-2" displayName="Inpatient Rehabilitation Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1071-0" displayName="Acute Stroke Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1072-8" displayName="Inpatient Surgical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1073-6" displayName="Inpatient Vascular Surgery Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1171-8" displayName="Inpatient Jail Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1172-6" displayName="Inpatient School Infirmary" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1205-4" displayName="Inpatient Antenatal Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1075-1" displayName="Inpatient Adolescent Behavioral Health Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1076-9" displayName="Inpatient Medical Pediatric Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1077-7" displayName="Inpatient Pediatric Behavioral Health Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1078-5" displayName="Inpatient Pediatric Burn Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1079-3" displayName="Inpatient Pediatric Ear, Nose, Throat Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1080-1" displayName="Inpatient Pediatric Genitourinary Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1081-9" displayName="Inpatient Pediatric Med/Surg Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1082-7" displayName="Inpatient Pediatric Neurology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1083-5" displayName="Inpatient Pediatric Neurosurgical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1084-3" displayName="Inpatient Pediatric Orthopedic Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1085-0" displayName="Pediatric Rehabilitation Ward - Within ACH" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1086-8" displayName="Inpatient Pediatric Surgical Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1099-1" displayName="Adult Step Down Unit (post-critical care)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1100-7" displayName="Pediatric Step Down Unit (post-critical care)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1005-8" displayName="Cardiac Catheterization Room/Suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1095-9" displayName="Cesarean Section Room/Suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1096-7" displayName="Inpatient Operating Room/Suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1097-5" displayName="Post-Anesthesia Care Unit/Recovery Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1203-9" displayName="Interventional Radiology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1009-0" displayName="Pulmonary Function Testing" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1020-7" displayName="Sleep Studies (for in- and outpatients)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1178-3" displayName="Transport Service" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1190-8" displayName="Soiled Utility Area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1206-2" displayName="Float" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1208-8" displayName="Telemetry Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1209-6" displayName="Treatment Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1211-2" displayName="Pediatric Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1210-4" displayName="Adult Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1212-0" displayName="Any Age Mixed Acuity Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1102-3" displayName="Long-Term Care Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1103-1" displayName="Long-Term Care Alzheimer's Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1104-9" displayName="Long-Term Care Behavioral Health/Psych Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1105-6" displayName="Long-Term Care Rehabilitation Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1164-3" displayName="Ventilator Dependent Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1165-0" displayName="Inpatient Hospice" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1260-9" displayName="LTCF Bariatric Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1255-9" displayName="LTCF Dementia Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1258-3" displayName="LTCF General Nursing Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1254-2" displayName="LTCF Inpatient Hospice Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1256-7" displayName="LTCF Psychiatric Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1257-5" displayName="LTCF Skilled Nursing/Short Term Rehabilitation Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1259-1" displayName="LTCF Ventilator Dependent Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1220-3" displayName="LTAC ICU" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1221-1" displayName="LTAC Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1222-9" displayName="LTAC Pediatric ICU" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1214-6" displayName="LTAC Pediatric Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1217-9" displayName="Rehabilitation Ward - Freestanding IRF" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1218-7" displayName="Rehabilitation Pediatric Ward - Freestanding IRF" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1108-0" displayName="Emergency Department" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1109-8" displayName="Pediatric Emergency Department" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1160-1" displayName="Urgent Care Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1162-7" displayName="24-Hour Observation Area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1169-2" displayName="Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1174-2" displayName="Mobile Emergency Services/EMS" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1007-4" displayName="Endoscopy Suite" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1008-2" displayName="Radiology (includes Nuclear Medicine)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1017-3" displayName="Hyperbaric Oxygen Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1018-1" displayName="Infusion Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1019-9" displayName="Specimen Collection Area (Healthcare)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1110-6" displayName="Allergy Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1112-2" displayName="Cardiac Rehabilitation Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1113-0" displayName="Cardiology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1115-5" displayName="Dermatology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1116-3" displayName="Diabetes/Endocrinology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1117-1" displayName="Family Medicine Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1118-9" displayName="Outpatient Gastrointestinal (GI) Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1119-7" displayName="Pediatric Gastrointestinal Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1120-5" displayName="Outpatient Medical Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1121-3" displayName="Gynecology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1122-1" displayName="Genetics Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1123-9" displayName="Neurology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1124-7" displayName="Ophthalmology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1125-4" displayName="Orthopedic Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1126-2" displayName="Ear, Nose, Throat Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1127-0" displayName="Pain Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1128-8" displayName="Pediatric Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1129-6" displayName="Pediatric Cardiology Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1130-4" displayName="Pediatric Dental Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1131-2" displayName="Pediatric Dermatology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1132-0" displayName="Pediatric Diabetes/Endocrinology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1133-8" displayName="Pediatric Orthopedic Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1134-6" displayName="Pediatric Scoliosis Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1136-1" displayName="Pediatric Hematology/Oncology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1137-9" displayName="Pediatric Nephrology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1138-7" displayName="Pediatric Rheumatology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1139-5" displayName="Well Baby Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1140-3" displayName="Podiatry Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1141-1" displayName="Physician's Office" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1142-9" displayName="Rheumatology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1143-7" displayName="Surgical Services Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1144-5" displayName="Wound Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1145-2" displayName="Behavioral Health Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1146-0" displayName="Pediatric Behavioral Health Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1147-8" displayName="Blood Collection Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1148-6" displayName="Continence Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1149-4" displayName="Ostomy Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1150-2" displayName="Outpatient Dental Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1151-0" displayName="Occupational Health Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1152-8" displayName="Occupational Therapy Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1153-6" displayName="Outpatient Hemodialysis Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1154-4" displayName="Outpatient HIV Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1155-1" displayName="Outpatient Rehabilitation Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1156-9" displayName="Prenatal Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1157-7" displayName="Pulmonary Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1158-5" displayName="Speech Therapy Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1159-3" displayName="Wound Ostomy Continence Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1161-9" displayName="Holistic Medicine Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1170-0" displayName="School or Prison Infirmary" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1175-9" displayName="Mobile MRI/CT" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1176-7" displayName="Mobile Blood Collection center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1200-5" displayName="Outpatient Hematology/Oncology Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1202-1" displayName="Physical Therapy Clinic" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1207-0" displayName="Donor Apheresis Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1192-4" displayName="Home Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1194-0" displayName="Home-based Hospice" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1195-7" displayName="Blood Collection (Blood Drive Campaign)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1196-5" displayName="Specimen Collection Area (Community)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1204-7" displayName="Location outside facility" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1262-1" displayName="Home Care -  Dialysis" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1010-8" displayName="General Laboratory" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1011-6" displayName="Clinical Chemistry" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1012-4" displayName="Hematology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1013-2" displayName="Histology/Surgical Pathology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1014-0" displayName="Microbiology" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1015-7" displayName="Serology Lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1016-5" displayName="Virology Lab" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1106-4" displayName="Assisted Living Area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1179-1" displayName="Pharmacy" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1180-9" displayName="Public Area in Facility" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1181-7" displayName="Physical Plant Operations Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1182-5" displayName="Housekeeping/Environmental Services" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1183-3" displayName="Laundry Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1184-1" displayName="Administrative Areas" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1185-8" displayName="Blood Bank" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1186-6" displayName="Central Sterile Supply" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1187-4" displayName="Central Trash Area" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1188-2" displayName="Facility Grounds" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1189-0" displayName="Morgue/Autopsy Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1261-7" displayName="Centralized Transfusion Service" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1223-7" displayName="ONC Medical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1224-5" displayName="ONC Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1225-2" displayName="ONC Medical-Surgical Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1226-0" displayName="ONC Leukemia Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1228-6" displayName="ONC Lymphoma Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1229-4" displayName="ONC Leukemia/Lymphoma Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1230-2" displayName="ONC Solid Tumor Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1231-0" displayName="ONC Hematopoietic Stem Cell Transplant Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1232-8" displayName="ONC General Hematology/Oncology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1233-6" displayName="Pediatric Oncology Critical Care" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1234-4" displayName="Inpatient Pediatric Hematopoietic Stem Cell Transplant Oncology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1235-1" displayName="Inpatient Pediatric General Hematology/Oncology Ward" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1227-8" displayName="Oncology Step Down Unit (post-critical care)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1236-9" displayName="ONC Mixed Acuity Unit (all ages)" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1243-5" displayName="Ambulatory Surgery Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1242-7" displayName="Outpatient Operating Room/Suite_Attached" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1244-3" displayName="Outpatient Operating Room/Suite_Detached" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1248-4" displayName="Pediatric Outpatient Operating Room/Suite_Attached" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1249-2" displayName="Pediatric Outpatient Operating Room/Suite_Detached" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1246-8" displayName="Outpatient Ambulatory Pediatric Surgery Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1245-0" displayName="Ambulatory Surgery Recovery Room" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+    <code value="1247-6" displayName="Outpatient Ambulatory Plastic Surgery Center" codeSystemName="HL7 HealthcareServiceLocation" codeSystem="2.16.840.1.113883.6.259" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.3" valueSetName="NHSNHipReplacementCode">
+    <code value="1413-4" displayName="Total: Total Primary Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1414-2" displayName="Total: Total Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1415-9" displayName="Total: Partial Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1416-7" displayName="Hemi: Partial Primary Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1417-5" displayName="Hemi: Total Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1418-3" displayName="Hemi: Partial Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1419-1" displayName="Resurfacing: Total Primary Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1420-9" displayName="Resurfacing: Total Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1421-7" displayName="Resurfacing: Partial Primary Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1422-5" displayName="Resurfacing: Partial Revision Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.7215" valueSetName="NHSNInfectionFirstReportedSource">
+    <code value="304292004" displayName="Surgeon" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1651-9" displayName="Attending physician other than surgeon" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1652-7" displayName="Admitting inpatient facility" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1653-5" displayName="Routine follow-up at outpatient facility" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1654-3" displayName="Patient or family member" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.6" valueSetName="NHSNInfectionRiskFactorsCode">
+    <code value="1006-6" displayName="central line including umbilical catheter" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1002-5" displayName="(unspecified) central line" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1003-3" displayName="permanent central line" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1005-8" displayName="temporary central line" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.4" valueSetName="NHSNKneeReplacementCode">
+    <code value="1406-8" displayName="Total: Total Primary Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1407-6" displayName="Total: Total Revision Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1408-4" displayName="Total: Partial Revision Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1409-2" displayName="Hemi: Partial Primary Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1411-8" displayName="Hemi: Total Revision Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1412-6" displayName="Hemi: Partial Revision Knee Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.10.20.5.9.3" valueSetName="NHSNLastLocationEncounterTypeCode">
+    <code value="HH" displayName="home health" codeSystemName="ActCode" codeSystem="2.16.840.1.113883.5.4" />
+    <code value="IMP" displayName="impatient encounter" codeSystemName="ActCode" codeSystem="2.16.840.1.113883.5.4" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3283" valueSetName="NHSNOrganismASTCode">
+    <code value="113727004" displayName="VRE" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="115329001" displayName="MRSA" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3234" valueSetName="NHSNPopulationCategoryCode">
+    <code value="3300-1" displayName="Birthweight under 750gm" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3301-9" displayName="Birthweight 751-1000gm" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3302-7" displayName="Birthweight 1001-1500gm" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3303-5" displayName="Birthweight 1501-2500gm" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="3304-3" displayName="Birthweight over 2500gm" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3595" valueSetName="NHSNPopulationSummaryReportTypeCode">
+    <code value="1879-6" displayName="Summary data reporting catheter and ventilator use in a ICU/Other" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1880-4" displayName="Summary data reporting catheter and ventilator use in a SCA" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1881-2" displayName="Summary data reporting catheter and ventilator use in a NICU" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1884-6" displayName="Summary data reporting Active Surveillance Testing" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2316-8" displayName="Summary data reporting vascular access types for chronic hemodialysis patients" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1887-9" displayName="Summary data reporting Antimicrobial Usage" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2410-9" displayName="Summary data reporting antimicrobial resistance patterns at a facility" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1657-6" displayName="Summary data reporting Outpatient procedure component events at a facility" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2543-7" displayName="Hemovigilance Module -  Monthly Reporting Denominator" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.17" valueSetName="NHSNProcedureCategoryCode">
+    <code value="2105-5" displayName="Abdominal aortic aneurysm repair" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2107-1" displayName="Abdominal hysterectomy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2108-9" displayName="Appendix surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2102-2" displayName="AV shunt for dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2109-7" displayName="Bile duct, liver or pancreatic surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2110-5" displayName="Breast surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2111-3" displayName="Cardiac Surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2114-7" displayName="Carotid endarterectomy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2115-4" displayName="Cesarean section" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2116-2" displayName="Colon surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2112-1" displayName="Coronary artery bypass graft with both chest and donor site incisions" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2113-9" displayName="Coronary artery bypass graft with chest incision only" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2117-0" displayName="Craniotomy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2118-8" displayName="Exploratory abdominal surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2119-6" displayName="Gallbladder surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2120-4" displayName="Gastric surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2121-2" displayName="Heart transplant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2106-3" displayName="Herniorrhaphy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2101-4" displayName="Hip Replacement" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2122-0" displayName="Kidney surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2123-8" displayName="Kidney transplant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2124-6" displayName="Knee prosthesis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2125-3" displayName="Laminectomy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2126-1" displayName="Limb amputation" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2127-9" displayName="Liver transplant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2128-7" displayName="Neck surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2103-0" displayName="Not an NHSN operation" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2129-5" displayName="Open reduction of fracture" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2104-8" displayName="Other operations" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2130-3" displayName="Ovarian surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2131-1" displayName="Pacemaker surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2132-9" displayName="Peripheral vascular bypass surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2133-7" displayName="Prostate surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2134-5" displayName="Rectal surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2135-2" displayName="Refusion of spine" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2136-0" displayName="Small bowel surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2137-8" displayName="Spinal fusion" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2138-6" displayName="Spleen surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2139-4" displayName="Thoracic surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2140-2" displayName="Thyroid and/or parathyroid surgery" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2141-0" displayName="Vaginal hysterectomy" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2142-8" displayName="Ventricular shunt" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2102-2" displayName="Shunt for dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3182" valueSetName="NHSNReasonForInsertionCode">
+    <code value="5105-2" displayName="[To address] A new indication for a central line." codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="5106-0" displayName="[To replace] An existing, malfunctioning central line." codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="5107-8" displayName="[To replace] An existing central line where infection was suspected." codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3181" valueSetName="NHSNRoleOfPerformerCode">
+    <code value="65853000" displayName="Student (not medical)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="398130009" displayName="Student (medical)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="405277009" displayName="Intern/resident" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="405279007" displayName="Attending physician" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="2212-9" displayName="PICC Team" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="4100-4" displayName="IV Team" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="4101-2" displayName="Physician assistant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="4102-0" displayName="Medical staff not otherwise specified" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="4103-8" displayName="Fellow" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="363L00000X" displayName="Nurse Practitioner" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" codeSystem="2.16.840.1.113883.6.101" />
+    <code value="163W00000X" displayName="Registered Nurse" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" codeSystem="2.16.840.1.113883.6.101" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3361" valueSetName="NHSNRouteOfAdminstrationAURPCode">
+    <code value="447964005" displayName="Digestive tract route [A route that begins anywhere in the digestive tract extending from the mouth through rectum.]" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="447694001" displayName="Respiratory tract route [A route that begins within the respiratory tract, including the oropharynx and nasopharynx.]" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="47625008" displayName="Intravenous route [An intravascular route that begins with a vein.]" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="78421000" displayName="Intramuscular route [A route that begins within a muscle.]" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3183" valueSetName="NHSNSkinPreparationCode">
+    <code value="6052" displayName="Alcohol" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88" />
+    <code value="8611" displayName="Povidone iodine" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88" />
+    <code value="20791" displayName="Chlorhexidine gluconate" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.2" valueSetName="NHSNSpinalFusionApproachCode">
+    <code value="255549009" displayName="Anterior" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="255551008" displayName="Posterior" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1205-4" displayName="anterior posterior" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="118438002" displayName="Transoral Approach" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.11" valueSetName="NHSNSpinalFusionLevelCode">
+    <code value="1101-5" displayName="atlas-axis (C1-C2 only)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1102-3" displayName="atlas-axis/cervical (C1-C7: any combination)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1103-1" displayName="cervical (C3-C7: any combination)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1104-9" displayName="cervical/dorsal/dorsolumbar (Extends from any cervical through any lumbar levels )" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1105-6" displayName="dorsal/dorsolumbar (T1-L5: any combination)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1106-4" displayName="lumbar/lumbosacral (L1-S5: any combination)" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.7160" valueSetName="NHSNStaphAureusSpecificTest">
+    <code value="42721-1" displayName="Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" />
+    <code value="48813-0" displayName="Bacterial methicillin resistance (mecA) gene [Presence] by Probe and target amplification method" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.6074" valueSetName="NHSNStaphAureusTestResults">
+    <code value="10828004" displayName="Positive" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="260385009" displayName="Negative" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="261665006" displayName="Unknown" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.7338" valueSetName="NHSNStartOrContinuation">
+    <code value="2336-6" displayName="New antimicrobial start" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2337-4" displayName="Continuation of antimicrobial" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.6008" valueSetName="NHSNSuspectedSourceTypeCode">
+    <code value="2319-2" displayName="Vascular access" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2303-6" displayName="Contaminant" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.3247" valueSetName="NHSNTimingCode">
+    <code value="2201-2" displayName="On admission only" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2202-0" displayName="On admission and on discharge/transfer" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.6042" valueSetName="NHSNVascularAccessSiteCode">
+    <code value="2323-4" displayName="Vascular site fistula" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2324-2" displayName="Vascular site graft" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2321-8" displayName="Site of non-tunneled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="2322-6" displayName="Site of tunneled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.114222.4.11.6007" valueSetName="NHSNVascularAccessTypeCode">
+    <code value="438503005" displayName="Surgically constructed arteriovenous fistula" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="439218000" displayName="Surgically constructed arteriovenous graft" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="1117-1" displayName="Tunneled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1119-7" displayName="Non-tunneled central line, dialysis" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+    <code value="1969-5" displayName="Catheter-graft hybrid" codeSystemName="cdcNHSN" codeSystem="2.16.840.1.113883.6.277" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.13.9" valueSetName="NHSNWoundClassCode">
+    <code value="418780004" displayName="Class I/Clean (Clean)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="418115006" displayName="Class II/Clean Contaminated (Clean-contaminated)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="419877002" displayName="Class III/Contaminated (Contaminated)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+    <code value="418422005" displayName="Class IV/Dirty Infected (Dirty)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.10.20.5.9.2" valueSetName="NullValues_UNK_NA">
+    <code value="UNK" displayName="Unknown" codeSystemName="HL7NullFlavor" codeSystem="2.16.840.1.113883.5.1008" />
+    <code value="NA" displayName="Not applicable" codeSystemName="HL7NullFlavor" codeSystem="2.16.840.1.113883.5.1008" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.10.20.5.9.1" valueSetName="NullValues_UNK_OTH">
+    <code value="UNK" displayName="Unknown" codeSystemName="HL7NullFlavor" codeSystem="2.16.840.1.113883.5.1008" />
+    <code value="OTH" displayName="Other" codeSystemName="HL7NullFlavor" codeSystem="2.16.840.1.113883.5.1008" />
+  </system>
+  <system valueSetOid="2.16.840.1.113883.3.88.12.3221.7.2" valueSetName="Problem Type" />
+  <system valueSetOid="2.16.840.1.113883.11.20.9.39" valueSetName="Result Status">
+    <code value="aborted" displayName="aborted" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+    <code value="active" displayName="active" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+    <code value="cancelled" displayName="cancelled" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+    <code value="completed" displayName="completed" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+    <code value="held" displayName="held" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+    <code value="suspended" displayName="suspended" codeSystemName="ActStatus" codeSystem="2.16.840.1.113883.5.14" />
+  </system>
+</systems>
