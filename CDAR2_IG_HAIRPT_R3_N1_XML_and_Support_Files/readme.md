@@ -1,1 +1,1 @@
-This repo will contain the R3 Normative XML and Supporting files
+This repo contains the R3 Normative XML and Supporting files

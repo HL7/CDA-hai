@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Denominator for Neonatal Intensive Care Unit (NICU) Report
+        Filename: pop_sum-denom.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R3_N1_2020MAY (HAI R3N1) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../../../../../../SVN/strucdoc/CDA_SDTC/infrastructure/cda/CDA_SDTC.xsd" xmlns="urn:hl7-org:v3"
+  xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
+
+  <!-- Comments precede their subject -->
+
+  <!-- This is a population-summary report. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R3D3 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.3.3" />
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to the NHSN Constraints for Population Summary Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+
+  <!-- Conformant to the Neonatal Intensive Care Unit (NICU) Summary Report (V3) -->
+  <templateId root="2.16.840.1.113883.10.20.5.41" extension="2018-04-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Denominator for Neonatal Intensive Care Unit (NICU)</title>
+
+  <!-- Document-creation date -->
+  <effectiveTime value="20170701" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- This is a population summary report -->
+      <id nullFlavor="NA" />
+    </patientRole>
+  </recordTarget>
+
+  <!-- The author of a population summary report is the software forming the message. -->
+  <author>
+    <time value="20170701" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1" extension="aSoftwareID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- Legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20170701" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+
+  <!-- In a population summary report, a participant element represents the group -->
+  <participant typeCode="SBJ" contextControlCode="OP">
+    <associatedEntity classCode="PRS">
+      <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
+    </associatedEntity>
+  </participant>
+
+  <!-- The location participant -->
+  <participant typeCode="LOC" contextControlCode="OP">
+    <associatedEntity classCode="SDLOC">
+
+      <!--ID of facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode="CASE">
+      <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1881-2" displayName="Summary data reporting catheter and ventilator use in a NICU" />
+      <effectiveTime>
+        <!-- the first day of the period reported -->
+        <low value="20170601" />
+        <!-- the last day of the period reported -->
+        <high value="20170630" />
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- 
+      ********************************************************
+      Structured Body
+      ******************************************************** 
+  -->
+  <component>
+    <structuredBody>
+
+      <!-- 
+          ********************************************************
+          Summary Data Section (NICU) (V2)
+          ******************************************************** 
+      -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.48" extension="2018-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Data Section" />
+          <title>Summary Data</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Birthweight under 750gm</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>23 d</td>
+                </tr>
+                <tr>
+                  <td>Number of central line days including umbilical catheter</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>4 d</td>
+                </tr>
+                <tr>
+                  <td>Number of urinary catheter days</td>
+                  <td>2 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Birthweight 751-1000gm</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>23 d</td>
+                </tr>
+
+                <tr>
+                  <td>Number of ventilator Days</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>4 d</td>
+                </tr>
+                <tr>
+                  <td>Number of urinary catheter days</td>
+                  <td>2 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Birthweight 1001-1500gm</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>23 d</td>
+                </tr>
+                <tr>
+                  <td>Number of central line days including umbilical catheter</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>4 d</td>
+                </tr>
+                <tr>
+                  <td>Number of urinary catheter days</td>
+                  <td>2 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Birthweight 1501-2500gm</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>23 d</td>
+                </tr>
+                <tr>
+                  <td>Number of central line days including umbilical catheter</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>4 d</td>
+                </tr>
+                <tr>
+                  <td>Number of urinary catheter days</td>
+                  <td>2 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Birthweight over 2500gm</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>23 d</td>
+                </tr>
+                <tr>
+                  <td>Number of central line days including umbilical catheter</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>5 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>4 d</td>
+                </tr>
+                <tr>
+                  <td>Number of urinary catheter days</td>
+                  <td>2 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Extremely preterm (&lt;28 weeks)</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>44 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>26 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>8 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Very preterm (28 to &lt;32 weeks)</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>44 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>26 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>8 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Moderate to late preterm (32 to &lt;37 weeks)</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>44 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>26 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>8 d</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Facility Location</content>
+                  </td>
+                  <td>9W Medical/Surgical critical care unit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <content styleCode="Bold">Sub-group</content>
+                  </td>
+                  <td>Term (&gt;=37 weeks)</td>
+                </tr>
+                <tr>
+                  <td>Number of patient days</td>
+                  <td>44 d</td>
+                </tr>
+                <tr>
+                  <td>Ventilator Days</td>
+                  <td>26 d</td>
+                </tr>
+                <tr>
+                  <td>Number of EMV days</td>
+                  <td>8 d</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </text>
+          <!-- Subgroup: Birthweight under 750g -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3300-1" displayName="Birthweight under 750g" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="23" />
+                </observation>
+              </entryRelationship>
+              <!-- CL Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9" displayName="Number of central line days including umbilical catheter" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="4" />
+                </observation>
+              </entryRelationship>
+              <!-- UrC Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="2" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Birthweight 751-1000g -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- This encounter reports on a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3301-9" displayName="Birthweight 751-1000g" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="23" />
+                </observation>
+              </entryRelationship>
+              <!-- CL Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9" displayName="Number of central line days including umbilical catheter" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="4" />
+                </observation>
+              </entryRelationship>
+              <!-- UrC Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="2" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Birthweight 1001-1500g -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the total group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3302-7" displayName="Birthweight 1001-1500g" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="23" />
+                </observation>
+              </entryRelationship>
+              <!-- CL Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9" displayName="Number of central line days including umbilical catheter" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="4" />
+                </observation>
+              </entryRelationship>
+              <!-- UrC Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="2" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Birthweight 1501-2500g -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3303-5" displayName="Birthweight 1501-2500g" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="23" />
+                </observation>
+              </entryRelationship>
+              <!-- CL Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9" displayName="Number of central line days including umbilical catheter" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="4" />
+                </observation>
+              </entryRelationship>
+              <!-- UrC Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="2" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Birthweight over 2500g -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3304-3" displayName="Birthweight over 2500g" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="23" />
+                </observation>
+              </entryRelationship>
+              <!-- CL Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9" displayName="Number of central Line Days including umbilical catheter" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="5" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="4" />
+                </observation>
+              </entryRelationship>
+              <!-- UrC Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="2" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Extermely preterm (<28 weeks) -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1334-2" displayName="Extremely preterm (&lt;28 weeks)" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="44" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="26" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="8" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Very preterm (28 to <32 weeks) -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1335-9" displayName="Very preterm (28 to &lt;32 weeks)" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="44" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="8" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Moderate to late preterm (32 to <37 weeks) -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1336-7" displayName="Moderate to late preterm (32 to &lt;37 weeks)" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="44" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="26" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="8" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+          <!-- Subgroup: Term (>=37 weeks) -->
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.5.6.191" />
+
+              <!-- the location id and type -->
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                </participantRole>
+              </participant>
+
+              <!-- a subset of the group -->
+              <participant typeCode="SBJ" contextControlCode="OP">
+                <participantRole classCode="PRS">
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1337-5" displayName="Term (&gt;=37 weeks)" />
+                </participantRole>
+              </participant>
+              <!-- Patient Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="44" />
+                </observation>
+              </entryRelationship>
+              <!-- Vent Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="26" />
+                </observation>
+              </entryRelationship>
+              <!-- EMV Days -->
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                  <statusCode code="completed" />
+                  <value xsi:type="PQ" unit="d" value="8" />
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+
+        </section>
+      </component>
+      <!-- 
+          ********************************************************
+          Report No Events Section
+          ******************************************************** 
+      -->
+      <component>
+        <section>
+          <!-- HAI Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D3] Report No Events Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.62" extension="2018-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="90252-8" displayName="Report No Events Section" />
+          <title>Report No Events</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Report no events for NICU Central Line Associated Blood Stream Infection (CLABSI) - birthweight 751-1000g</td>
+                </tr>
+                <tr>
+                  <td>Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAP) - birthweight 1001-1500g</td>
+                </tr>
+                <tr>
+                  <td>Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAE) - birthweight 1001-1500g</td>
+                </tr>
+                <tr>
+                  <td>Report no events for NICU - Pediatric Ventilator-Associated Event (PedVAE) - very preterm (28 to &lt;32 weeks)</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D3] Report No Events -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
+              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3015-5"
+                displayName="Report no events for NICU Central Line Associated Blood Stream Infection (CLABSI) - birthweight 751-1000g" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D3] Report No Events -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
+              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3021-3"
+                displayName="Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAP) - birthweight 1001-1500g" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D3] Report No Events -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
+              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1316-9"
+                displayName="Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAE) - birthweight 1001-1500g" />
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D3] Report No Events -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
+              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1330-0"
+                displayName="Report no events for NICU - Pediatric Ventilator-Associated Event (PedVAE) - very preterm (28 to &lt;32 weeks)" />
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
