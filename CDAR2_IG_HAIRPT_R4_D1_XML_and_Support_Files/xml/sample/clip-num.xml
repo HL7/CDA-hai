@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Central-line Insertion Practices Numerator (CLIP) sample report
+        Filename: clip-num.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_D1 (HAI R4N1) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+ xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
+
+  <!-- Comments precede their subject. -->
+
+  <!-- This is a single-patient record. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+
+  <!-- Published in HAI IG R2D2.1 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.2.2.1" />
+
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+
+  <!-- Conformant to HAI Single-Person Report Generic Constraints -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" />
+
+  <!-- Conformant to the HAI Central-Line Insertion Practice Numerator Report (V2) -->
+  <templateId root="2.16.840.1.113883.10.20.5.36" extension="2014-12-01" />
+
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Central-line Insertion Practices (CLIP)</title>
+  <effectiveTime value="20140815" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- Fake root for sample. -->
+      <id extension="12345" root="2.16.840.1.113883.19.5" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="20140714" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238"
+          codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+
+  <!-- Author/authenticator may be software or may be
+        someone in the role of "infection control professional".
+        This author is scoped by facility. -->
+  <author>
+    <time value="20080807" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- legal authenticator is scoped by facility -->
+  <legalAuthenticator>
+    <time value="20140816" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <!-- Facility-generated Event/Procedure number -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" extension="31" />
+      <effectiveTime>
+        <low nullFlavor="NI" />
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+          <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
+            displayName="Medical/Surgical Critical Care" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+
+  <!-- ********************************************************
+         Structured Body
+   ******************************************************** -->
+  <component>
+    <structuredBody>
+
+      <!-- ********************************************************
+            Procedure Details Section
+         ******************************************************** -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.42" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Details Section" />
+          <title>Procedure Details</title>
+          <text>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Type of procedure</td>
+                  <td>Central-line Insertion</td>
+                </tr>
+                <tr>
+                  <td>Procedure date</td>
+                  <td>August 15, 2014</td>
+                </tr>
+                <tr>
+                  <td>Procedure site</td>
+                  <td>Femoral vein</td>
+                </tr>
+                <tr>
+                  <td>Role of performer</td>
+                  <td>Physician assistant</td>
+                </tr>
+                <tr>
+                  <td>Catheter type</td>
+                  <td>Non-tunneled, dialysis</td>
+                </tr>
+                <tr>
+                  <td>Recorder was performer</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Inserter was a member of PICC/IV Team</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Reason for procedure</td>
+                  <td>[To address] A new indication for a central line.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Procedure Details Clinical Statement in a CLIP Report -->
+            <procedure moodCode="EVN" classCode="PROC">
+              <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+              <!-- [HAI R1] Procedure Details Clinical Statement in a CLIP Report -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.155" />
+              <id nullFlavor="NA" />
+              <code code="233527006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Central-line Insertion" />
+              <statusCode code="completed" />
+              <effectiveTime value="20140815" />
+              <targetSiteCode code="83419000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Femoral vein" />
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="4101-2" displayName="Physician assistant" />
+                </assignedEntity>
+              </performer>
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <playingDevice>
+                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1119-7"
+                      displayName="Non-tunneled central line, dialysis" />
+                  </playingDevice>
+                </participantRole>
+              </participant>
+              <!-- Recorder was the performer -->
+              <entryRelationship typeCode="COMP">
+                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                  <!-- Recorder Observation (R1) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.159" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3104-7"
+                    displayName="Recorder was performer" />
+                </observation>
+              </entryRelationship>
+              <!-- Performer was member of PICC/IV team -->
+              <entryRelationship typeCode="COMP">
+                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                  <!-- PICC/IV Team (R1)  -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.148" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2213-7"
+                    displayName="Inserter was a member of PICC/IV Team" />
+                </observation>
+              </entryRelationship>
+              <!-- Reason for Procedure Observation -->
+              <entryRelationship typeCode="RSON">
+                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                  <!-- [C-CDA R1.1] Indication -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                  <!-- [HAI R1] Reason for Procedure Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.158" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="5105-2"
+                    displayName="[To address] A new indication for a central line." />
+                </observation>
+                <!-- If [To replace] An existing central line where infection was suspected. -->
+                <!-- Guidewire Used Clinical Statement -->
+                <!--<observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-\- [C-CDA R1.1] Indication -\->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                                    <!-\- [HAI R1] Reason for Procedure Observation -\->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.158"/>
+                                    <id nullFlavor="NA"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                                        codeSystemName="HL7 Act Code"/>
+                                    <statusCode code="completed"/>
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277"
+                                        codeSystemName="cdcNHSN" code="5107-8"
+                                        displayName="[To replace] An existing central line where infection was suspected."/>
+                                    <entryRelationship typeCode="RSON" inversionInd="true">
+                                        <procedure>
+                                            <!-\- [C-CDA R1.1] Procedure Activity Procedure -\->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+                                            <!-\- HAI Guidewire Used Clinical Statement -\->
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.129"/>
+                                            <id nullFlavor="NA"/>
+                                            <code code="3121-1" codeSystem="2.16.840.1.113883.6.277"
+                                                codeSystemName="cdcNHSN"
+                                                displayName="Central line exchanged over guidewire"/>
+                                            <statusCode code="completed"/>
+                                        </procedure>
+                                    </entryRelationship>
+                                </observation>-->
+              </entryRelationship>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+
+      <!-- ********************************************************
+                  Infection Risk Factors Section in a CLIP Report (V2)
+                  ******************************************************** -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.34" extension="2014-12-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51898-5" displayName="Risk Factors Section" />
+          <title>Risk Factors</title>
+          <text>
+            <list listType="ordered">
+              <item>Preparation<br />
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td>Hand hygiene </td>
+                      <td>Yes</td>
+                    </tr>
+                    <tr>
+                      <td>Skin preparation solutions</td>
+                      <td>Alcohol: Yes<br />Povidone iodine: No<br />Chlorhexidine gluconate: No (contraindicated)</td>
+                    </tr>
+                    <tr>
+                      <td>Contraindication type</td>
+                      <td> Patient has a documented/known allergy/reaction to CHG based products that would preclude its use</td>
+                    </tr>
+                    <tr>
+                      <td>Contraindication type</td>
+                      <td> Facility restrictions or safety concerns for CHG use in premature infants precludes its use</td>
+                    </tr>
+                    <tr>
+                      <td>Use of Sterile Technique</td>
+                      <td>Mask/Eye shield<br />Large sterile drape</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </item>
+              <item>Solutions Dried<br />
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td>Solution(s) had dried</td>
+                      <td>Yes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </item>
+            </list>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Antimicrobial coated catheter used</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- [HAI] Central-Line Insertion Practice Clinical Statement -->
+            <act moodCode="EVN" classCode="ACT" negationInd="false">
+              <!-- [C-CDA R1.1] Procedure Activity Act -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.12" />
+              <!-- [HAI R2D2.1] Central-line Insertion Practice Clinical Statement (V2) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.116" extension="2014-12-01" />
+              <id nullFlavor="NA" />
+              <code code="3108-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Central line insertion practice" />
+              <statusCode code="completed" />
+              <!-- Sequence Step 1. Preparation -->
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="1" />
+                <!-- [HAI] Central-Line Insertion Preparation Organizer (V2) -->
+                <organizer moodCode="EVN" classCode="CLUSTER">
+                  <templateId root="2.16.840.1.113883.10.20.5.6.179" extension="2014-12-01" />
+                  <id nullFlavor="NA" />
+                  <statusCode code="completed" />
+                  <!-- Sequence Step 1: Preparation -->
+                  <!-- 1a. Hand Hygiene -->
+                  <component>
+                    <!-- Hand Hygiene Performed Clinical Statement -->
+                    <procedure moodCode="EVN" classCode="PROC" negationInd="false">
+                      <!-- [C-CDA R1.1] Procedure Activity Prcedure -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                      <!-- [HAI R1] Hand Hygiene Performed Clinical Statement -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.130" />
+                      <id nullFlavor="NA" />
+                      <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3109-6" displayName="Hand hygiene" />
+                      <statusCode code="completed" />
+                    </procedure>
+                  </component>
+                  <!-- Skin-Preparation Solutions Applied Organizer (V2)-->
+                  <component>
+                    <organizer moodCode="EVN" classCode="CLUSTER">
+                      <templateId root="2.16.840.1.113883.10.20.5.6.183" extension="2014-12-01" />
+                      <statusCode code="completed" />
+                      <component>
+                        <!-- Skin preparation Clinical Statement -->
+                        <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="false">
+                          <!-- [C-CDA R1.1] Medication Activity -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                          <!-- [HAI R2D2.1] Skin Preparation Clinical Statement (V2) -->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.162" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <statusCode code="completed" />
+                          <effectiveTime xsi:type="IVL_TS">
+                            <low nullFlavor="NA" />
+                            <high nullFlavor="NA" />
+                          </effectiveTime>
+                          <consumable>
+                            <manufacturedProduct classCode="MANU">
+                              <!-- [C-CDA R1.1] Medication Information -->
+                              <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                              <manufacturedMaterial classCode="MMAT">
+                                <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="6052" displayName="Alcohol" />
+                              </manufacturedMaterial>
+                            </manufacturedProduct>
+                          </consumable>
+                        </substanceAdministration>
+                      </component>
+                      <!-- Skin preparation Clinical Statement -->
+                      <component>
+                        <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="true">
+                          <!-- [C-CDA R1.1] Medication Activity -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                          <!-- [HAI R2D2.1] Skin Preparation Clinical Statement (V2) -->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.162" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <statusCode code="completed" />
+                          <effectiveTime xsi:type="IVL_TS">
+                            <low nullFlavor="NA" />
+                            <high nullFlavor="NA" />
+                          </effectiveTime>
+                          <consumable>
+                            <manufacturedProduct classCode="MANU">
+                              <!-- [C-CDA R1.1] Medication Information -->
+                              <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                              <manufacturedMaterial classCode="MMAT">
+                                <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="8611" displayName="Povidone iodine" />
+                              </manufacturedMaterial>
+                            </manufacturedProduct>
+                          </consumable>
+                        </substanceAdministration>
+                      </component>
+                      <!-- Skin preparation Clinical Statement -->
+                      <component>
+                        <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="true">
+                          <!-- [C-CDA R1.1] Medication Activity -->
+                          <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                          <!-- [HAI R2D2.1] Skin Preparation Clinical Statement (V2) -->
+                          <templateId root="2.16.840.1.113883.10.20.5.6.162" extension="2014-12-01" />
+                          <id nullFlavor="NA" />
+                          <statusCode code="completed" />
+                          <effectiveTime xsi:type="IVL_TS">
+                            <low nullFlavor="NA" />
+                            <high nullFlavor="NA" />
+                          </effectiveTime>
+                          <consumable>
+                            <manufacturedProduct classCode="MANU">
+                              <!-- [C-CDA R1.1] Medication Information -->
+                              <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                              <manufacturedMaterial classCode="MMAT">
+                                <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="20791" displayName="Chlorhexidine gluconate"
+                                 />
+                              </manufacturedMaterial>
+                            </manufacturedProduct>
+                          </consumable>
+                          <!-- if chlorhexidine was not applied, record here whether it was contraindicated -->
+                          <entryRelationship typeCode="RSON">
+                            <!-- [HAI] Contraindicated Observation -->
+                            <!-- It is true (not-negated) that the target statement was contraindicated -->
+                            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                              <!-- [C-CDA R1.1] Indication-->
+                              <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                              <!-- [HAI R2D2.1] Contraindicated Observation (V2) -->
+                              <templateId root="2.16.840.1.113883.10.20.5.6.118" extension="2014-12-01" />
+                              <id nullFlavor="NA" />
+                              <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                              <statusCode code="completed" />
+                              <value xsi:type="CD" code="410536001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                                displayName="Contraindicated" />
+                              <entryRelationship typeCode="RSON">
+                                <observation moodCode="EVN" classCode="OBS">
+                                  <!-- [HAI] Contraindication Type Observation -->
+                                  <templateId root="2.16.840.1.113883.10.20.5.6.216" extension="2014-12-01" />
+                                  <code code="6130-9" displayName="Contraindication type" codeSystem="2.16.840.1.113883.6.277"
+                                    codeSystemName="cdcNHSN" />
+                                  <statusCode code="completed" />
+                                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6132-5"
+                                    displayName="Patient has a documented/known allergy/reaction to CHG based products that would preclude its use" />
+                                </observation>
+                              </entryRelationship>
+                              <entryRelationship typeCode="RSON">
+                                <!-- Contraindication Type Observation -->
+                                <observation moodCode="EVN" classCode="OBS">
+                                  <!-- [C-CDA R1.1] Problem Observation -->
+                                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                  <!-- [HAI] Contraindication Type Observation -->
+                                  <templateId root="2.16.840.1.113883.10.20.5.6.216" extension="2014-12-01" />
+                                  <id nullFlavor="NA" />
+                                  <code code="6130-9" displayName="Contraindication type" codeSystem="2.16.840.1.113883.6.277"
+                                    codeSystemName="cdcNHSN" />
+                                  <statusCode code="completed" />
+                                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6133-3"
+                                    displayName="Facility restrictions or safety concerns for CHG use in premature infants precludes its use" />
+                                </observation>
+                              </entryRelationship>
+                            </observation>
+                          </entryRelationship>
+                        </substanceAdministration>
+                      </component>
+                    </organizer>
+                  </component>
+                  <!-- 1c. Sterile Barriers -->
+                  <component>
+                    <!-- Sterile Barriers Applied Clinical Statement  -->
+                    <procedure moodCode="EVN" classCode="PROC" negationInd="false">
+                      <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                      <!-- [HAI R1] Sterile Barriers Applied Clinical Statement -->
+                      <templateId root="2.16.840.1.113883.10.20.5.6.167" />
+                      <id nullFlavor="NA" />
+                      <code code="370822003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Use of Sterile Technique" />
+                      <statusCode code="completed" />
+                      <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                          <playingDevice>
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6110-1" displayName="Mask/Eye shield" />
+                          </playingDevice>
+                        </participantRole>
+                      </participant>
+                      <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                          <playingDevice>
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6112-7" displayName="Large sterile drape" />
+                          </playingDevice>
+                        </participantRole>
+                      </participant>
+                    </procedure>
+                  </component>
+                </organizer>
+              </entryRelationship>
+              <!-- End of Sequence Step 1. Preparation -->
+              <!-- Sequence Step 2. Solutions Dried -->
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="2" />
+                <!-- Solutions Dried Observation -->
+                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                  <!-- [C-CDA R1.1] Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R1] Solutions Dried Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.163" />
+                  <id nullFlavor="NA" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3114-6" displayName="Solution(s) had dried"
+                   />
+                </observation>
+              </entryRelationship>
+              <!-- End of Sequence Step 2. Solutions Dried. -->
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <!-- [HAI] Antimicrobial Coated Catheter Used Observation -->
+            <!-- Setting negationInd="false" indicates that an antimicrobial coated catheter was used -->
+            <observation moodCode="EVN" classCode="OBS" negationInd="false">
+              <!-- [HAI] Antimicrobial Coated Catheter Used Observation -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.217" extension="2014-12-01" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6140-8"
+                displayName="Antimicrobial coated catheter used" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
