@@ -3,7 +3,7 @@
         Title: Denominator for Antimicrobial Usage Report
         Filename: pop_sum-denom-AUP.xml
         
-        Specification: CDAR2_IG_HAIRPT_R3_N1_2020MAY (HAI R3N1) 
+        Specification: CDAR2_IG_HAIRPT_R4_D1 (HAI R4N1) 
         
         This sample document was created by Lantana Consulting Group
         on behalf of the Center for Disease Control and Prevention
@@ -13,438 +13,403 @@
         For more information see www.hl7.org, Structured Documents Working Group
 -->
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
-<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3"
-  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/CDA/infrastructure/cda/CDA.xsd">
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
 
-  <!-- Comments precede their subject -->
+   <!-- Comments precede their subject -->
 
-  <!-- This is a population-summary report. -->
-  <realmCode code="US" />
-  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
-
-  <!-- Published in HAI IG R1 Normative -->
-  <templateId root="2.16.840.1.113883.10.20.5.7.2" />
-
-  <!-- Conformant to Healthcare Associated Infection Report -->
-  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
-
-  <!-- Conformant to the NHSN Constraints for Population Summary Report -->
-  <templateId root="2.16.840.1.113883.10.20.5.4.28" />
-
-  <!-- Conformant to Antimicrobial Use (AUP) Summary Report -->
-  <templateId root="2.16.840.1.113883.10.20.5.44" extension="2015-04-01" />
-
-  <!-- Document ID (extension) is scoped by vendor/software -->
-  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
-  <title>Antimicrobial Use, Pharmacy Option (AUP) Summary Report</title>
-
-  <!-- Document-creation date -->
-  <effectiveTime value="20080701" />
-  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
-  <languageCode code="en-US" />
-
-  <!-- succession management -->
-  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
-
-  <!-- the original -->
-  <versionNumber value="1" />
-  <recordTarget>
-    <patientRole>
-      <!-- This is a population summary report -->
-      <id nullFlavor="NA" />
-    </patientRole>
-  </recordTarget>
-
-  <!-- The author of a population summary report is the software forming the message. -->
-  <author>
-    <!-- The time the document was authored -->
-    <time value="20080701" />
-    <assignedAuthor>
-      <!-- root=vendor OID; extension may be the Synthetic Data Set (SDS) 
+   <!-- This is a population-summary report. -->
+   <realmCode code="US" />
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+   <!-- Published in HAI IG R1 Normative -->
+   <templateId root="2.16.840.1.113883.10.20.5.7.2" />
+   <!-- Conformant to Healthcare Associated Infection Report -->
+   <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+   <!-- Conformant to the NHSN Constraints for Population Summary Report -->
+   <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+   <!-- Conformant to Antimicrobial Use (AUP) Summary Report -->
+   <templateId root="2.16.840.1.113883.10.20.5.44" extension="2015-04-01" />
+   <!-- Document ID (extension) is scoped by vendor/software -->
+   <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+   <title>Antimicrobial Use, Pharmacy Option (AUP) Summary Report</title>
+   <!-- Document-creation date -->
+   <effectiveTime value="20080701" />
+   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+   <languageCode code="en-US" />
+   <!-- succession management -->
+   <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
+   <!-- the original -->
+   <versionNumber value="1" />
+   <recordTarget>
+      <patientRole>
+         <!-- This is a population summary report -->
+         <id nullFlavor="NA" />
+      </patientRole>
+   </recordTarget>
+   <!-- The author of a population summary report is the software forming the message. -->
+   <author>
+      <!-- The time the document was authored -->
+      <time value="20080701" />
+      <assignedAuthor>
+         <!-- root=vendor OID; extension may be the Synthetic Data Set (SDS) 
       Validation ID assigned by NHSN AUR SME; 
 		  if not participating in SDS, vendor may use a SoftwareID  -->
-      <id root="2.111.111.111.10008" extension="SDS validation ID" />
-      <assignedAuthoringDevice>
-        <!-- Optional-Vendor software name -->
-        <manufacturerModelName>vendor software name</manufacturerModelName>
-        <!-- Optional-version and release of the software-->
-        <softwareName>vendor software version</softwareName>
-      </assignedAuthoringDevice>
-      <!-- Optional-Vendor Name -->
-      <representedOrganization>
-        <name>vendor name</name>
-      </representedOrganization>
-    </assignedAuthor>
-  </author>
-
-  <!-- The custodian of the CDA document is NHSN -->
-  <custodian>
-    <assignedCustodian>
-      <representedCustodianOrganization>
-        <id root="2.16.840.1.114222.4.3.2.11" />
-      </representedCustodianOrganization>
-    </assignedCustodian>
-  </custodian>
-
-  <!-- Legal authenticator is scoped by facility -->
-  <legalAuthenticator>
-    <time value="20080701" />
-    <signatureCode code="S" />
-    <assignedEntity>
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
-    </assignedEntity>
-  </legalAuthenticator>
-
-  <!-- In a population summary report, a participant element SHALL be present
+         <id root="2.111.111.111.10008" extension="SDS validation ID" />
+         <assignedAuthoringDevice>
+            <!-- Optional-Vendor software name -->
+            <manufacturerModelName>vendor software name</manufacturerModelName>
+            <!-- Optional-version and release of the software-->
+            <softwareName>vendor software version</softwareName>
+         </assignedAuthoringDevice>
+         <!-- Optional-Vendor Name -->
+         <representedOrganization>
+            <name>vendor name</name>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <!-- The custodian of the CDA document is NHSN -->
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id root="2.16.840.1.114222.4.3.2.11" />
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <!-- Legal authenticator is scoped by facility -->
+   <legalAuthenticator>
+      <time value="20080701" />
+      <signatureCode code="S" />
+      <assignedEntity>
+         <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+      </assignedEntity>
+   </legalAuthenticator>
+   <!-- In a population summary report, a participant element SHALL be present
        representing that the report documents a group -->
-  <participant typeCode="SBJ" contextControlCode="OP">
-    <associatedEntity classCode="PRS">
-      <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
-    </associatedEntity>
-  </participant>
+   <participant typeCode="SBJ" contextControlCode="OP">
+      <associatedEntity classCode="PRS">
+         <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
+      </associatedEntity>
+   </participant>
+   <!-- The location participant (facility) -->
+   <participant typeCode="LOC" contextControlCode="OP">
+      <associatedEntity classCode="SDLOC">
 
-  <!-- The location participant (facility) -->
-  <participant typeCode="LOC" contextControlCode="OP">
-    <associatedEntity classCode="SDLOC">
-
-      <!--ID of facility -->
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
-    </associatedEntity>
-  </participant>
-  <documentationOf>
-    <serviceEvent classCode="CASE">
-      <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1887-9" displayName="Summary data reporting antimicrobial usage" />
-      <effectiveTime>
-        <!-- the first day of the period reported -->
-        <low value="20080601" />
-        <!-- the last day of the period reported -->
-        <high value="20080630" />
-      </effectiveTime>
-    </serviceEvent>
-  </documentationOf>
-
-  <!-- ********************************************************
+         <!--ID of facility -->
+         <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+      </associatedEntity>
+   </participant>
+   <documentationOf>
+      <serviceEvent classCode="CASE">
+         <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1887-9" displayName="Summary data reporting antimicrobial usage" />
+         <effectiveTime>
+            <!-- the first day of the period reported -->
+            <low value="20080601" />
+            <!-- the last day of the period reported -->
+            <high value="20080630" />
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <!-- ********************************************************
      Structured Body
      ******************************************************** -->
-  <component>
-    <structuredBody>
+   <component>
+      <structuredBody>
 
-      <!-- ********************************************************
+         <!-- ********************************************************
      Population Summary Section
      ******************************************************** -->
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-          <templateId root="2.16.840.1.113883.10.20.5.5.51" extension="2015-04-01" />
-          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Data Section" />
-          <title>Summary Data</title>
-          <text>
-            <table>
-              <tbody>
-                <tr>
-                  <td>In-facility location</td>
-                  <td>9W Medical/Surgical critical care unit</td>
-                </tr>
-                <tr>
-                  <td>Number of patient-present days</td>
-                  <td>6 d</td>
-                </tr>
-                <tr>
-                  <td>
-                    <content styleCode="Bold">Location</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Antimicrobial Ingredient</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Route</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Number of therapy days</content>
-                  </td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Penicillin G</td>
-                  <td>Aggregate - n/a</td>
-                  <td>6 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Penicillin G</td>
-                  <td>Respiratory tract route</td>
-                  <td>0 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Penicillin G</td>
-                  <td>Digestive tract route</td>
-                  <td>Not Applicable</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Penicillin G</td>
-                  <td>Intravenous route [An intravascular route that begins with a vein.]</td>
-                  <td>3 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Penicillin G</td>
-                  <td>Intramuscular route [A route that begins within a muscle.]</td>
-                  <td>3 d</td>
-                </tr>
-                <tr>
-                  <td>
-                    <content styleCode="Bold">Location</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Antimicrobial Ingredient</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Route</content>
-                  </td>
-                  <td>
-                    <content styleCode="Bold">Number of therapy days</content>
-                  </td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Amikacin</td>
-                  <td>Aggregate - n/a</td>
-                  <td>6 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Amikacin</td>
-                  <td>Respiratory tract route</td>
-                  <td>0 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Amikacin</td>
-                  <td>Digestive tract route</td>
-                  <td>Not Applicable</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Amikacin</td>
-                  <td>Intravenous route [An intravascular route that begins with a vein.]</td>
-                  <td>3 d</td>
-                </tr>
-                <tr>
-                  <td>9W Medical/Surgical critical care unit</td>
-                  <td>Amikacin</td>
-                  <td>Intramuscular route [A route that begins within a muscle.]</td>
-                  <td>3 d</td>
-                </tr>
-              </tbody>
-            </table>
-          </text>
-          <entry typeCode="DRIV">
-            <encounter classCode="ENC" moodCode="EVN">
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+               <templateId root="2.16.840.1.113883.10.20.5.5.51" extension="2015-04-01" />
+               <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Data Section" />
+               <title>Summary Data</title>
+               <text xmlns:sdtc="urn:hl7-org:sdtc">
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>In-facility location</td>
+                           <td>9W Medical-Surgical Critical Care</td>
+                        </tr>
+                        <tr>
+                           <td>Number of patient-present days</td>
+                           <td>6 d</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <content styleCode="Bold">Location</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Antimicrobial Ingredient</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Route</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Number of therapy days</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>penicillin G</td>
+                           <td>Aggregate - n/a</td>
+                           <td>6 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>penicillin G</td>
+                           <td>Respiratory tract route (qualifier value)</td>
+                           <td>0 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>penicillin G</td>
+                           <td>Digestive tract route (qualifier value)</td>
+                           <td>Not Applicable</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>penicillin G</td>
+                           <td>Intravenous route (qualifier value)</td>
+                           <td>3 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>penicillin G</td>
+                           <td>Intramuscular route (qualifier value)</td>
+                           <td>3 d</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <content styleCode="Bold">Location</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Antimicrobial Ingredient</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Route</content>
+                           </td>
+                           <td>
+                              <content styleCode="Bold">Number of therapy days</content>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>amikacin</td>
+                           <td>Aggregate - n/a</td>
+                           <td>6 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>amikacin</td>
+                           <td>Respiratory tract route (qualifier value)</td>
+                           <td>0 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>amikacin</td>
+                           <td>Digestive tract route (qualifier value)</td>
+                           <td>Not Applicable</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>amikacin</td>
+                           <td>Intravenous route (qualifier value)</td>
+                           <td>3 d</td>
+                        </tr>
+                        <tr>
+                           <td>9W Medical-Surgical Critical Care</td>
+                           <td>amikacin</td>
+                           <td>Intramuscular route (qualifier value)</td>
+                           <td>3 d</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry typeCode="DRIV">
+                  <encounter classCode="ENC" moodCode="EVN">
 
-              <!-- Summary Encounter Patient Presence (AUP) (V2) -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.197" extension="2015-04-01" />
-
-              <!-- the location ID and type -->
-              <participant typeCode="LOC">
-                <participantRole classCode="SDLOC">
-                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
-                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
-                    displayName="Medical/Surgical Critical Care" />
-                </participantRole>
-              </participant>
-
-              <!-- report for a single unit, so  Number of Patient-present Days -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Summary Data Observation (AU/AP)-->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2525-4" displayName="Number of Patient-present Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="6" />
-                </observation>
-              </entryRelationship>
-
-              <!-- if reporting facility-wide, a second observation here
+                     <!-- Summary Encounter Patient Presence (AUP) (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.5.6.197" extension="2015-04-01" />
+                     <!-- the location ID and type -->
+                     <participant typeCode="LOC">
+                        <participantRole classCode="SDLOC">
+                           <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                           <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                        </participantRole>
+                     </participant>
+                     <!-- report for a single unit, so  Number of Patient-present Days -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Summary Data Observation (AU/AP)-->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2525-4" displayName="Number of Patient-present Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="6" />
+                        </observation>
+                     </entryRelationship>
+                     <!-- if reporting facility-wide, a second observation here
                           with Number of Admissions here -->
-            </encounter>
-          </entry>
-          <entry typeCode="DRIV">
-            <encounter classCode="ENC" moodCode="EVN">
+                  </encounter>
+               </entry>
+               <entry typeCode="DRIV">
+                  <encounter classCode="ENC" moodCode="EVN">
 
-              <!-- Summary Encounter (AUP) (V2) -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.198" extension="2015-04-01" />
+                     <!-- Summary Encounter (AUP) (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.5.6.198" extension="2015-04-01" />
+                     <!-- the location ID and type -->
+                     <participant typeCode="LOC">
+                        <participantRole classCode="SDLOC">
+                           <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                           <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                        </participantRole>
+                     </participant>
+                     <!-- The antimicrobial ingredient -->
+                     <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                           <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="7980" displayName="Penicillin G" />
+                        </participantRole>
+                     </participant>
+                     <!-- Aggregate data. No specified route of administration -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Summary Data Observation (AU/AR) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="6" />
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="0" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447694001" displayName="Respiratory tract route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" nullFlavor="NA" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="3" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="3" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+               <entry typeCode="DRIV">
+                  <encounter classCode="ENC" moodCode="EVN">
 
-              <!-- the location ID and type -->
-              <participant typeCode="LOC">
-                <participantRole classCode="SDLOC">
-                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
-                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
-                    displayName="Medical/Surgical Critical Care" />
-                </participantRole>
-              </participant>
-
-              <!-- The antimicrobial ingredient -->
-              <participant typeCode="CSM">
-                <participantRole classCode="MANU">
-                  <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="7980" displayName="Penicillin G" />
-                </participantRole>
-              </participant>
-
-              <!-- Aggregate data. No specified route of administration -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Summary Data Observation (AU/AR) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="6" />
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="0" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447694001" displayName="Respiratory tract route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" nullFlavor="NA" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="3" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="3" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-            </encounter>
-          </entry>
-          <entry typeCode="DRIV">
-            <encounter classCode="ENC" moodCode="EVN">
-
-              <!-- Summary Encounter (AUP) (V2) -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.198" extension="2015-04-01" />
-
-              <!-- the location ID and type -->
-              <participant typeCode="LOC">
-                <participantRole classCode="SDLOC">
-                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
-                  <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8"
-                    displayName="Medical/Surgical Critical Care" />
-                </participantRole>
-              </participant>
-
-              <!-- The antimicrobial ingredient -->
-              <participant typeCode="CSM">
-                <participantRole classCode="MANU">
-                  <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="641" displayName="Amikacin" />
-                </participantRole>
-              </participant>
-
-              <!-- Aggregate data. No specified route of administration -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Summary Data Observation (AU/AR) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="6" />
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="0" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="cdcNHSN" code="447694001" displayName="Respiratory tract route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" nullFlavor="NA" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [HAI] Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="3" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-
-              <!-- stratified data: ingredient + route -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Summary Data Observation (AUP) -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
-                  <statusCode code="completed" />
-                  <value xsi:type="PQ" unit="d" value="3" />
-                  <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />
-                  <!-- how actually administered -->
-                </observation>
-              </entryRelationship>
-            </encounter>
-          </entry>
-        </section>
-      </component>
-    </structuredBody>
-  </component>
+                     <!-- Summary Encounter (AUP) (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.5.6.198" extension="2015-04-01" />
+                     <!-- the location ID and type -->
+                     <participant typeCode="LOC">
+                        <participantRole classCode="SDLOC">
+                           <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                           <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1029-8" displayName="Medical/Surgical Critical Care" />
+                        </participantRole>
+                     </participant>
+                     <!-- The antimicrobial ingredient -->
+                     <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                           <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" code="641" displayName="Amikacin" />
+                        </participantRole>
+                     </participant>
+                     <!-- Aggregate data. No specified route of administration -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Summary Data Observation (AU/AR) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="6" />
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="0" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="cdcNHSN" code="447694001" displayName="Respiratory tract route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" nullFlavor="NA" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- [HAI] Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="3" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                     <!-- stratified data: ingredient + route -->
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <!-- Summary Data Observation (AUP) -->
+                           <templateId root="2.16.840.1.113883.10.20.5.6.194" />
+                           <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                           <statusCode code="completed" />
+                           <value xsi:type="PQ" unit="d" value="3" />
+                           <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />
+                           <!-- how actually administered -->
+                        </observation>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
 </ClinicalDocument>
