@@ -141,7 +141,7 @@
                      <id nullFlavor="NA" />
                      <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                      <statusCode code="completed" />
-                     <value xsi:type="CD" code="840539006" codeSystem="2.16.840.1.113883.6.96 " codeSystemName="SNOMED CT" displayName="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" />
+                     <value xsi:type="CD" code="840539006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" />
                   </observation>
                </entry>
             </section>
