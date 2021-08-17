@@ -172,7 +172,7 @@
                 <observation classCode="OBS" moodCode="EVN">
                   <!-- Summary Data Observation (AU/AR) -->
                   <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                  <code code="1862-2" codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" displayName="Admission count" />
+                  <code code="1862-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Admission count" />
                   <statusCode code="completed" />
                   <value xsi:type="INT" value="46" />
                 </observation>

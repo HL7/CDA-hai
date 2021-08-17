@@ -436,7 +436,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="5" />
                 </observation>
@@ -505,7 +505,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="5" />
                 </observation>
@@ -574,7 +574,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="5" />
                 </observation>
@@ -643,7 +643,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="5" />
                 </observation>
@@ -712,7 +712,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="5" />
                 </observation>
@@ -771,7 +771,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="26" />
                 </observation>
@@ -862,7 +862,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="26" />
                 </observation>
@@ -912,7 +912,7 @@
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                  <code codeSystem="2.16.840.1.113883.6.270" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
                   <statusCode code="completed" />
                   <value xsi:type="PQ" unit="d" value="26" />
                 </observation>
