@@ -203,7 +203,7 @@
                             <id nullFlavor="NA" />
                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1002-5" displayName="(unspecified) central line" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1002-5" displayName="(unspecified) central line" />
                             <!-- MAY contain the related device insertion procedure time and location of where the procedure took place -->
                             <entryRelationship typeCode="REFR" inversionInd="true">
                                 <!-- Device Insertion Time and Location Procedure -->
@@ -303,7 +303,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="3055-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                            <value xsi:type="CD" code="3055-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN"
                                 displayName="Known or suspected Munchausen Syndrome by Proxy during current admission" />
                         </observation>
                     </entry>
@@ -316,7 +316,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="3056-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                            <value xsi:type="CD" code="3056-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN"
                                 displayName="Observed or suspected patient injection into vascular line(s) within the BSI infection window period" />
                         </observation>
                     </entry>
@@ -329,7 +329,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="3057-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                            <value xsi:type="CD" code="3057-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN"
                                 displayName="Epidermolysis bullosa during current admission" />
                         </observation>
                     </entry>
@@ -342,12 +342,12 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="3059-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                            <value xsi:type="CD" code="3059-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN"
                                 displayName="Pus present at vascular specimen collection site and matching organism identified in blood and from site specific specimen(s)" />
                             <participant typeCode="DEV">
                                 <participantRole classCode="MANU">
                                     <playingDevice>
-                                        <code code="3060-1" displayName="Peripheral IV or midline catheter site" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                        <code code="3060-1" displayName="Peripheral IV or midline catheter site" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                     </playingDevice>
                                 </participantRole>
                             </participant>
@@ -455,7 +455,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1902-6" displayName="Blood Culture Not Done" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1902-6" displayName="Blood Culture Not Done" />
                                         </observation>
                                     </component>
                                     <component>
@@ -491,7 +491,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1944-8"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1944-8"
                                                 displayName="Common skin contaminant from &lt;=2 blood cultures" />
                                         </observation>
                                     </component>
@@ -528,7 +528,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1962-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1962-0"
                                                 displayName="Physician Institutes Appropriate antimicrobial therapy" />
                                         </observation>
                                     </component>
@@ -541,7 +541,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1951-3" displayName="Recognized pathogen" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1951-3" displayName="Recognized pathogen" />
                                         </observation>
                                     </component>
                                     <component>
@@ -569,7 +569,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1613-9" displayName="LCBI" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1613-9" displayName="LCBI" />
                                 </observation>
                             </entryRelationship>
                         </observation>
@@ -614,7 +614,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
                             <entryRelationship typeCode="REFR">
                                 <!-- Procedure Details Clinical Statement in an Infection-type Report -->
                                 <procedure classCode="PROC" moodCode="EVN">
@@ -623,7 +623,7 @@
                                     <!-- Procedure Details Clinical Statement in an Infection-Type Report -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.154" />
                                     <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
-                                    <code code="2108-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Appendix surgery">
+                                    <code code="2108-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Appendix surgery">
                                         <translation code="0DTJ0ZZ" displayName="Resection of Appendix, Open Approach" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS"
                                          />
                                     </code>
@@ -699,7 +699,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1" displayName="Pathogen rank 1" />
                                 </observation>
                             </component>
                             <component>
@@ -728,7 +728,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2318-4" displayName="MDRO Infection or C.difficile infection"
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2318-4" displayName="MDRO Infection or C.difficile infection"
                              />
                         </observation>
                     </entry>

@@ -100,7 +100,7 @@
     </participant>
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1887-9" displayName="Summary data reporting antimicrobial usage" />
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1887-9" displayName="Summary data reporting antimicrobial usage" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
                 <low value="20080601" />
@@ -244,7 +244,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AP)-->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2525-4" displayName="Number of Patient-present Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2525-4" displayName="Number of Patient-present Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="6" />
                                 </observation>
@@ -277,7 +277,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AR) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="6" />
                                 </observation>
@@ -287,7 +287,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="0" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447694001" displayName="Respiratory tract route" />
@@ -299,7 +299,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" nullFlavor="NA" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
@@ -311,7 +311,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="3" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
@@ -323,7 +323,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="3" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />
@@ -356,7 +356,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AR) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="6" />
                                 </observation>
@@ -366,10 +366,10 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="0" />
-                                    <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="cdcNHSN" code="447694001" displayName="Respiratory tract route" />
+                                    <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="CDCNHSN" code="447694001" displayName="Respiratory tract route" />
                                     <!-- how actually administered -->
                                 </observation>
                             </entryRelationship>
@@ -378,7 +378,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" nullFlavor="NA" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447964005" displayName="Digestive tract route" />
@@ -390,7 +390,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI] Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="3" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47625008" displayName="Intravenous route" />
@@ -402,7 +402,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AUP) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.194" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2524-7" displayName="Number of Therapy Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2524-7" displayName="Number of Therapy Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="3" />
                                     <methodCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78421000" displayName="Intramuscular route" />

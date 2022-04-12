@@ -84,7 +84,7 @@
     </participant>
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1881-2" displayName="Summary data reporting catheter and ventilator use in a NICU" />
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1881-2" displayName="Summary data reporting catheter and ventilator use in a NICU" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
                 <low value="20170601" />
@@ -385,14 +385,14 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3300-1" displayName="Birthweight under 750g" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3300-1" displayName="Birthweight under 750g" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="23" />
                                 </observation>
@@ -401,7 +401,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1854-9"
                                         displayName="Number of central line days including umbilical catheter" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
@@ -411,7 +411,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -420,7 +420,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="4" />
                                 </observation>
@@ -429,7 +429,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Number of urinary catheter days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="2" />
                                 </observation>
@@ -451,14 +451,14 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3301-9" displayName="Birthweight 751-1000g" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3301-9" displayName="Birthweight 751-1000g" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="23" />
                                 </observation>
@@ -467,7 +467,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1854-9"
                                         displayName="Number of central line days including umbilical catheter" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
@@ -477,7 +477,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -486,7 +486,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="4" />
                                 </observation>
@@ -495,7 +495,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Number of urinary catheter days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="2" />
                                 </observation>
@@ -517,14 +517,14 @@
                             <!-- a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3302-7" displayName="Birthweight 1001-1500g" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3302-7" displayName="Birthweight 1001-1500g" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="23" />
                                 </observation>
@@ -533,7 +533,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1854-9"
                                         displayName="Number of central line days including umbilical catheter" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
@@ -543,7 +543,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -552,7 +552,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="4" />
                                 </observation>
@@ -561,7 +561,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Number of urinary catheter days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="2" />
                                 </observation>
@@ -583,14 +583,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3303-5" displayName="Birthweight 1501-2500g" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3303-5" displayName="Birthweight 1501-2500g" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="23" />
                                 </observation>
@@ -599,7 +599,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1854-9"
                                         displayName="Number of central line days including umbilical catheter" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
@@ -609,7 +609,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -618,7 +618,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="4" />
                                 </observation>
@@ -627,7 +627,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Number of urinary catheter days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="2" />
                                 </observation>
@@ -649,14 +649,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3304-3" displayName="Birthweight over 2500g" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3304-3" displayName="Birthweight over 2500g" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="23" />
                                 </observation>
@@ -665,7 +665,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1854-9"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1854-9"
                                         displayName="Number of central Line Days including umbilical catheter" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
@@ -675,7 +675,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -684,7 +684,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="4" />
                                 </observation>
@@ -693,7 +693,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Number of urinary catheter days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="2" />
                                 </observation>
@@ -715,14 +715,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1334-2" displayName="Extremely preterm (&lt;28 weeks)" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1334-2" displayName="Extremely preterm (&lt;28 weeks)" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="44" />
                                 </observation>
@@ -731,7 +731,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="26" />
                                 </observation>
@@ -740,7 +740,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="8" />
                                 </observation>
@@ -762,14 +762,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1335-9" displayName="Very preterm (28 to &lt;32 weeks)" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1335-9" displayName="Very preterm (28 to &lt;32 weeks)" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="44" />
                                 </observation>
@@ -778,7 +778,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="8" />
                                 </observation>
@@ -800,14 +800,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1336-7" displayName="Moderate to late preterm (32 to &lt;37 weeks)" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1336-7" displayName="Moderate to late preterm (32 to &lt;37 weeks)" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="44" />
                                 </observation>
@@ -816,7 +816,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="26" />
                                 </observation>
@@ -825,7 +825,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="8" />
                                 </observation>
@@ -847,14 +847,14 @@
                             <!-- a subset of the group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PRS">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1337-5" displayName="Term (&gt;=37 weeks)" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1337-5" displayName="Term (&gt;=37 weeks)" />
                                 </participantRole>
                             </participant>
                             <!-- Patient Days -->
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="44" />
                                 </observation>
@@ -863,7 +863,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="26" />
                                 </observation>
@@ -872,7 +872,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1333-4" displayName="Number of EMV days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1333-4" displayName="Number of EMV days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="8" />
                                 </observation>
@@ -916,7 +916,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3015-5"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3015-5"
                                 displayName="Report no events for NICU Central Line Associated Blood Stream Infection (CLABSI) - birthweight 751-1000g" />
                         </act>
                     </entry>
@@ -924,7 +924,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3021-3"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3021-3"
                                 displayName="Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAP) - birthweight 1001-1500g" />
                         </act>
                     </entry>
@@ -932,7 +932,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1316-9"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1316-9"
                                 displayName="Report no events for NICU Pediatric Ventilator-Associated Pneumonia (PedVAE) - birthweight 1001-1500g" />
                         </act>
                     </entry>
@@ -940,7 +940,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1330-0"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1330-0"
                                 displayName="Report no events for NICU - Pediatric Ventilator-Associated Event (PedVAE) - very preterm (28 to &lt;32 weeks)" />
                         </act>
                     </entry>

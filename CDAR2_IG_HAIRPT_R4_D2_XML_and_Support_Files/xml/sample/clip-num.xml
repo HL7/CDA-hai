@@ -163,13 +163,13 @@
                             <performer>
                                 <assignedEntity>
                                     <id nullFlavor="UNK" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="4101-2" displayName="Physician assistant" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="4101-2" displayName="Physician assistant" />
                                 </assignedEntity>
                             </performer>
                             <participant typeCode="DEV">
                                 <participantRole classCode="MANU">
                                     <playingDevice>
-                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1119-7" displayName="Non-tunneled central line, dialysis" />
+                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1119-7" displayName="Non-tunneled central line, dialysis" />
                                     </playingDevice>
                                 </participantRole>
                             </participant>
@@ -181,7 +181,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3104-7" displayName="Recorder was performer" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3104-7" displayName="Recorder was performer" />
                                 </observation>
                             </entryRelationship>
                             <!-- Performer was member of PICC/IV team -->
@@ -192,7 +192,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2213-7"
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2213-7"
                                         displayName="Inserter was a member of PICC/IV Team" />
                                 </observation>
                             </entryRelationship>
@@ -206,7 +206,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="5105-2"
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="5105-2"
                                         displayName="[To address] A new indication for a central line." />
                                 </observation>
                                 <!-- If [To replace] An existing central line where infection was suspected. -->
@@ -221,7 +221,7 @@
                                         codeSystemName="HL7 Act Code"/>
                                     <statusCode code="completed"/>
                                     <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277"
-                                        codeSystemName="cdcNHSN" code="5107-8"
+                                        codeSystemName="CDCNHSN" code="5107-8"
                                         displayName="[To replace] An existing central line where infection was suspected."/>
                                     <entryRelationship typeCode="RSON" inversionInd="true">
                                         <procedure>
@@ -231,7 +231,7 @@
                                             <templateId root="2.16.840.1.113883.10.20.5.6.129"/>
                                             <id nullFlavor="NA"/>
                                             <code code="3121-1" codeSystem="2.16.840.1.113883.6.277"
-                                                codeSystemName="cdcNHSN"
+                                                codeSystemName="CDCNHSN"
                                                 displayName="Central line exchanged over guidewire"/>
                                             <statusCode code="completed"/>
                                         </procedure>
@@ -307,7 +307,7 @@
                             <!-- [HAI R2D2.1] Central-line Insertion Practice Clinical Statement (V2) -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.116" extension="2014-12-01" />
                             <id nullFlavor="NA" />
-                            <code code="3108-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Central line insertion practice" />
+                            <code code="3108-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Central line insertion practice" />
                             <statusCode code="completed" />
                             <!-- Sequence Step 1. Preparation -->
                             <entryRelationship typeCode="COMP">
@@ -327,7 +327,7 @@
                                             <!-- [HAI R1] Hand Hygiene Performed Clinical Statement -->
                                             <templateId root="2.16.840.1.113883.10.20.5.6.130" />
                                             <id nullFlavor="NA" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3109-6" displayName="Hand hygiene" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3109-6" displayName="Hand hygiene" />
                                             <statusCode code="completed" />
                                         </procedure>
                                     </component>
@@ -426,9 +426,9 @@
                                                                     <!-- [HAI] Contraindication Type Observation -->
                                                                     <templateId root="2.16.840.1.113883.10.20.5.6.216" extension="2014-12-01" />
                                                                     <code code="6130-9" displayName="Contraindication type" codeSystem="2.16.840.1.113883.6.277"
-                                                                        codeSystemName="cdcNHSN" />
+                                                                        codeSystemName="CDCNHSN" />
                                                                     <statusCode code="completed" />
-                                                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6132-5"
+                                                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="6132-5"
                                                                         displayName="Patient has a documented/known allergy/reaction to CHG based products that would preclude its use"
                                                                      />
                                                                 </observation>
@@ -442,9 +442,9 @@
                                                                     <templateId root="2.16.840.1.113883.10.20.5.6.216" extension="2014-12-01" />
                                                                     <id nullFlavor="NA" />
                                                                     <code code="6130-9" displayName="Contraindication type" codeSystem="2.16.840.1.113883.6.277"
-                                                                        codeSystemName="cdcNHSN" />
+                                                                        codeSystemName="CDCNHSN" />
                                                                     <statusCode code="completed" />
-                                                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6133-3"
+                                                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="6133-3"
                                                                         displayName="Facility restrictions or safety concerns for CHG use in premature infants precludes its use" />
                                                                 </observation>
                                                             </entryRelationship>
@@ -468,14 +468,14 @@
                                             <participant typeCode="DEV">
                                                 <participantRole classCode="MANU">
                                                     <playingDevice>
-                                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6110-1" displayName="Mask/Eye shield" />
+                                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="6110-1" displayName="Mask/Eye shield" />
                                                     </playingDevice>
                                                 </participantRole>
                                             </participant>
                                             <participant typeCode="DEV">
                                                 <participantRole classCode="MANU">
                                                     <playingDevice>
-                                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6112-7" displayName="Large sterile drape" />
+                                                        <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="6112-7" displayName="Large sterile drape" />
                                                     </playingDevice>
                                                 </participantRole>
                                             </participant>
@@ -496,7 +496,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3114-6" displayName="Solution(s) had dried" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3114-6" displayName="Solution(s) had dried" />
                                 </observation>
                             </entryRelationship>
                             <!-- End of Sequence Step 2. Solutions Dried. -->
@@ -510,7 +510,7 @@
                             <templateId root="2.16.840.1.113883.10.20.5.6.217" extension="2014-12-01" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="6140-8" displayName="Antimicrobial coated catheter used" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="6140-8" displayName="Antimicrobial coated catheter used" />
                         </observation>
                     </entry>
                 </section>

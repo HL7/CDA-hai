@@ -87,7 +87,7 @@
     </participant>
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1657-6"
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1657-6"
                 displayName="Summary data reporting outpatient procedure component events at a facility" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
@@ -150,7 +150,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- [HAI R1] Summary Data Observation -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1890-3"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1890-3"
                                         displayName="Number of Total Facility Encounters (for outpatient location)" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="100" />
@@ -186,7 +186,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1340-9"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1340-9"
                                 displayName="No Same Day Outcome Measures (events) reported this month" />
                         </act>
                     </entry>

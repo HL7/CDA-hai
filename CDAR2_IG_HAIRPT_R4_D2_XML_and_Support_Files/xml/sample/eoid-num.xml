@@ -185,7 +185,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2304-4" displayName="Transient patient" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2304-4" displayName="Transient patient" />
                                 </observation>
                             </entryRelationship>
                         </observation>
@@ -222,7 +222,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="2308-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Buttonhole cannulation" />
+                                    <value xsi:type="CD" code="2308-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Buttonhole cannulation" />
                                 </observation>
                             </entryRelationship>
                         </observation>
@@ -267,7 +267,7 @@
                             <effectiveTime>
                                 <low value="200608" />
                             </effectiveTime>
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1117-1" displayName="Tunneled central line, dialysis" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1117-1" displayName="Tunneled central line, dialysis" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
@@ -288,7 +288,7 @@
                             <effectiveTime>
                                 <low value="200708" />
                             </effectiveTime>
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1119-7" displayName="Non-tunneled central line, dialysis" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1119-7" displayName="Non-tunneled central line, dialysis" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
@@ -309,7 +309,7 @@
                             <effectiveTime>
                                 <low value="200708" />
                             </effectiveTime>
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1969-5" displayName="Catheter-graft hybrid" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1969-5" displayName="Catheter-graft hybrid" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
@@ -341,7 +341,7 @@
                             <templateId root="2.16.840.1.113883.10.20.5.6.231" extension="2015-10-01" />
                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2334-1" displayName="Patient's dialyzer is reused" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2334-1" displayName="Patient's dialyzer is reused" />
                         </observation>
                     </entry>-->
                 </section>
@@ -478,13 +478,13 @@
                                     <effectiveTime xsi:type="IVL_TS">
                                         <low value="20180405" />
                                     </effectiveTime>
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2305-1"
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2305-1"
                                         displayName="Pus, redness, or increased swelling" />
                                     <participant typeCode="DEV">
                                         <participantRole classCode="MANU">
                                             <playingDevice>
                                                 <code code="2321-8" displayName="Site of non-tunneled central line, dialysis" codeSystem="2.16.840.1.113883.6.277"
-                                                    codeSystemName="cdcNHSN" />
+                                                    codeSystemName="CDCNHSN" />
                                             </playingDevice>
                                         </participantRole>
                                     </participant>
@@ -523,10 +523,10 @@
                                         <observation classCode="OBS" moodCode="EVN">
                                             <!-- [HAI R3D1] Type of Antimicrobial Start Observation -->
                                             <templateId root="2.16.840.1.113883.10.20.5.6.230" extension="2015-10-01" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2335-8"
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2335-8"
                                                 displayName="New outpatient start or continuation of inpatient course" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2336-6" displayName="New antimicrobial start"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2336-6" displayName="New antimicrobial start"
                                              />
                                         </observation>
                                     </entryRelationship>
@@ -540,7 +540,7 @@
                                             <templateId root="2.16.840.1.113883.10.20.5.6.239" extension="2016-08-01" />
                                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2339-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2339-0"
                                                 displayName="Blood sample collected for culture" />
                                         </observation>
                                     </entryRelationship>
@@ -554,7 +554,7 @@
                                     <!-- [HAI R1] IV Antifungal Start Clinical Statement -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.141" />
                                     <id nullFlavor="NA" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2306-9" displayName="Intravenous injection of antifungal substance" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2306-9" displayName="Intravenous injection of antifungal substance" />
                                     <statusCode code="completed" />
                                     <effectiveTime xsi:type="IVL_TS">
                                         <low nullFlavor="NA" />
@@ -590,7 +590,7 @@
                                     <effectiveTime xsi:type="IVL_TS">
                                         <low value="20180405" />
                                     </effectiveTime>
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1955-4" displayName="Positive blood culture" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1955-4" displayName="Positive blood culture" />
                                     <!-- Suspected Source of Pathogen -->
                                     <entryRelationship typeCode="CAUS" inversionInd="true">
                                         <observation classCode="OBS" moodCode="EVN" negationInd="false">
@@ -601,7 +601,7 @@
                                             <id nullFlavor="NA" />
                                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2319-2" displayName="Vascular access" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2319-2" displayName="Vascular access" />
                                             <!-- Imputability = possible  (a "suspected" source) -->
                                             <entryRelationship typeCode="COMP">
                                                 <!-- Imputability Observation -->
@@ -611,7 +611,7 @@
                                                     <!-- [HAI R1] Imputability Observation -->
                                                     <templateId root="2.16.840.1.113883.10.20.5.6.134" />
                                                     <id nullFlavor="NA" />
-                                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2307-7"
+                                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2307-7"
                                                         displayName="Imputability of positive blood culture to the suspected source" />
                                                     <statusCode code="completed" />
                                                     <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="60022001" displayName="Possible" />
@@ -625,9 +625,9 @@
                                             <!-- [HAI R2D2.1] Blood Collection Location  -->
                                             <templateId root="2.16.840.1.113883.10.20.5.6.219" extension="2014-12-01" />
                                             <code code="2331-7" displayName="Where was the positive blood culture collected" codeSystem="2.16.840.1.113883.6.277"
-                                                codeSystemName="cdcNHSN" />
+                                                codeSystemName="CDCNHSN" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" code="2333-3" displayName="Dialysis Clinic" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                            <value xsi:type="CD" code="2333-3" displayName="Dialysis Clinic" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                         </observation>
                                     </entryRelationship>
                                 </observation>
@@ -673,7 +673,7 @@
                             <id nullFlavor="NA" />
                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="2325-9" displayName="Loss of vascular access" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                            <value xsi:type="CD" code="2325-9" displayName="Loss of vascular access" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
@@ -766,7 +766,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1" displayName="Pathogen rank 1" />
                                 </observation>
                             </component>
                             <!-- An antimicrobial resistance finding is required if the pathogen is bacterial -->

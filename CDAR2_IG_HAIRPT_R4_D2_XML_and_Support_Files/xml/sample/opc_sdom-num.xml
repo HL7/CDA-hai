@@ -166,7 +166,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1645-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Hospital transfer/admission" />
+                                    <value xsi:type="CD" code="1645-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Hospital transfer/admission" />
                                 </observation>
                             </component>
                             <component>
@@ -179,7 +179,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1646-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Wrong site" />
+                                    <value xsi:type="CD" code="1646-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong site" />
                                 </observation>
                             </component>
                             <component>
@@ -192,7 +192,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1647-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Wrong side" />
+                                    <value xsi:type="CD" code="1647-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong side" />
                                 </observation>
                             </component>
                             <component>
@@ -205,7 +205,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1648-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Wrong patient" />
+                                    <value xsi:type="CD" code="1648-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong patient" />
                                 </observation>
                             </component>
                             <component>
@@ -231,7 +231,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1649-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Wrong implant" />
+                                    <value xsi:type="CD" code="1649-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong implant" />
                                 </observation>
                             </component>
                         </organizer>

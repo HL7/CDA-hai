@@ -310,7 +310,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1971-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1971-1"
                                                 displayName="Acute pain, swelling, or tenderness of testes, epididymis, or prostate" />
                                         </observation>
                                     </component>
@@ -352,7 +352,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1960-4" displayName="Pain or Tenderness" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1960-4" displayName="Pain or Tenderness" />
                                         </observation>
                                     </component>
                                     <!-- Purulent drainage or material -->
@@ -379,7 +379,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1905-9"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1905-9"
                                                 displayName="Other evidence of infection found on direct exam, during surgery, or by diagnostic tests" />
                                         </observation>
                                     </component>
@@ -406,7 +406,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1927-3"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1927-3"
                                                 displayName="1 positive culture with &gt;=10^5 col/cc with no more than 2 organisms" />
                                         </observation>
                                     </component>
@@ -433,7 +433,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1928-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1928-1"
                                                 displayName="Positive dipstick for leukocyte esterase or nitrate" />
                                         </observation>
                                     </component>
@@ -460,7 +460,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1972-9" displayName="Urine not tested for WBC"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1972-9" displayName="Urine not tested for WBC"
                                              />
                                         </observation>
                                     </component>
@@ -474,7 +474,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2403-4"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2403-4"
                                                 displayName="1 positive culture with &gt;=10^3 CFU/ml and &lt;10^5 CFU/ml with no more than 2 species of microorganisms" />
                                         </observation>
                                     </component>
@@ -488,7 +488,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1952-1" displayName="Positive culture" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1952-1" displayName="Positive culture" />
                                         </observation>
                                     </component>
                                     <!-- Positive blood culture -->
@@ -501,7 +501,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1955-4" displayName="Positive blood culture" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1955-4" displayName="Positive blood culture" />
                                         </observation>
                                     </component>
                                     <!-- Radiographic evidence of infection -->
@@ -514,7 +514,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1924-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1924-0"
                                                 displayName="Radiographic evidence of infection" />
                                         </observation>
                                     </component>
@@ -531,7 +531,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3111-2" displayName="Secondary BSI" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3111-2" displayName="Secondary BSI" />
                                 </observation>
                             </entryRelationship>
                             <!--Infection Condition Observation -->
@@ -561,7 +561,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
                             <entryRelationship typeCode="REFR">
                                 <!-- Procedure Details Clinical Statement in an Infection-type Report -->
                                 <procedure classCode="PROC" moodCode="EVN">
@@ -570,7 +570,7 @@
                                     <!-- [HAI R1] Procedure Details Clinical Statement in an Infection-Type Report  -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.154" />
                                     <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
-                                    <code code="2108-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Appendix surgery">
+                                    <code code="2108-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Appendix surgery">
                                         <translation code="0DTJ0ZZ" displayName="Resection of Appendix, Open Approach" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS"
                                          />
                                     </code>
@@ -644,7 +644,7 @@
                             <id nullFlavor="NA" />
                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3191-4" displayName="Urinary Catheter Present" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3191-4" displayName="Urinary Catheter Present" />
                             <!-- MAY contain the related device insertion procedure time and location of where the procedure took place -->
                             <entryRelationship typeCode="REFR" inversionInd="true">
                                 <!-- Device Insertion Time and Location Procedure -->
@@ -679,7 +679,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2404-2" displayName="Removed within 48 hours prior" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2404-2" displayName="Removed within 48 hours prior" />
                                 </observation>
                             </entryRelationship>
                         </observation>
@@ -775,7 +775,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2318-4" displayName="MDRO Organism or C.difficile Infection" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2318-4" displayName="MDRO Organism or C.difficile Infection" />
                         </observation>
                     </entry>
                 </section>

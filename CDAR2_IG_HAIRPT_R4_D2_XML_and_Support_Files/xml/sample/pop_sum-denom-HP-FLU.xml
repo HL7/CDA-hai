@@ -81,7 +81,7 @@
             <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
             <!-- Location -->
             <!-- code MAY contain nullFlavor="NA" -->
-            <code code="1263-3" codeSystem="2.16.840.1.113883.6.259" codeSystemName="cdcNHSN" displayName="Non-CMS Hospital Unit(s)" />
+            <code code="1263-3" codeSystem="2.16.840.1.113883.6.259" codeSystemName="CDCNHSN" displayName="Non-CMS Hospital Unit(s)" />
         </associatedEntity>
     </participant>
     <documentationOf>
@@ -272,7 +272,7 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PART">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2366-3" displayName="Employees (staff on facility payroll)" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2366-3" displayName="Employees (staff on facility payroll)" />
                                 </participantRole>
                             </participant>
                             <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
@@ -347,7 +347,7 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PART">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2367-1"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2367-1"
                                         displayName="Licensed independent practitioners: Physicians, advanced practice nurses, &amp; physician assistants" />
                                 </participantRole>
                             </participant>
@@ -423,7 +423,7 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PART">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2368-9" displayName="Adult students/trainees &amp; volunteers" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2368-9" displayName="Adult students/trainees &amp; volunteers" />
                                 </participantRole>
                             </participant>
                             <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->
@@ -498,7 +498,7 @@
                             <!-- This encounter reports on a subset of the total group -->
                             <participant typeCode="SBJ" contextControlCode="OP">
                                 <participantRole classCode="PART">
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2369-7" displayName="Other contract personnel" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2369-7" displayName="Other contract personnel" />
                                 </participantRole>
                             </participant>
                             <!-- This summary observation reports the number of HCP who worked at the facility in the flu season -->

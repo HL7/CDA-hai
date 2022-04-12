@@ -183,7 +183,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1620-4"
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1620-4"
                                         displayName="Superficial incisional primary SSI" />
                                 </observation>
                             </entryRelationship>
@@ -254,7 +254,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1967-9"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1967-9"
                                                 displayName="Incision deliberately opened or otherwise drained by physician" />
                                         </observation>
                                     </component>
@@ -268,7 +268,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1905-9"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1905-9"
                                                 displayName="Other evidence of infection found on direct exam, during surgery,or by diagnostic tests per organ/space specific site criteria"
                                              />
                                         </observation>
@@ -283,7 +283,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1920-8" displayName="Localized Swelling" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1920-8" displayName="Localized Swelling" />
                                         </observation>
                                     </component>
                                     <!-- Criterion of Diagnosis Observation -->
@@ -296,7 +296,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1960-4" displayName="Pain or Tenderness " />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1960-4" displayName="Pain or Tenderness " />
                                         </observation>
                                     </component>
                                     <!-- Criterion of Diagnosis Observation -->
@@ -349,7 +349,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1901-8" displayName="Not cultured" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1901-8" displayName="Not cultured" />
                                         </observation>
                                     </component>
                                     <!-- Criterion of Diagnosis Observation -->
@@ -362,7 +362,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1924-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1924-0"
                                                 displayName="Radiographic evidence of infection" />
                                         </observation>
                                     </component>
@@ -376,7 +376,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1963-8"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1963-8"
                                                 displayName="Physician Diagnosis of this event type" />
                                         </observation>
                                     </component>
@@ -389,10 +389,10 @@
                                     <!-- [HAI R3D4] SSI Detection Method -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.261" extension="2019-04-01" />
                                     <id nullFlavor="NA" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" code="1309-4" codeSystemName="cdcNHSN" displayName="Active SSI Detection Method" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" code="1309-4" codeSystemName="CDCNHSN" displayName="Active SSI Detection Method" />
                                     <statusCode code="completed" />
                                     <value xsi:type="CD" code="1321-9" displayName="Review of patient's medical record" codeSystem="2.16.840.1.113883.6.277"
-                                        codeSystemName="cdcNHSN" />
+                                        codeSystemName="CDCNHSN" />
                                 </observation>
                             </entryRelationship>
                         </observation>
@@ -409,7 +409,7 @@
                 must be the same in both the report of a procedure and the report of a 
                 surgical-site infection resulting from that procedure. -->
                             <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
-                            <code code="2108-9" displayName="Appendix surgery" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN">
+                            <code code="2108-9" displayName="Appendix surgery" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN">
                                 <translation code="44970" displayName="Laparoscopic Procedures on the Appendix" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4" />
                             </code>
                             <statusCode code="completed" />
@@ -474,7 +474,7 @@
               <code code="41852-5" displayName="Microorganism identified" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
-              <value xsi:type="CD" code="3119-7" displayName="No pathogen identified" codeSystem="2.16.840.1.113883.6.96" codeSystemName="cdcNHSN" />
+              <value xsi:type="CD" code="3119-7" displayName="No pathogen identified" codeSystem="2.16.840.1.113883.6.96" codeSystemName="CDCNHSN" />
             </observation>
           </entry>-->
                     <entry typeCode="DRIV">
@@ -508,7 +508,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1" displayName="Pathogen rank 1" />
                                 </observation>
                             </component>
                         </organizer>
@@ -544,7 +544,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2" displayName="Pathogen rank 2" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2" displayName="Pathogen rank 2" />
                                 </observation>
                             </component>
                         </organizer>
@@ -580,7 +580,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3" displayName="Pathogen rank 3" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3" displayName="Pathogen rank 3" />
                                 </observation>
                             </component>
                         </organizer>

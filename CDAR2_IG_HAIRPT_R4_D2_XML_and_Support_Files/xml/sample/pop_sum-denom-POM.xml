@@ -85,7 +85,7 @@
     <!-- The period reported -->
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1884-6" displayName="Summary data reporting Active Surveillance Testing" />
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1884-6" displayName="Summary data reporting Active Surveillance Testing" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
                 <low value="20080601" />
@@ -215,7 +215,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Number of Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Number of Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="100" />
                                 </observation>
@@ -225,7 +225,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1862-2" displayName="Number of admissions" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1862-2" displayName="Number of admissions" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="20" />
                                 </observation>
@@ -248,7 +248,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1864-8"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1864-8"
                                         displayName="Number of observations in which hand hygiene was indicated" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="30" />
@@ -259,7 +259,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1865-5"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1865-5"
                                         displayName="Number of observations in which hand hygiene was performed" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="30" />
@@ -270,7 +270,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1866-3"
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1866-3"
                                         displayName="Number of observations in which gown and gloves were indicated" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="30" />
@@ -281,7 +281,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1867-1 "
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1867-1 "
                                         displayName="Number of observations in which gown and gloves were used" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="30" />
@@ -292,34 +292,34 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation POM -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.192" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3193-0" displayName="AST Organism Monitored" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3193-0" displayName="AST Organism Monitored" />
                                     <statusCode code="completed" />
                                     <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115329001" displayName="MRSA" />
                                     <!-- Timing of AST -->
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1870-5" displayName="Timing" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1870-5" displayName="Timing" />
                                             <!-- OnAdmission or OnAdmissionAndDischarge -->
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2201-2" displayName="On admission only" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2201-2" displayName="On admission only" />
                                         </observation>
                                     </entryRelationship>
                                     <!-- Criterion for AST -->
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1871-3" displayName="Eligibility Criterion" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1871-3" displayName="Eligibility Criterion" />
                                             <statusCode code="completed" />
                                             <!-- All or NHxOnly -->
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2301-0" displayName="All patients" />
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2301-0" displayName="All patients" />
                                         </observation>
                                     </entryRelationship>
                                     <!-- Number eligible on admission-->
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1872-1" displayName="Number of patients eligible on admission" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1872-1" displayName="Number of patients eligible on admission" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="20" />
                                         </observation>
@@ -328,7 +328,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1873-9" displayName="Number performed on admission" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1873-9" displayName="Number performed on admission" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="19" />
                                         </observation>
@@ -337,7 +337,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1874-7"
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1874-7"
                                                 displayName="Number of patients eligible on discharge/transfer" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="15" />
@@ -347,7 +347,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1875-4" displayName="Number performed on discharge/transfer" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1875-4" displayName="Number performed on discharge/transfer" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="15" />
                                         </observation>
@@ -356,7 +356,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1876-2"
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1876-2"
                                                 displayName="Prevalent cases identified (clinical positive)" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="2" />
@@ -366,7 +366,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1877-0" displayName="Prevalent cases previously known" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1877-0" displayName="Prevalent cases previously known" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="0" />
                                         </observation>
@@ -375,7 +375,7 @@
                                     <entryRelationship typeCode="COMP">
                                         <observation classCode="OBS" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1878-8" displayName="Incident cases" />
+                                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1878-8" displayName="Incident cases" />
                                             <statusCode code="completed" />
                                             <value xsi:type="INT" value="0" />
                                         </observation>
@@ -390,16 +390,16 @@
                         <observation classCode="OBS" moodCode="EVN">
                             <!-- Primary C. Difficile Testing Method This Quarter -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.221" extension="2014-12-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2029-7"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2029-7"
                                 displayName="C. difficile primary testing method used most often for this quarter" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2034-7" displayName="GDHNAAT - GDH plus NAAT" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2034-7" displayName="GDHNAAT - GDH plus NAAT" />
                         </observation>
                         <!-- A commented out example of using nullFlavor="OTH" -->
                         <!--<observation classCode="OBS" moodCode="EVN">
               <!-\- Primary C. Difficile Testing Method This Quarter -\->
               <templateId root="2.16.840.1.113883.10.20.5.6.221" extension="2014-12-01" />
-              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2029-7"
+              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2029-7"
                 displayName="C. difficile primary testing method used most often for this quarter" />
               <statusCode code="completed" />
               <value xsi:type="CD" nullFlavor="OTH">
@@ -469,7 +469,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3029-6"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3029-6"
                                 displayName="Report no infection surveillance events - Methicillin-resistant Staphylococcus aureus" />
                         </act>
                     </entry>

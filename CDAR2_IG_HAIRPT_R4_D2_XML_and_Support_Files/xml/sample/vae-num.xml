@@ -184,7 +184,7 @@
                             <!-- [HAI] Mechanical Ventilation Initiation Act -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.244" extension="2017-04-01" />
                             <id nullFlavor="NA" />
-                            <code code="2341-2" displayName="Mechanical ventilation initiation" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                            <code code="2341-2" displayName="Mechanical ventilation initiation" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                             <statusCode code="completed" />
                             <effectiveTime>
                                 <low value="20200112" />
@@ -210,7 +210,7 @@
                             <templateId root="2.16.840.1.113883.10.20.5.6.248" extension="2017-04-01" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2342-6"
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2342-6"
                                 displayName="Patient on Airway Pressure Release Ventilation (APRV) or a related mode of mechanical ventilation at the time of VAE" />
                         </observation>
                     </entry>
@@ -302,7 +302,7 @@
                                 <low value="20200115" />
                             </effectiveTime>
                             <!-- This will always be 2340-3: Ventilator Associated Event -->
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2340-3" displayName="Ventilator Associated Event" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2340-3" displayName="Ventilator Associated Event" />
                             <entryRelationship typeCode="REFR">
                                 <observation classCode="OBS" moodCode="EVN" negationInd="false">
                                     <!-- [C-CDA R1.1] Problem Observation -->
@@ -313,7 +313,7 @@
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
                                     <!-- This is one of VAC, IVAC, or PVAP  -->
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2345-0"
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2345-0"
                                         displayName="PVAP - Possible Ventilator-Associated Pneumonia" />
                                 </observation>
                             </entryRelationship>
@@ -331,7 +331,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2346-5"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2346-5"
                                                 displayName="Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days" />
                                         </observation>
                                     </component>
@@ -344,7 +344,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2347-3"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2347-3"
                                                 displayName="Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days" />
                                         </observation>
                                     </component>
@@ -357,7 +357,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2348-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2348-1"
                                                 displayName="Temperature &gt; 380 C or &lt; 360 C" />
                                         </observation>
                                     </component>
@@ -370,7 +370,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2349-9"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2349-9"
                                                 displayName="White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3" />
                                         </observation>
                                     </component>
@@ -383,7 +383,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2350-2"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2350-2"
                                                 displayName="A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days" />
                                         </observation>
                                     </component>
@@ -396,7 +396,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2351-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2351-1"
                                                 displayName="Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -409,7 +409,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2352-5"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2352-5"
                                                 displayName="Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -422,7 +422,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2353-3"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2353-3"
                                                 displayName="Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -435,7 +435,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2354-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2354-1"
                                                 displayName="Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -448,7 +448,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2355-9"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2355-9"
                                                 displayName="Criterion 2 - Purulent respiratory secretions plus organism(s)" />
                                         </observation>
                                     </component>
@@ -461,7 +461,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2356-4"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2356-4"
                                                 displayName="Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -474,7 +474,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2357-2"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2357-2"
                                                 displayName="Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -487,7 +487,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2358-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2358-0"
                                                 displayName="Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -500,7 +500,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2359-8"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2359-8"
                                                 displayName="Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -513,7 +513,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2360-1"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2360-1"
                                                 displayName="Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions" />
                                         </observation>
                                     </component>
@@ -526,7 +526,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2361-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2361-0"
                                                 displayName="Criterion 3 - Positive test Organism(s) identified from pleural fluid" />
                                         </observation>
                                     </component>
@@ -539,7 +539,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2362-4"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2362-4"
                                                 displayName="Criterion 3 - Positive test for Lung histopathology" />
                                         </observation>
                                     </component>
@@ -552,7 +552,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2363-2"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2363-2"
                                                 displayName="Criterion 3 - Positive Diagnostic test for Legionella species" />
                                         </observation>
                                     </component>
@@ -565,7 +565,7 @@
                                             <id nullFlavor="NA" />
                                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                             <statusCode code="completed" />
-                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2364-0"
+                                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2364-0"
                                                 displayName="Criterion 3 - Positive Diagnostic test for selected viral pathogens" />
                                         </observation>
                                     </component>
@@ -582,7 +582,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="3111-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Secondary bloodstream infection"
+                                    <value xsi:type="CD" code="3111-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Secondary bloodstream infection"
                                      />
                                 </observation>
                             </entryRelationship>
@@ -628,7 +628,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3188-0" displayName="Infection occurred post-procedure" />
                             <entryRelationship typeCode="REFR">
                                 <!-- Procedure Details Clinical Statement in an Infection-type Report -->
                                 <procedure classCode="PROC" moodCode="EVN">
@@ -637,7 +637,7 @@
                                     <!-- Procedure Details Clinical Statement in an Infection-Type Report -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.154" />
                                     <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
-                                    <code code="2105-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Abdominal aortic aneurysm repair">
+                                    <code code="2105-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Abdominal aortic aneurysm repair">
                                         <translation code="04B00ZZ" displayName="AAA - Abdominal aortic aneurysm repair" codeSystem="2.16.840.1.113883.6.4"
                                             codeSystemName="ICD10PCS" />
                                     </code>
@@ -714,7 +714,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1" displayName="Pathogen rank 1" />
                                 </observation>
                             </component>
                             <component>
@@ -743,7 +743,7 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2318-4" displayName="MDRO Infection or C.difficile infection"
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2318-4" displayName="MDRO Infection or C.difficile infection"
                              />
                         </observation>
                     </entry>

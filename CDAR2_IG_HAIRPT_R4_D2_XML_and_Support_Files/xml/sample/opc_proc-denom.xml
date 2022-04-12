@@ -271,7 +271,7 @@
                 must be the same in both the report of a procedure and the report of a 
                 surgical-site infection resulting from that procedure. -->
                             <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.5" extension="21987654321" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2108-9" displayName="Appendix surgery">
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2108-9" displayName="Appendix surgery">
                                 <translation code="44970" displayName="Laparoscopic Procedures on the Appendix" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4" />
                             </code>
                             <statusCode code="completed" />

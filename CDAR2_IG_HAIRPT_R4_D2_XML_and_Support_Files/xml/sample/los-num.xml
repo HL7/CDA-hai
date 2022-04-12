@@ -180,7 +180,7 @@
                                     <id nullFlavor="NA" />
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" code="3067-6" displayName="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" codeSystemName="cdcNHSN"
+                                    <value xsi:type="CD" code="3067-6" displayName="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" codeSystemName="CDCNHSN"
                                         codeSystem="2.16.840.1.113883.6.277" />
                                 </observation>
                             </entryRelationship>
@@ -199,7 +199,7 @@
                                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                             <statusCode code="completed" />
                                             <value xsi:type="CD" code="1951-3" displayName="Recognized pathogen from one or more blood specimens"
-                                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                         </observation>
                                     </component>
                                 </organizer>
@@ -291,7 +291,7 @@
                             <id nullFlavor="NA" />
                             <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1006-6" displayName="central line including umbilical catheter"
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1006-6" displayName="central line including umbilical catheter"
                              />
                         </observation>
                     </entry>
@@ -379,7 +379,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1" displayName="Pathogen rank 1" />
+                                    <value xsi:type="CO" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1" displayName="Pathogen rank 1" />
                                 </observation>
                             </component>
                             <!-- An antimicrobial resistance finding is required if the pathogen is bacterial -->

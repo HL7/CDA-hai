@@ -156,7 +156,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.5.6.228" extension="2014-12-01" />
                             <code code="3004-9" displayName="Patient discharged from another facility in the past four weeks" codeSystem="2.16.840.1.113883.6.277"
-                                codeSystemName="cdcNHSN" />
+                                codeSystemName="CDCNHSN" />
                             <!-- Check all that apply - can have more than one discharge from different facilities in the 
                    past four weeks each represented by a different encounter -->
                             <!-- First encounter -->
@@ -173,7 +173,7 @@
                                     <effectiveTime nullFlavor="NA" />
                                     <participant typeCode="LOC">
                                         <participantRole classCode="SDLOC">
-                                            <code code="3005-6" displayName="Nursing Home/Skilled Nursing Facility" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                            <code code="3005-6" displayName="Nursing Home/Skilled Nursing Facility" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                         </participantRole>
                                     </participant>
                                 </encounter>
@@ -193,7 +193,7 @@
                                     <participant typeCode="LOC">
                                         <participantRole classCode="SDLOC">
                                             <code code="3009-4" displayName="Other Inpatient Healthcare Setting (e.g., Acute Care Hospital, LTAC, Rehabilitation, etc.)"
-                                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                         </participantRole>
                                     </participant>
                                 </encounter>
@@ -206,7 +206,7 @@
                             <!-- Last Physical Overnight Location Act -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.227" extension="2014-12-01" />
                             <code code="3002-3" displayName="Last physical overnight location of patient immediately prior to arrival into facility"
-                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                             <entryRelationship typeCode="COMP">
                                 <!-- Last Physical Overnight Location Encounter -->
                                 <encounter classCode="ENC" moodCode="EVN">
@@ -223,7 +223,7 @@
                                     <effectiveTime nullFlavor="NA" />
                                     <participant typeCode="LOC">
                                         <participantRole classCode="SDLOC">
-                                            <code code="3007-2" displayName="Personal Residence/Residential Care" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                            <code code="3007-2" displayName="Personal Residence/Residential Care" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                         </participantRole>
                                     </participant>
                                 </encounter>
@@ -310,7 +310,7 @@
                             <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism Identified" />
                             <statusCode code="completed" />
                             <effectiveTime nullFlavor="NA" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2017-2" displayName="CRE-Klebsiella (CREKLEB)" />
+                          <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2017-2" displayName="CRE-Klebsiella (CREKLEB)" />
                             <!-- Specimen collection procedure contains specimen collection encounter -->
                             <entryRelationship typeCode="COMP">
                                 <procedure classCode="PROC" moodCode="EVN">
@@ -368,7 +368,7 @@
                                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                                     <statusCode code="completed" />
                                     <value xsi:type="CD" code="2037-0" displayName="Bacterial isolate tested for carbapenemase" codeSystem="2.16.840.1.113883.6.277"
-                                        codeSystemName="cdcNHSN" />
+                                        codeSystemName="CDCNHSN" />
                                     <!-- If the value of negationInd="false" for Bacterial 
                        Isolate Tested for Carbapenemase (meaning it was tested) 
                        then the following entryRelationship is required
@@ -392,7 +392,7 @@
                                                     <templateId root="2.16.840.1.113883.10.20.5.6.224" extension="2014-12-01" />
                                                     <id nullFlavor="NA" />
                                                     <code code="2039-6" displayName="(PCR-KPC) Polymerase chain reaction - Klebsiella pneumoniae carbapenemase"
-                                                        codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                                        codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
                                                     <value xsi:type="CD" nullFlavor="NA" />
@@ -406,7 +406,7 @@
                                                     <templateId root="2.16.840.1.113883.10.20.5.6.224" extension="2014-12-01" />
                                                     <id nullFlavor="NA" />
                                                     <code code="2047-9" displayName="(MBLs) Metallo-beta-lactamase screen" codeSystem="2.16.840.1.113883.6.277"
-                                                        codeSystemName="cdcNHSN" />
+                                                        codeSystemName="CDCNHSN" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
                                                     <value xsi:type="CD" nullFlavor="NA" />
@@ -442,7 +442,7 @@
                                             <statusCode code="completed" />
                                             <effectiveTime nullFlavor="NA" />
                                             <value xsi:type="CD" code="2048-7" displayName="Isolate tested positive for carbapenemase" codeSystem="2.16.840.1.113883.6.277"
-                                                codeSystemName="cdcNHSN" />
+                                                codeSystemName="CDCNHSN" />
                                             <entryRelationship typeCode="COMP">
                                                 <!-- [HAI] Carbapenemase Type Identified Observation -->
                                                 <observation classCode="OBS" moodCode="EVN">
@@ -451,10 +451,10 @@
                                                     <!-- [HAI] Carbapenemase Type Identified Observation-->
                                                     <templateId root="2.16.840.1.113883.10.20.5.6.226" extension="2014-12-01" />
                                                     <id nullFlavor="NA" />
-                                                    <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                                    <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
-                                                    <value xsi:type="CD" code="2052-9" displayName="(IMP) Imipenemase" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN"
+                                                    <value xsi:type="CD" code="2052-9" displayName="(IMP) Imipenemase" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN"
                                                      />
                                                 </observation>
                                             </entryRelationship>
@@ -466,7 +466,7 @@
                                                     <!-- [HAI] Carbapenemase Type Identified Observation-->
                                                     <templateId root="2.16.840.1.113883.10.20.5.6.226" extension="2014-12-01" />
                                                     <id nullFlavor="NA" />
-                                                    <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                                    <code code="2049-5" displayName="Carbapenemase Type Identified" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
                                                     <value xsi:type="CD" nullFlavor="OTH">

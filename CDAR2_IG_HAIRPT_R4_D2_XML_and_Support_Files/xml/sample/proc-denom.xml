@@ -318,7 +318,7 @@
                             <!-- Procedure Details Clinical Statement in a Procedure Report (V2) -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.153.2" />
                             <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2126-1" displayName="Limb amputation">
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2126-1" displayName="Limb amputation">
                                 <translation code="0Y6C0Z1" displayName="Detachment at Right Upper Leg, High, Open Approach" codeSystem="2.16.840.1.113883.6.4"
                                     codeSystemName="ICD10PCS" />
                             </code>
@@ -335,11 +335,11 @@
                         that might include secondary and tertiary - this is a bit of a stretch - but similar to some things we have done in consolidation-->
                             <!-- ************************ END PRIMARY SURGERY ************************************************************************ -->
                             <!-- Hip replacement Type -->
-                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1413-4" displayName="Total: Total Primary Hip Replacement" />
+                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1413-4" displayName="Total: Total Primary Hip Replacement" />
                             <!-- Knee replacement Type -->
-                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1406-8" displayName="Total: Total Primary Knee Replacement" />
+                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1406-8" displayName="Total: Total Primary Knee Replacement" />
                             <!-- Spinal fusion approach site and level  -->
-                            <approachSiteCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1205-4" displayName="anterior posterior" />
+                            <approachSiteCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1205-4" displayName="anterior posterior" />
                             <!-- Surgeon who performed the procedure -->
                             <performer typeCode="PRF">
                                 <assignedEntity classCode="ASSIGNED">
@@ -356,7 +356,7 @@
                                     <id nullFlavor="NA" />
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
-                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1101-5" displayName="atlas-axis (C1-C2 only)" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1101-5" displayName="atlas-axis (C1-C2 only)" />
                                 </observation>
                             </entryRelationship>
                             <!-- ************************ START CLOSURE TECHNIQUE ************************************************************************ -->
@@ -372,7 +372,7 @@
                                     <!-- SHALL BE THE BELOW CODE -->
                                     <code code="112695004" displayName="surgical closure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                                     <statusCode code="completed" />
-                                    <methodCode code="2406-7" displayName="Primary" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
+                                    <methodCode code="2406-7" displayName="Primary" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
                                 </procedure>
                             </entryRelationship>
                             <!-- ************************ END CLOSURE TECHNIQUE ************************************************************************ -->
@@ -417,7 +417,7 @@
                                     <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
                                     <statusCode code="completed" />
                                     <value xsi:type="CD" code="1239-3" displayName="Revision associated with prior infection at index joint" codeSystem="2.16.840.1.113883.6.277"
-                                        codeSystemName="cdcNHSN" />
+                                        codeSystemName="CDCNHSN" />
                                 </observation>
                             </entryRelationship>
                         </procedure>

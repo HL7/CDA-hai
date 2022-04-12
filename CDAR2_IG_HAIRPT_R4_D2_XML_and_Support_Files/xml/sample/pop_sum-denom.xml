@@ -86,7 +86,7 @@
     </participant>
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1879-6" displayName="Summary data reporting catheter and ventilator use in a ICU" />
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1879-6" displayName="Summary data reporting catheter and ventilator use in a ICU" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
                 <low value="20080601" />
@@ -163,7 +163,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1851-5" displayName="Patient Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1851-5" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="100" />
                                 </observation>
@@ -171,7 +171,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1833-3" displayName="Central Line Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1833-3" displayName="Central Line Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="25" />
                                 </observation>
@@ -179,7 +179,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Urinary Catheter Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1853-1" displayName="Urinary Catheter Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="26" />
                                 </observation>
@@ -187,7 +187,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1852-3" displayName="Ventilator Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1852-3" displayName="Ventilator Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="27" />
                                 </observation>
@@ -195,7 +195,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1834-1" displayName="Number of APRV Days" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1834-1" displayName="Number of APRV Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="5" />
                                 </observation>
@@ -203,7 +203,7 @@
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.5.6.185" />
-                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1826-7" displayName="Number of new episodes of mechanical ventilation" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1826-7" displayName="Number of new episodes of mechanical ventilation" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="25" />
                                 </observation>
@@ -241,7 +241,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3010-6"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3010-6"
                                 displayName="Report no events for ICU Central Line Associated Blood Stream Infection (CLABSI)" />
                         </act>
                     </entry>
@@ -249,7 +249,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1338-3"
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1338-3"
                                 displayName="Report no events for ICU Pediatric Ventilator-Associated Pneumonia (PedVAE)" />
                         </act>
                     </entry>

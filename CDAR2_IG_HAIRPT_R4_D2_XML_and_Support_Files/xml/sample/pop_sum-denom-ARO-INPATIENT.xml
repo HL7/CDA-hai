@@ -84,7 +84,7 @@
     </participant>
     <documentationOf>
         <serviceEvent classCode="CASE">
-            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="2410-9" displayName="Summary data reporting antimicrobial resistance patterns at a facility" />
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2410-9" displayName="Summary data reporting antimicrobial resistance patterns at a facility" />
             <effectiveTime>
                 <!-- the first day of the period reported -->
                 <low value="20210301" />
@@ -149,7 +149,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AR) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code code="1851-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Patient Days" />
+                                    <code code="1851-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Patient Days" />
                                     <statusCode code="completed" />
                                     <value xsi:type="PQ" unit="d" value="235" />
                                 </observation>
@@ -158,7 +158,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AR) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code code="1862-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Admission count" />
+                                    <code code="1862-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Admission count" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="46" />
                                 </observation>
@@ -167,7 +167,7 @@
                                 <observation classCode="OBS" moodCode="EVN">
                                     <!-- Summary Data Observation (AU/AR) -->
                                     <templateId root="2.16.840.1.113883.10.20.5.6.229" extension="2015-04-01" />
-                                    <code code="2409-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Blood cultures performed" />
+                                    <code code="2409-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Blood cultures performed" />
                                     <statusCode code="completed" />
                                     <value xsi:type="INT" value="24" />
                                 </observation>
@@ -202,7 +202,7 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1341-7" displayName="Report no antimicrobial resistance (AR) events" />
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1341-7" displayName="Report no antimicrobial resistance (AR) events" />
                         </act>
                     </entry>
                 </section>
