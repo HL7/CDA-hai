@@ -331,7 +331,7 @@
               <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="41852-5" displayName="Microorganism Identified" />
               <statusCode code="completed" />
               <effectiveTime nullFlavor="NA" />
-              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2017-2" displayName="CRE-Klebsiella (CREKLEB)" />
+              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2017-2" displayName="CRE-Klebsiella (CREKLEB)" />
               <!-- Specimen collection procedure contains specimen collection encounter -->
               <entryRelationship typeCode="COMP">
                 <procedure classCode="PROC" moodCode="EVN">
