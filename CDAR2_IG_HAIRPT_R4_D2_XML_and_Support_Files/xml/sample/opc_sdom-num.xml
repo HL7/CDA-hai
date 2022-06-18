@@ -17,318 +17,317 @@
 -->
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
 
-    <!-- Comments precede their subject -->
+  <!-- Comments precede their subject -->
 
-    <!-- This is a single-patient record. -->
-    <realmCode code="US" />
-    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
-    <!-- Published in HAI IG R4D2 -->
-    <templateId root="2.16.840.1.113883.10.20.5.7.4.2" />
-    <!-- Conformant to Healthcare Associated Infection Report -->
-    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
-    <!-- [HAI R4D2] Conformant to HAI Single-Person Report Generic Constraints (V2) -->
-    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2022-04-01" />
-    <!-- [HAI R3D4] Outpatient Procedure Component Same Day Outcome Measures Event (V2) -->
-    <templateId root="2.16.840.1.113883.10.20.5.54" extension="2022-04-01" />
-    <!-- Document ID (extension) is scoped by vendor/software -->
-    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
-    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
-    <title>Outpatient Procedure Component Same Day Outcome Measures Event</title>
-    <effectiveTime value="201808061219" />
-    <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
-    <languageCode code="en-US" />
-    <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
-    <!-- the original -->
-    <versionNumber value="1" />
-    <recordTarget>
-        <patientRole>
-            <!-- Patient ID - scoped by facility -->
-            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
-            <!-- Secondary ID - scoped by facility -->
-            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654321" />
-            <patient>
-                <name>
-                    <family>Nuclear</family>
-                    <given>Ned</given>
-                </name>
-                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
-                <birthTime value="19541125" />
-                <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
-                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
-            </patient>
-        </patientRole>
-    </recordTarget>
-    <!-- Author/authenticator may be software or may be someone in the role of "infection control professional". This author is scoped by facility. -->
-    <author>
-        <time value="20180806" />
-        <assignedAuthor>
-            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
-        </assignedAuthor>
-    </author>
-    <!-- The custodian of the CDA document is NHSN -->
-    <custodian>
-        <assignedCustodian>
-            <representedCustodianOrganization>
-                <id root="2.16.840.1.114222.4.3.2.11" />
-            </representedCustodianOrganization>
-        </assignedCustodian>
-    </custodian>
-    <!-- Scoped by facility -->
-    <legalAuthenticator>
-        <time value="20180806" />
-        <signatureCode code="S" />
-        <assignedEntity>
-            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
-        </assignedEntity>
-    </legalAuthenticator>
-    <componentOf>
-        <encompassingEncounter>
-            <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="AMB" displayName="Outpatient" />
-            <effectiveTime>
-                <!-- Date Admitted to Facility -->
-                <low value="20180805" />
-            </effectiveTime>
-            <location>
-                <healthCareFacility>
-                    <!-- Facility ID -->
-                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
-                </healthCareFacility>
-            </location>
-        </encompassingEncounter>
-    </componentOf>
-    <!-- ********************************************************
+  <!-- This is a single-patient record. -->
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <!-- Published in HAI IG R4D2 -->
+  <templateId root="2.16.840.1.113883.10.20.5.7.4.2" />
+  <!-- Conformant to Healthcare Associated Infection Report -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+  <!-- [HAI R4D2] Conformant to HAI Single-Person Report Generic Constraints (V2) -->
+  <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2022-04-01" />
+  <!-- [HAI R3D4] Outpatient Procedure Component Same Day Outcome Measures Event (V2) -->
+  <templateId root="2.16.840.1.113883.10.20.5.54" extension="2022-04-01" />
+  <!-- Document ID (extension) is scoped by vendor/software -->
+  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+  <title>Outpatient Procedure Component Same Day Outcome Measures Event</title>
+  <effectiveTime value="201808061219" />
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+  <!-- the original -->
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <!-- Patient ID - scoped by facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
+      <!-- Secondary ID - scoped by facility -->
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654321" />
+      <patient>
+        <name>
+          <family>Nuclear</family>
+          <given>Ned</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="19541125" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <!-- Author/authenticator may be software or may be someone in the role of "infection control professional". This author is scoped by facility. -->
+  <author>
+    <time value="20180806" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+    </assignedAuthor>
+  </author>
+  <!-- The custodian of the CDA document is NHSN -->
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.114222.4.3.2.11" />
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <!-- Scoped by facility -->
+  <legalAuthenticator>
+    <time value="20180806" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter>
+      <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="AMB" displayName="Outpatient" />
+      <effectiveTime>
+        <!-- Date Admitted to Facility -->
+        <low value="20180805" />
+      </effectiveTime>
+      <location>
+        <healthCareFacility>
+          <!-- Facility ID -->
+          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <!-- ********************************************************
  Structured Body
  ******************************************************** -->
-    <component>
-        <structuredBody>
+  <component>
+    <structuredBody>
 
-            <!-- ********************************************************
+      <!-- ********************************************************
             
             ******************************************************** -->
-            <component>
-                <section>
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-                    <templateId root="2.16.840.1.113883.10.20.5.5.66" extension="2019-04-01" />
-                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Event Details" />
-                    <title>Same Day Outcome Measures Event Details Section</title>
-                    <text xmlns:sdtc="urn:hl7-org:sdtc">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Same day outcome measures</td>
-                                    <td>Burn (disorder): Yes<br />Accidental fall (event): Yes<br />Hospital transfer/admission: No<br />Wrong site: Yes<br />Wrong side:
-                                        No<br />Wrong patient: No<br />Wrong surgical procedure performed on a patient (event): No<br />Wrong implant: No</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </text>
-                    <entry typeCode="DRIV">
-                        <!-- Same Day Outcome Measures Organizer (V3) -->
-                        <organizer classCode="CLUSTER" moodCode="EVN">
-                            <!-- [HAI R3D4] Same Day Outcome Measures Organizer (V3) -->
-                            <templateId root="2.16.840.1.113883.10.20.5.6.212" extension="2019-04-01" />
-                            <statusCode code="completed" />
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Patient burn (yes) -->
-                                <!-- If the outcome occurred, set the value of @negationInd to false. 
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <templateId root="2.16.840.1.113883.10.20.5.5.66" extension="2019-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Event Details" />
+          <title>Same Day Outcome Measures Event Details Section</title>
+          <text xmlns:sdtc="urn:hl7-org:sdtc">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Same day outcome measures</td>
+                  <td>Burn (disorder): Yes<br />Accidental fall (event): Yes<br />Hospital transfer/admission: No<br />Wrong site: Yes<br />Wrong side: No<br />Wrong patient: No<br />Wrong surgical procedure performed on a patient (event):
+                    No<br />Wrong implant: No</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <!-- Same Day Outcome Measures Organizer (V3) -->
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <!-- [HAI R3D4] Same Day Outcome Measures Organizer (V3) -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.212" extension="2019-04-01" />
+              <statusCode code="completed" />
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Patient burn (yes) -->
+                <!-- If the outcome occurred, set the value of @negationInd to false. 
                   If the outcome did not occur, set the value of @negationInd to true. -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-04" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="125666000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient burn" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Patient fall (yes) -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="217082002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient fall" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Hospital transfer/admission (no)-->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1645-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Hospital transfer/admission" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Wrong site (yes) -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1646-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong site" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Wrong side (no)  -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1647-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong side" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Wrong patient (no) -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1648-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong patient" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Wrong procedure (no) -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="370898007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Wrong procedure" />
-                                </observation>
-                            </component>
-                            <component>
-                                <!-- Same Day Outcome Measure Observation (V3) - Wrong implant (no) -->
-                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                                    <!-- [C-CDA R1.1] R1.1 Problem Observation -->
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                                    <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
-                                    <id nullFlavor="NA" />
-                                    <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
-                                    <statusCode code="completed" />
-                                    <value xsi:type="CD" code="1649-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong implant" />
-                                </observation>
-                            </component>
-                        </organizer>
-                    </entry>
-                </section>
-            </component>
-            <!-- 
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-04" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="125666000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient burn" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Patient fall (yes) -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="217082002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient fall" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Hospital transfer/admission (no)-->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1645-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Hospital transfer/admission" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Wrong site (yes) -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1646-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong site" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Wrong side (no)  -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1647-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong side" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Wrong patient (no) -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1648-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong patient" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Wrong procedure (no) -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="370898007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Wrong procedure" />
+                </observation>
+              </component>
+              <component>
+                <!-- Same Day Outcome Measure Observation (V3) - Wrong implant (no) -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <!-- [C-CDA R1.1] R1.1 Problem Observation -->
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <!-- [HAI R3D4] Same Day Outcome Measure Observation (V3) -->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.208" extension="2019-04-01" />
+                  <id nullFlavor="NA" />
+                  <code code="1655-0" displayName="Same Day Outcome Measure" codeSystem="2.16.840.1.113883.6.277" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="1649-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Wrong implant" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <!-- 
             ******************************************************** 
             NHSN Social History Section
             ******************************************************** 
       -->
-            <component>
-                <section>
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-                    <!-- [HAI R4D2] NHSN Social History Section -->
-                    <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
-                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
-                    <title>NHSN Social History Section</title>
-                    <text>
-                        <list>
-                            <item>Gender identity<list>
-                                <item>Identifies as female gender (finding)</item>
-                            </list>
-                            </item>
-                        </list>
-                        <list>
-                            <item>Birth Sex<list>
-                                <item>Female</item>
-                            </list>
-                            </item>
-                        </list>
-                    </text>
-                    
-                    <entry>
-                        <!-- Gender Identity Observation -->
-                        <observation classCode="OBS" moodCode="EVN">
-                            <!-- [C-CDA R2.1] Social History Observation (V3) -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01" />
-                            <!-- [C-CDA CG] Gender Identity Observation (V3) -->
-                            <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                            <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                            <statusCode code="completed" />
-                            <effectiveTime>
-                                <low value="20210703" />
-                            </effectiveTime>
-                            <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96"
-                                codeSystemName="SNOMED CT" />
-                        </observation>
-                    </entry>
-                    <entry>
-                        <!-- Birth Sex Observation -->
-                        <observation classCode="OBS" moodCode="EVN">
-                            <!-- [C-CDA 2.1] Birth Sex Observation -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                            <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                            <statusCode code="completed" />
-                            <value xsi:type="CD" code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
-                        </observation>
-                    </entry>
-                </section>
-            </component>
-            <!-- 
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R4D2] NHSN Social History Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+          <title>NHSN Social History Section</title>
+          <text>
+            <list>
+              <item>Gender identity<list>
+                  <item>Identifies as female gender (finding)</item>
+                </list>
+              </item>
+            </list>
+            <list>
+              <item>Birth Sex<list>
+                  <item>Female</item>
+                </list>
+              </item>
+            </list>
+          </text>
+
+          <entry>
+            <!-- Gender Identity Observation -->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [C-CDA R2.1] Social History Observation (V3) -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01" />
+              <!-- [C-CDA CG] Gender Identity Observation (V3) -->
+              <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
+              <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+              <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20210703" />
+              </effectiveTime>
+              <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+            </observation>
+          </entry>
+          <entry>
+            <!-- Birth Sex Observation -->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [C-CDA 2.1] Birth Sex Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
+              <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+              <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <!-- 
           ********************************************************
           NHSN Comment Section
           ******************************************************** 
       -->
-            <component>
-                <section>
-                    <!-- NHSN Comment Section Generic Constraints -->
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-                    <!-- [HAI R3D2] NHSN Comment Section -->
-                    <templateId root="2.16.840.1.113883.10.20.5.5.61" extension="2017-04-01" />
-                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86468-6" displayName="Report comment Section" />
-                    <title>Comment</title>
-                    <text xmlns:sdtc="urn:hl7-org:sdtc">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Comment</td>
-                                    <td>NHSN text comment that is less than 2000 characters.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </text>
-                    <entry typeCode="DRIV">
-                        <act classCode="ACT" moodCode="EVN">
-                            <!-- [HAI R3D2] NHSN Comment -->
-                            <templateId root="2.16.840.1.113883.10.20.5.6.243" extension="2017-04-01" />
-                            <code code="86467-8" displayName="Report comment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                            <!-- Less than 2000 characters -->
-                            <text>NHSN text comment that is less than 2000 characters.</text>
-                        </act>
-                    </entry>
-                </section>
-            </component>
-        </structuredBody>
-    </component>
+      <component>
+        <section>
+          <!-- NHSN Comment Section Generic Constraints -->
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R3D2] NHSN Comment Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.61" extension="2017-04-01" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="86468-6" displayName="Report comment Section" />
+          <title>Comment</title>
+          <text xmlns:sdtc="urn:hl7-org:sdtc">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Comment</td>
+                  <td>NHSN text comment that is less than 2000 characters.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <!-- [HAI R3D2] NHSN Comment -->
+              <templateId root="2.16.840.1.113883.10.20.5.6.243" extension="2017-04-01" />
+              <code code="86467-8" displayName="Report comment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <!-- Less than 2000 characters -->
+              <text>NHSN text comment that is less than 2000 characters.</text>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
 </ClinicalDocument>
