@@ -211,14 +211,6 @@
                   <value xsi:type="INT" value="0" />
                 </observation>
               </entryRelationship>
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.5.6.195" />
-                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2338-2" displayName="Number of Chronic Hemodialysis Patients, with vascular access, for whom diazlyers are reused" />
-                  <statusCode code="completed" />
-                  <value xsi:type="INT" value="4" />
-                </observation>
-              </entryRelationship>
             </encounter>
           </entry>
         </section>
