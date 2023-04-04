@@ -422,6 +422,62 @@
           </entry>
         </section>
       </component>
+        <!-- 
+            ******************************************************** 
+            NHSN Social History Section
+            ******************************************************** 
+      -->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+          <!-- [HAI R4D2] NHSN Social History Section -->
+          <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+          <title>NHSN Social History Section</title>
+          <text>
+            <list>
+              <item>Gender identity<list>
+                <item>Identifies as female gender (finding)</item>
+              </list>
+              </item>
+            </list>
+            <list>
+              <item>Birth Sex<list>
+                <item>Male</item>
+              </list>
+              </item>
+            </list>
+          </text>
+          
+          <entry>
+            <!-- Gender Identity Observation -->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [C-CDA R2.1] Social History Observation (V3) -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01" />
+              <!-- [C-CDA CG] Gender Identity Observation (V3) -->
+              <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
+              <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+              <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20210703" />
+              </effectiveTime>
+              <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+            </observation>
+          </entry>
+          <entry>
+            <!-- Birth Sex Observation -->
+            <observation classCode="OBS" moodCode="EVN">
+              <!-- [C-CDA 2.1] Birth Sex Observation -->
+              <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
+              <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+              <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
+            </observation>
+          </entry>
+        </section>
+      </component>
     </structuredBody>
   </component>
 </ClinicalDocument>
