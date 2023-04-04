@@ -267,7 +267,7 @@
             </list>
             <list>
               <item>Birth Sex<list>
-                  <item>Female</item>
+                  <item>Male</item>
                 </list>
               </item>
             </list>
@@ -297,7 +297,7 @@
               <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
               <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
               <statusCode code="completed" />
-              <value xsi:type="CD" code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
+              <value xsi:type="CD" code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
             </observation>
           </entry>
         </section>
