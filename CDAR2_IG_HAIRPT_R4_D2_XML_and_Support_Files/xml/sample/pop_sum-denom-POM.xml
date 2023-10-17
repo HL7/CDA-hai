@@ -186,14 +186,6 @@
                                     <td>C. difficile primary testing method used most often for this quarter</td>
                                     <td> GDHNAAT - GDH plus NAAT</td>
                                 </tr>
-                                <tr>
-                                    <td>Inpatient Rehabilitation (IRF) Unit in Facility</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>Inpatient Psychiatric (IPF) Unit in Facility</td>
-                                    <td>No</td>
-                                </tr>
                             </tbody>
                         </table>
                     </text>
@@ -398,30 +390,6 @@
                 <originalText>Testing method other than on specificed in NHSN value set</originalText>
               </value>
             </observation>-->
-                    </entry>
-                    <entry typeCode="DRIV">
-                        <!-- When the facility does contain an IRF unit, set the value of @negationInd to false. 
-                            When the facility does not contain an IRF unit, set the value of @negationInd to true. -->
-                        <!-- The following example states that this facility DOES contain an IRF unit -->
-                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                            <!-- Inpatient Rehabilitation (IRF) Unit in Facility -->
-                            <templateId root="2.16.840.1.113883.10.20.5.6.271" extension="2022-04-01" />
-                            <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
-                            <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HSLOC" code="1264-1" displayName="Inpatient Rehabilitation Facility Unit(s)" />
-                        </observation>
-                    </entry>
-                    <entry>
-                        <!-- When the facility does contain an IPF unit, set the value of @negationInd to false. 
-                 When the facility does not contain an IPF unit, set the value of @negationInd to true. -->
-                        <!-- The following example states that this facility DOES NOT contain an IPF unit -->
-                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
-                            <!-- Inpatient Psychiatric (IPF) Unit in Facility -->
-                            <templateId root="2.16.840.1.113883.10.20.5.6.272" extension="2022-04-01" />
-                            <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
-                            <statusCode code="completed" />
-                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HSLOC" code="1265-8" displayName="Inpatient Psychiatric Facility Unit(s)" />
-                        </observation>
                     </entry>
                 </section>
             </component>
