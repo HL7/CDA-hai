@@ -1091,7 +1091,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.5-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.5-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-81-794-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.22.4.5'])=0">'urn:oid:2.16.840.1.113883.10.20.22.4.5' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-81-794-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.22.4.5'])=0">'urn:oid:2.16.840.1.113883.10.20.22.4.5' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.5-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.5']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.5-errors-CL-abstract" />
@@ -1244,7 +1245,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.112-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.112-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1234-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.112' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1234-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.112' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.112-errors-CL" context="cda:substanceAdministration[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.112']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.112-errors-CL-abstract" />
@@ -1274,7 +1276,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.113-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.113-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1235-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.113' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1235-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.113' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.113-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.113']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.113-errors-CL-abstract" />
@@ -1304,7 +1307,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.114-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.114-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1236-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.114' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1236-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.114' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.114-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.114']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.114-errors-CL-abstract" />
@@ -1345,7 +1349,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.120-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.120-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1237-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.120' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1237-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.120' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.120-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.120']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.120-errors-CL-abstract" />
@@ -1380,7 +1385,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.121-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.121-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1238-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.22.4.79'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.121' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1238-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.22.4.79'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.121' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.121-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.121']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.121-errors-CL-abstract" />
@@ -1408,7 +1414,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.174-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.174-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1239-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.174' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1239-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.174' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.174-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.174']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.174-errors-CL-abstract" />
@@ -1442,7 +1449,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.173-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.173-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1240-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.173' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1240-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.173' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.173-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.173']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.173-errors-CL-abstract" />
@@ -1477,7 +1485,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.150-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.150-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1241-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.150' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1241-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.150' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.150-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.150']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.150-errors-CL-abstract" />
@@ -1511,7 +1520,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.131-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.131-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1242-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.131' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1242-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.131' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.131-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.131']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.131-errors-CL-abstract" />
@@ -1542,7 +1552,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.137-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.137-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1244-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.137' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1244-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.22.4.27'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.137' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.137-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.137']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.137-errors-CL-abstract" />
@@ -1574,7 +1585,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.147-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.147-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1245-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.147' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1245-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.147' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.147-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.147']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.147-errors-CL-abstract" />
@@ -1607,7 +1619,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.138-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.138-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1246-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.138' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1246-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.138' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.138-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.138']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.138-errors-CL-abstract" />
@@ -1638,7 +1651,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.160-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.160-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1248-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.160' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1248-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.160' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.160-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.160']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.160-errors-CL-abstract" />
@@ -1668,7 +1682,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.135-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.135-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-1251-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.135' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-1251-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.135' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.135-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.135']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.135-errors-CL-abstract" />
@@ -1698,7 +1713,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.145-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.145-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2253-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.145' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2253-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.145' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.145-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.145']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.145-errors-CL-abstract" />
@@ -1729,7 +1745,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.170-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.170-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2254-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.170' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2254-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.170' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.170-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.170']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.170-errors-CL-abstract" />
@@ -1760,7 +1777,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.163-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.163-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2255-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.163' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2255-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.163' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.163-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.163']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.163-errors-CL-abstract" />
@@ -1792,7 +1810,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.123-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.123-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2259-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.123' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2259-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.123' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.123-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.123']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.123-errors-CL-abstract" />
@@ -1823,7 +1842,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.126-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.126-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2260-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.126' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2260-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.126' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.126-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.126']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.126-errors-CL-abstract" />
@@ -1852,7 +1872,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.117-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.117-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2261-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.117' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2261-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.117' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.117-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.117']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.117-errors-CL-abstract" />
@@ -1892,7 +1913,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.122-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.122-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2262-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.122' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2262-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.122' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.122-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.122']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.122-errors-CL-abstract" />
@@ -1923,7 +1945,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.175-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.175-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2263-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.175' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.175' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2263-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.175' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.175' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.175-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.175']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.175-errors-CL-abstract" />
@@ -1944,7 +1967,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.176-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.176-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2264-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.176'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.176' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2264-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.176'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.176' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.176-errors-CL" context="cda:participant[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.176']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.176-errors-CL-abstract" />
@@ -1975,7 +1999,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.142-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.142-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2269-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.142' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.142' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2269-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.142' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.142' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.142-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.142']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.142-errors-CL-abstract" />
@@ -2013,7 +2038,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.141-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.141-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2270-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.141' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.141' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2270-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.141' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.141' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.141-errors-CL" context="cda:substanceAdministration[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.141']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.141-errors-CL-abstract" />
@@ -2049,7 +2075,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.139-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.139-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2272-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.139' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2272-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.139' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.139-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.139']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.139-errors-CL-abstract" />
@@ -2079,7 +2106,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.148-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.148-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2275-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.148' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2275-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.148' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.148-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.148']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.148-errors-CL-abstract" />
@@ -2102,7 +2130,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.156-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.156-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2280-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.156' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2280-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.156' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.156-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.156']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.156-errors-CL-abstract" />
@@ -2131,7 +2160,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.159-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.159-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2282-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.159'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.159' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2282-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.159'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.159' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.159-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.159']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.159-errors-CL-abstract" />
@@ -2162,7 +2192,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.165-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.165-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2286-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.165' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2286-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.165' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.165-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.165']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.165-errors-CL-abstract" />
@@ -2193,7 +2224,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.169-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.169-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2290-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.169' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2290-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.169' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.169-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.169']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.169-errors-CL-abstract" />
@@ -2226,7 +2258,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.171-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.171-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2291-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.171' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2291-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.171' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.171-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.171']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.171-errors-CL-abstract" />
@@ -2263,7 +2296,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.172-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.172-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2292-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.172' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2292-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.172' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.172-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.172']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.172-errors-CL-abstract" />
@@ -2297,7 +2331,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.168-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.168-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2293-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.134'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.168' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2293-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.134'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.168' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.168-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.168']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.168-errors-CL-abstract" />
@@ -2330,7 +2365,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.167-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.167-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2294-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.167' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2294-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.167' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.167-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.167']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.167-errors-CL-abstract" />
@@ -2359,7 +2395,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.166-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.166-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2295-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.166' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2295-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.166' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.166-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.166']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.166-errors-CL-abstract" />
@@ -2394,7 +2431,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.164-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.164-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2296-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.164' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2296-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.164' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.164-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.164']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.164-errors-CL-abstract" />
@@ -2429,7 +2467,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.158-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.158-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2297-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.158' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2297-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.158' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.158-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.158']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.158-errors-CL-abstract" />
@@ -2473,7 +2512,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.155-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.155-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2298-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.155' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2298-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.155' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.155-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.155']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.155-errors-CL-abstract" />
@@ -2499,7 +2539,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.154-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.154-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2299-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.154' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2299-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.154' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.154-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.154']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.154-errors-CL-abstract" />
@@ -2529,7 +2570,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.144-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.144-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2302-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.144' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2302-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.144' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.144-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.144']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.144-errors-CL-abstract" />
@@ -2561,7 +2603,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.125-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.125-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2304-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.125' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2304-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.125' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.125-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.125']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.125-errors-CL-abstract" />
@@ -2592,7 +2635,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.115-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.115-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2305-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.115' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2305-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.115' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.115-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.115']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.115-errors-CL-abstract" />
@@ -2624,7 +2668,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.134-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.134-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2307-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.134' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.134' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2307-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.134' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.134' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.134-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.134']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.134-errors-CL-abstract" />
@@ -2646,7 +2691,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.4.26-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2312-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.4.26'])=0">'urn:oid:2.16.840.1.113883.10.20.5.4.26' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2312-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.4.26'])=0">'urn:oid:2.16.840.1.113883.10.20.5.4.26' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.4.26']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-errors-CL-abstract" />
@@ -2674,7 +2720,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.128-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.128-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2314-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.128' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2314-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.128' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.128-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.128']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.128-errors-CL-abstract" />
@@ -2697,7 +2744,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.180-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.180-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2322-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.180' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2322-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.180' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.180-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.180']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.180-errors-CL-abstract" />
@@ -2730,7 +2778,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.119-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.119-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2324-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.119' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2324-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.119' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.119-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.119']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.119-errors-CL-abstract" />
@@ -2758,7 +2807,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.130-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.130-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2325-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.130' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2325-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.130' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.130-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.130']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.130-errors-CL-abstract" />
@@ -2787,7 +2837,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.129-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.129-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2326-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.129' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2326-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.129' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.129-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.129']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.129-errors-CL-abstract" />
@@ -2813,7 +2864,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.136-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.136-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2327-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.136' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2327-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.136' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.136-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.136']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.136-errors-CL-abstract" />
@@ -2838,7 +2890,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.133-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.133-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2330-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.133'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.133' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2330-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.133'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.133' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.133-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.133']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.133-errors-CL-abstract" />
@@ -2867,7 +2920,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.132-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.132-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2331-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.132' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2331-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.132' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.132-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.132']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.132-errors-CL-abstract" />
@@ -2896,7 +2950,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.127-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.127-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2332-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.127' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2332-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.127' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.127-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.127']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.127-errors-CL-abstract" />
@@ -2921,7 +2976,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.182-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.182-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2334-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.182' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2334-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.182' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.182-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.182']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.182-errors-CL-abstract" />
@@ -2949,7 +3005,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.35-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.35-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2338-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.35' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.35' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2338-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.35' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.35' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.35-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.35']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.35-errors-CL-abstract" />
@@ -2972,7 +3029,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.36-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.36-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2339-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.36' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.36' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2339-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.36' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.36' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.36-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.36']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.36-errors-CL-abstract" />
@@ -2994,7 +3052,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.38-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.38-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2341-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.38' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.38' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2341-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.38' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.38' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.38-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.38']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.38-errors-CL-abstract" />
@@ -3016,7 +3075,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.40-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.40-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2343-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.40' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.40' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2343-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.40' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.40' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.40-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.40']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.40-errors-CL-abstract" />
@@ -3039,7 +3099,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.42-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.42-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2345-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.42' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.42' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2345-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.42' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.42' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.42-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.42']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.42-errors-CL-abstract" />
@@ -3063,7 +3124,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.45-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.45-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2348-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.45' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2348-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.45' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.45-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.45']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.45-errors-CL-abstract" />
@@ -3086,7 +3148,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.47-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.47-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2350-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.47' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2350-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.47' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.47-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.47']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.47-errors-CL-abstract" />
@@ -3112,7 +3175,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.184-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.184-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2351-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.184' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2351-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.184' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.184-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.184']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.184-errors-CL-abstract" />
@@ -3136,7 +3200,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.185-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.185-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2352-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.185' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2352-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.185' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.185-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.185']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.185-errors-CL-abstract" />
@@ -3188,7 +3253,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.189-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.189-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2366-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.189' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2366-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.189' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.189-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.189']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.189-errors-CL-abstract" />
@@ -3216,7 +3282,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.190-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.190-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2367-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.190' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2367-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.190' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.190-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.190']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.190-errors-CL-abstract" />
@@ -3243,7 +3310,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.191-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.191-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2370-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.191' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2370-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.191' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.191-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.191']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.191-errors-CL-abstract" />
@@ -3272,7 +3340,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.192-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.192-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2373-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.192' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2373-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.192' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.192-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.192']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.192-errors-CL-abstract" />
@@ -3298,7 +3367,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.193-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.193-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2374-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.193' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2374-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.193' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.193-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.193']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.193-errors-CL-abstract" />
@@ -3323,7 +3393,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.194-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.194-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2378-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.194' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2378-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.194' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.194-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.194']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.194-errors-CL-abstract" />
@@ -3350,7 +3421,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.195-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.195-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2380-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.195' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2380-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.195' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.195-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.195']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.195-errors-CL-abstract" />
@@ -3373,7 +3445,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.50-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.50-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2381-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.50' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.50' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2381-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.50' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.50' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.50-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.50']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.50-errors-CL-abstract" />
@@ -3399,7 +3472,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.196-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.196-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2382-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.196' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2382-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.196' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.196-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.196']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.196-errors-CL-abstract" />
@@ -3437,7 +3511,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.124-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.124-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-86-2398-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.124'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.124' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-86-2398-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.124'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.124' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.124-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.124']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.124-errors-CL-abstract" />
@@ -3470,7 +3545,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.203-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.203-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3623-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.203' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.203' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3623-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.203' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.203' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.203-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.203']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.203-errors-CL-abstract" />
@@ -3503,7 +3579,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.204-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.204-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3729-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.204' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.204' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3729-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.204' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.204' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.204-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.204']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.204-errors-CL-abstract" />
@@ -3544,7 +3621,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.153.2-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.153.2-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3730-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.153.2' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3730-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.153.2' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.153.2-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.153.2']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.153.2-errors-CL-abstract" />
@@ -3567,7 +3645,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.43.2-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.43.2-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3731-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.43.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.43.2' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3731-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.43.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.43.2' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.43.2-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.43.2']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.43.2-errors-CL-abstract" />
@@ -3600,7 +3679,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.205-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.205-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3733-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.205' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3733-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.205' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.205-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.205']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.205-errors-CL-abstract" />
@@ -3625,7 +3705,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.5.39.2-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.39.2-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3734-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.39.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.5.6.206' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.39.2' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3734-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.5.39.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.5.6.206' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:oid:2.16.840.1.113883.10.20.5.5.39.2' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.5.39.2-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.39.2']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.5.39.2-errors-CL-abstract" />
@@ -3656,7 +3737,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.5.6.206-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.206-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1101-3773-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.206'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.206' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1101-3773-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.5.6.206'])=0">'urn:oid:2.16.840.1.113883.10.20.5.6.206' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.5.6.206-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.206']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.6.206-errors-CL-abstract" />
@@ -3706,7 +3788,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.216-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.216-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4298-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.216:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4298-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.216:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.216-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.216' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.216-2014-12-01-errors-CL-abstract" />
@@ -3747,7 +3830,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.162-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.162-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4299-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.162:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4299-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.162:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.162-2014-12-01-errors-CL" context="cda:substanceAdministration[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.162' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.162-2014-12-01-errors-CL-abstract" />
@@ -3779,7 +3863,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.118-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.118-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4300-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.118:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4300-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.118:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.118-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.118' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.118-2014-12-01-errors-CL-abstract" />
@@ -3803,7 +3888,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.183-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.183-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4301-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.183:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4301-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.183:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.183-2014-12-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.183' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.183-2014-12-01-errors-CL-abstract" />
@@ -3829,7 +3915,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.179-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.179-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4302-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.179:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4302-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.179:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.179-2014-12-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.179' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.179-2014-12-01-errors-CL-abstract" />
@@ -3857,7 +3944,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.116-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.116-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4303-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.116:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4303-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.116:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.116-2014-12-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.116' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.116-2014-12-01-errors-CL-abstract" />
@@ -3879,7 +3967,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.34-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.34-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4304-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.34' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.34:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4304-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.34' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.34:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.34-2014-12-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.34' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.34-2014-12-01-errors-CL-abstract" />
@@ -3907,7 +3996,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.217-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.217-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4306-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.217:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4306-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.217:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.217-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.217' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.217-2014-12-01-errors-CL-abstract" />
@@ -3934,7 +4024,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.151-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.151-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4307-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.151:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4307-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.151:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.151-2014-12-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.151' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.151-2014-12-01-errors-CL-abstract" />
@@ -3968,7 +4059,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.218-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.218-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4308-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.218:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4308-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.218:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.218-2014-12-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.218' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.218-2014-12-01-errors-CL-abstract" />
@@ -3992,7 +4084,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.44-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.44-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4309-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.44' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.44:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4309-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.44' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.44:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.44-2014-12-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.44' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.44-2014-12-01-errors-CL-abstract" />
@@ -4023,7 +4116,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.220-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.220-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4367-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.220:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4367-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.220:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.220-2014-12-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.220' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.220-2014-12-01-errors-CL-abstract" />
@@ -4048,7 +4142,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.219-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.219-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4402-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.219:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4402-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.219:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.219-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.219' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.219-2014-12-01-errors-CL-abstract" />
@@ -4072,7 +4167,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.221-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.221-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4403-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.221:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4403-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.221:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.221-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.221' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.221-2014-12-01-errors-CL-abstract" />
@@ -4099,7 +4195,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.222-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.222-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.222:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.222:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.222-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.222' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.222-2014-12-01-errors-CL-abstract" />
@@ -4128,7 +4225,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.223-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.223-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.223:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.223:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.223-2014-12-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.223' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.223-2014-12-01-errors-CL-abstract" />
@@ -4158,7 +4256,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.224-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.224-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4408-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.224:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4408-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.224:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.224-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.224' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.224-2014-12-01-errors-CL-abstract" />
@@ -4191,7 +4290,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.225-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.225-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4409-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.225:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4409-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.225:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.225-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.225' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.225-2014-12-01-errors-CL-abstract" />
@@ -4222,7 +4322,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.146-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.146-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4426-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.146:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4426-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.146:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.146-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.146' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.146-2014-12-01-errors-CL-abstract" />
@@ -4244,7 +4345,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.46-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.46-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4427-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.46' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.46:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4427-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.46' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.46:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.46-2014-12-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.46' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.46-2014-12-01-errors-CL-abstract" />
@@ -4275,7 +4377,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.226-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.226-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4430-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.226:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4430-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.226:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.226-2014-12-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.226' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.226-2014-12-01-errors-CL-abstract" />
@@ -4299,7 +4402,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.227-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.227-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4836-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.227:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4836-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.227:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.227-2014-12-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.227' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.227-2014-12-01-errors-CL-abstract" />
@@ -4323,7 +4427,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.228-2014-12-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.228-2014-12-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1129-4837-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.228:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1129-4837-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.228:2014-12-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.228-2014-12-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.228' and @extension='2014-12-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.228-2014-12-01-errors-CL-abstract" />
@@ -4352,7 +4457,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.44-2015-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.44-2015-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1181-5196-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.44' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.51' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.44:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1181-5196-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.44' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.51' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.44:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.44-2015-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.44' and @extension='2015-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.44-2015-04-01-errors-CL-abstract" />
@@ -4376,7 +4482,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.229-2015-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.229-2015-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1181-5201-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.229:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1181-5201-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.229:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.229-2015-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.229' and @extension='2015-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.229-2015-04-01-errors-CL-abstract" />
@@ -4404,7 +4511,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.197-2015-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.197-2015-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1181-5202-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.197:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1181-5202-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.197:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.197-2015-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.197' and @extension='2015-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.197-2015-04-01-errors-CL-abstract" />
@@ -4432,7 +4540,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.198-2015-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.198-2015-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1181-5203-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.198:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1181-5203-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.198:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.198-2015-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.198' and @extension='2015-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.198-2015-04-01-errors-CL-abstract" />
@@ -4455,7 +4564,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.51-2015-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.51-2015-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1181-5205-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.51' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.51:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1181-5205-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.51' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.197' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.198' and @extension = '2015-04-01') and @root != '2.16.840.1.113883.10.20.5.6.194'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.51:2015-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.51-2015-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.51' and @extension='2015-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.51-2015-04-01-errors-CL-abstract" />
@@ -4483,7 +4593,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.231-2015-10-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.231-2015-10-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1202-5425-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.231' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.231:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1202-5425-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.231' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.231:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.231-2015-10-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.231' and @extension='2015-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.231-2015-10-01-errors-CL-abstract" />
@@ -4509,7 +4620,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.230-2015-10-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.230-2015-10-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1202-5428-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.230:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1202-5428-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.230:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.230-2015-10-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.230' and @extension='2015-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.230-2015-10-01-errors-CL-abstract" />
@@ -4538,7 +4650,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.147-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.147-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-81-5432-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.22.4.147'])=0">'urn:oid:2.16.840.1.113883.10.20.22.4.147' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-81-5432-CL" test="count(.//cda:templateId[@root != '2.16.840.1.113883.10.20.22.4.147'])=0">'urn:oid:2.16.840.1.113883.10.20.22.4.147' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.147-errors-CL" context="cda:substanceAdministration[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.147']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.147-errors-CL-abstract" />
@@ -4566,7 +4679,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.232-2015-10-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.232-2015-10-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1202-5605-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.232:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1202-5605-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.232:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.232-2015-10-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.232' and @extension='2015-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.232-2015-10-01-errors-CL-abstract" />
@@ -4594,7 +4708,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.233-2015-10-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.233-2015-10-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1202-5606-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.233:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1202-5606-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.233:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.233-2015-10-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.233' and @extension='2015-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.233-2015-10-01-errors-CL-abstract" />
@@ -4617,7 +4732,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.235-2015-10-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.235-2015-10-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-1202-5608-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.235:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-1202-5608-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.235:2015-10-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.235-2015-10-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.235' and @extension='2015-10-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.235-2015-10-01-errors-CL-abstract" />
@@ -4662,7 +4778,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.239-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.239-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8295-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.239:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8295-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.239:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.239-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.239' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.239-2016-08-01-errors-CL-abstract" />
@@ -4696,7 +4813,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.186-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.186-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8394-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.186:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8394-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.186:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.186-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.186' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.186-2016-08-01-errors-CL-abstract" />
@@ -4726,7 +4844,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.200-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.200-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8395-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.200:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8395-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.200:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.200-2016-08-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.200' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.200-2016-08-01-errors-CL-abstract" />
@@ -4755,7 +4874,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.177-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.177-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8396-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.175'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.177:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8396-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.175'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.177:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.177-2016-08-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.177' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.177-2016-08-01-errors-CL-abstract" />
@@ -4783,7 +4903,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.236-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.236-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8404-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.236:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8404-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.236:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.236-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.236' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.236-2016-08-01-errors-CL-abstract" />
@@ -4795,7 +4916,7 @@ Schematron generated from Trifolia on 3/6/2023
       <sch:assert id="a-3247-30653" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.6.234'][@extension='2016-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:3247-30653) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.6.234" (CONF:3247-30660). SHALL contain exactly one [1..1] @extension="2016-08-01" (CONF:3247-30661).</sch:assert>
       <sch:assert id="a-3247-30654" test="count(cda:participant[@typeCode='LOC'][count(cda:participantRole[@classCode='SDLOC'][count(cda:id[@root][@extension='FACWIDEIN'])=1][count(cda:code[@code='1250-0'][@codeSystem='2.16.840.1.113883.6.259'])=1])=1])=1">SHALL contain exactly one [1..1] participant (CONF:3247-30654) such that it SHALL contain exactly one [1..1] participantRole (CONF:3247-30655). This participantRole SHALL contain exactly one [1..1] id (CONF:3247-30656). This id SHALL contain exactly one [1..1] @root (CONF:3247-30662). This id SHALL contain exactly one [1..1] @extension="FACWIDEIN" (CONF:3247-30663). This participantRole SHALL contain exactly one [1..1] code (CodeSystem: HSLOC urn:oid:2.16.840.1.113883.6.259 DYNAMIC) (CONF:3247-30657). This code SHALL contain exactly one [1..1] @code="1250-0" (CONF:3247-30664). This code SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.259" (CONF:3247-30665). This participantRole SHALL contain exactly one [1..1] @classCode="SDLOC" Service Delivery Location (CodeSystem: HL7EntityClass urn:oid:2.16.840.1.113883.5.41 STATIC) (CONF:3247-30667). SHALL contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC) (CONF:3247-30668).</sch:assert>
       <sch:assert id="a-3247-30730" test="count(cda:entryRelationship[count(cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.235' and @extension='2015-10-01']])=1]) &gt; 0">SHALL contain at least one [1..*] entryRelationship (CONF:3247-30730) such that it SHALL contain exactly one [1..1] Summary Data Observation (HV) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.6.235:2015-10-01) (CONF:3247-30732).</sch:assert>
-      <sch:assert id="a-3247-30733-c" test="count(cda:entryRelationship/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.5.6.237']) = 123">SHALL contain at least one [1..*] entryRelationship (CONF:3247-30733) such that it SHALL contain exactly one [1..1] Blood Product Usage Summary Observation (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.6.237:2016-08-01) (CONF:3247-30735).</sch:assert>
+      <sch:assert id="a-3247-30733-c" test="count(cda:entryRelationship/cda:observation/cda:templateId[@root='2.16.840.1.113883.10.20.5.6.237']) > 1">SHALL contain at least one [1..*] entryRelationship (CONF:3247-30733) such that it SHALL contain exactly one [1..1] Blood Product Usage Summary Observation (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.6.237:2016-08-01) (CONF:3247-30735).</sch:assert>
       <sch:assert id="a-3247-30669" test="@classCode='ENC'">SHALL contain exactly one [1..1] @classCode="ENC" Encounter (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:3247-30669).</sch:assert>
       <sch:assert id="a-3247-30670" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:3247-30670).</sch:assert>
     </sch:rule>
@@ -4824,7 +4945,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.234-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.234-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.234:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.234:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.234-2016-08-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.234' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.234-2016-08-01-errors-CL-abstract" />
@@ -4848,7 +4970,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.57-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.57-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8406-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.57' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.57:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8406-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.57' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.57:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.57-2016-08-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.57' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.57-2016-08-01-errors-CL-abstract" />
@@ -4877,7 +5000,8 @@ Schematron generated from Trifolia on 3/6/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.49-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.49-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.49' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.57' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.49:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.49' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.57' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.232' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.233' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.234' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.236' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.235' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.49:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.49-2016-08-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.49' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.49-2016-08-01-errors-CL-abstract" />
@@ -4915,7 +5039,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.237-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.237-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8413-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.237:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8413-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.237' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.237:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.237-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.237' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.237-2016-08-01-errors-CL-abstract" />
@@ -4976,7 +5101,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.238-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.238-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8414-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.238:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8414-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.238:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.238-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.238' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.238-2016-08-01-errors-CL-abstract" />
@@ -5002,7 +5128,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.240-2016-08-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.240-2016-08-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3247-8428-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.240:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3247-8428-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.240' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.238' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.240:2016-08-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.240-2016-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.240' and @extension='2016-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.240-2016-08-01-errors-CL-abstract" />
@@ -5044,7 +5171,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.50-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.50-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9085-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.50' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.58' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.50:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9085-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.50' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.58' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.50:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.50-2017-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.50' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.50-2017-04-01-errors-CL-abstract" />
@@ -5067,7 +5195,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.58-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.58-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9086-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.58' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.58:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9086-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.58' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.58:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.58-2017-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.58' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.58-2017-04-01-errors-CL-abstract" />
@@ -5090,7 +5219,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.241-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.241-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9087-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.241:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9087-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.241' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.241:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.241-2017-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.241' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.241-2017-04-01-errors-CL-abstract" />
@@ -5123,7 +5253,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.242-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.242-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9092-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.242:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9092-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.242' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.242:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.242-2017-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.242' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.242-2017-04-01-errors-CL-abstract" />
@@ -5146,7 +5277,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.243-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.243-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9093-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.243:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9093-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.243:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.243-2017-04-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.243' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.243-2017-04-01-errors-CL-abstract" />
@@ -5169,7 +5301,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.59-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.59-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9145-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.59' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.59:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9145-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.59' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.59:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.59-2017-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.59' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.59-2017-04-01-errors-CL-abstract" />
@@ -5191,7 +5324,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.60-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.60-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9146-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.60' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.60:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9146-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.60' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.60:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.60-2017-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.60' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.60-2017-04-01-errors-CL-abstract" />
@@ -5213,7 +5347,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.61-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.61-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9155-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.61:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9155-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.61:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.61-2017-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.61' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.61-2017-04-01-errors-CL-abstract" />
@@ -5245,7 +5380,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.245-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.245-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9156-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.245:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9156-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.245:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.245-2017-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.245' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.245-2017-04-01-errors-CL-abstract" />
@@ -5277,7 +5413,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.246-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.246-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9157-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.246:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9157-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.246:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.246-2017-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.246' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.246-2017-04-01-errors-CL-abstract" />
@@ -5308,7 +5445,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.247-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.247-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9158-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.247:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9158-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.247:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.247-2017-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.247' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.247-2017-04-01-errors-CL-abstract" />
@@ -5349,7 +5487,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.244-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.244-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9184-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and @root != '2.16.840.1.113883.10.20.22.4.12'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.244:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9184-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and @root != '2.16.840.1.113883.10.20.22.4.12'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.244:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.244-2017-04-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.244' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.244-2017-04-01-errors-CL-abstract" />
@@ -5377,7 +5516,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.248-2017-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.248-2017-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3311-9185-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.248:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3311-9185-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.248:2017-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.248-2017-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.248' and @extension='2017-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.248-2017-04-01-errors-CL-abstract" />
@@ -5405,7 +5545,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9762-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.249:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9762-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.249:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-errors-CL" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.249' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-errors-CL-abstract" />
@@ -5433,7 +5574,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.41-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.41-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9763-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.41' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.48' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.41:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9763-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.41' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.48' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.41:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.41-2018-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.41' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.41-2018-04-01-errors-CL-abstract" />
@@ -5455,7 +5597,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.48-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.48-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9774-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.48' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.48:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9774-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.48' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.191' and @root != '2.16.840.1.113883.10.20.5.6.185'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.48:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.48-2018-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.48' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.48-2018-04-01-errors-CL-abstract" />
@@ -5477,7 +5620,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9778-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.62:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9778-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.62:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.62' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors-CL-abstract" />
@@ -5509,7 +5653,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.250-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.250-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9793-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.250:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9793-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.250:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.250-2018-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.250' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.250-2018-04-01-errors-CL-abstract" />
@@ -5541,7 +5686,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.251-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.251-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9794-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.251:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9794-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.251:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.251-2018-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.251' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.251-2018-04-01-errors-CL-abstract" />
@@ -5573,7 +5719,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.252-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.252-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9795-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.252:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9795-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.252:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.252-2018-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.252' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.252-2018-04-01-errors-CL-abstract" />
@@ -5606,7 +5753,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.33-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.33-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9796-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.33' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.33:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9796-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.33' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.33:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.33-2018-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.33' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.33-2018-04-01-errors-CL-abstract" />
@@ -5643,7 +5791,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.253-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.253-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9800-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.253:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9800-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.253:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.253-2018-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.253' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.253-2018-04-01-errors-CL-abstract" />
@@ -5707,7 +5856,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.40-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.40-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9841-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.40' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.40:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9841-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.40' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.40:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.40-2018-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.40' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.40-2018-04-01-errors-CL-abstract" />
@@ -5735,7 +5885,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.42-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.42-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9842-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.42' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.42:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9842-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.42' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.42:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.42-2018-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.42' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.42-2018-04-01-errors-CL-abstract" />
@@ -5763,7 +5914,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.45-2018-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.45-2018-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-3357-9844-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.45' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.50' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.45:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-3357-9844-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.45' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.50' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.196' and @root != '2.16.840.1.113883.10.20.5.6.195' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.45:2018-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.45-2018-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.45' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.45-2018-04-01-errors-CL-abstract" />
@@ -5791,7 +5943,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.55-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.55-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11272-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.55' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.55:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11272-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.55' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.5.47' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.184' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.55:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.55-2019-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.55' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.55-2019-04-01-errors-CL-abstract" />
@@ -5819,7 +5972,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.46-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.46-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11388-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.46' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.52' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.46:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11388-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.46' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.52' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.46:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.46-2019-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.46' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.46-2019-04-01-errors-CL-abstract" />
@@ -5839,7 +5993,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.66-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.66-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11401-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.66' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.66:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11401-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.66' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.66:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.66-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.66' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.66-2019-04-01-errors-CL-abstract" />
@@ -5862,7 +6017,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.212-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.212-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11402-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.212:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11402-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.212:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.212-2019-04-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.212' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.212-2019-04-01-errors-CL-abstract" />
@@ -5891,7 +6047,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.208-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.208-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11403-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.208:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11403-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.208:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.208-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.208' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.208-2019-04-01-errors-CL-abstract" />
@@ -5929,7 +6086,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.259-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.259-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11404-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.259:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11404-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.259:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.259-2019-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.259' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.259-2019-04-01-errors-CL-abstract" />
@@ -5952,7 +6110,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.67-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.67-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.67' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.67:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11405-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.67' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.67:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.67-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.67' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.67-2019-04-01-errors-CL-abstract" />
@@ -5977,7 +6136,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.68-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.68-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.68' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.68:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11407-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.68' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.68:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.68-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.68' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.68-2019-04-01-errors-CL-abstract" />
@@ -6017,7 +6177,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.140-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.140-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11453-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.140:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11453-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.140:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.140-2019-04-01-errors-CL" context="cda:substanceAdministration[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.140' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.140-2019-04-01-errors-CL-abstract" />
@@ -6046,7 +6207,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.181-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.181-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11454-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.181:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11454-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.181:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.181-2019-04-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.181' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.181-2019-04-01-errors-CL-abstract" />
@@ -6073,7 +6235,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.41-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.41-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11455-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.41' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.133' and @root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.124' and @root != '2.16.840.1.113883.10.20.5.6.203'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.41:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11455-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.41' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.133' and @root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.124' and @root != '2.16.840.1.113883.10.20.5.6.203'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.41:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.41-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.41' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.41-2019-04-01-errors-CL-abstract" />
@@ -6110,7 +6273,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.149-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.149-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11457-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.149:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11457-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.149:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.149-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.149' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.149-2019-04-01-errors-CL-abstract" />
@@ -6151,7 +6315,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.157-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.157-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11458-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.157:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11458-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.157:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.157-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.157' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.157-2019-04-01-errors-CL-abstract" />
@@ -6174,7 +6339,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.69-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.69-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11501-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.69' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.69:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11501-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.69' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.69:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.69-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.69' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.69-2019-04-01-errors-CL-abstract" />
@@ -6197,7 +6363,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.70-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.70-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11546-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.70' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.70:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11546-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.70' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.126'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.70:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.70-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.70' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.70-2019-04-01-errors-CL-abstract" />
@@ -6225,7 +6392,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.261-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.261-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11548-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.261:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11548-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.261:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.261-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.261' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.261-2019-04-01-errors-CL-abstract" />
@@ -6247,7 +6415,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.71-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.71-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11553-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.71' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.71:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11553-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.71' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.71:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.71-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.71' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.71-2019-04-01-errors-CL-abstract" />
@@ -6284,7 +6453,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.262-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.262-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11554-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.262:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11554-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.262:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.262-2019-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.262' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.262-2019-04-01-errors-CL-abstract" />
@@ -6318,7 +6488,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.263-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.263-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11560-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.263:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11560-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.263:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.263-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.263' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.263-2019-04-01-errors-CL-abstract" />
@@ -6341,7 +6512,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.72-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.72-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11562-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.72' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.72:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11562-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.72' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.72:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.72-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.72' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.72-2019-04-01-errors-CL-abstract" />
@@ -6364,7 +6536,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.199-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.199-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11566-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.199:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11566-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.199:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.199-2019-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.199' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.199-2019-04-01-errors-CL-abstract" />
@@ -6387,7 +6560,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.52-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.52-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11567-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.52' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.52:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11567-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.52' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.199' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.229' and @extension = '2015-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.52:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.52-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.52' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.52-2019-04-01-errors-CL-abstract" />
@@ -6416,7 +6590,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.265-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.265-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-11568-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.265:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-11568-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.22.4.14'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.265:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.265-2019-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.265' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.265-2019-04-01-errors-CL-abstract" />
@@ -6440,7 +6615,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.255-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.255-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-12003-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.255:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-12003-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.255:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.255-2019-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.255' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.255-2019-04-01-errors-CL-abstract" />
@@ -6463,7 +6639,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.65-2019-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.65-2019-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4395-12004-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.65' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.65:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4395-12004-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.65' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.65:2019-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.65-2019-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.65' and @extension='2019-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.65-2019-04-01-errors-CL-abstract" />
@@ -6502,7 +6679,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.32-2020-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.32-2020-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4459-12137-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.32' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.32:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4459-12137-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.32' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.32:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.32-2020-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.32' and @extension='2020-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.32-2020-04-01-errors-CL-abstract" />
@@ -6529,7 +6707,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.188-2020-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.188-2020-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4459-12138-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.188:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4459-12138-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.188:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.188-2020-04-01-errors-CL" context="cda:procedure[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.188' and @extension='2020-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.188-2020-04-01-errors-CL-abstract" />
@@ -6567,7 +6746,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.187-2020-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.187-2020-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4459-12139-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.187:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4459-12139-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.187:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.187-2020-04-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.187' and @extension='2020-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.187-2020-04-01-errors-CL-abstract" />
@@ -6590,7 +6770,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.202-2020-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.202-2020-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4459-12141-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.202:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4459-12141-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.202:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.202-2020-04-01-errors-CL" context="cda:participant[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.202' and @extension='2020-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.202-2020-04-01-errors-CL-abstract" />
@@ -6617,7 +6798,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.201-2020-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.201-2020-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4459-12142-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.201:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4459-12142-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.201:2020-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.201-2020-04-01-errors-CL" context="cda:organizer[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.201' and @extension='2020-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.201-2020-04-01-errors-CL-abstract" />
@@ -6647,7 +6829,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.270-2021-01-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.270-2021-01-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4475-12244-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.270:2021-01-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4475-12244-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.270:2021-01-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.270-2021-01-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.270' and @extension='2021-01-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.270-2021-01-01-errors-CL-abstract" />
@@ -6670,7 +6853,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.80-2021-01-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.80-2021-01-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4475-12245-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.80:2021-01-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4475-12245-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01') and @root != '2.16.840.1.113883.10.20.22.4.4'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.80:2021-01-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.80-2021-01-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.80' and @extension='2021-01-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.80-2021-01-01-errors-CL-abstract" />
@@ -6749,7 +6933,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.271-2022-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.271-2022-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4523-12538-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.271:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4523-12538-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.271:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.271-2022-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.271' and @extension='2022-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.271-2022-04-01-errors-CL-abstract" />
@@ -6777,7 +6962,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.272-2022-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.272-2022-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4523-12539-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.272:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4523-12539-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.272:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.272-2022-04-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.272' and @extension='2022-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.272-2022-04-01-errors-CL-abstract" />
@@ -6799,7 +6985,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.49-2022-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.49-2022-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4523-12540-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.49' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.49:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4523-12540-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.49' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.49:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.49-2022-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.49' and @extension='2022-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.49-2022-04-01-errors-CL-abstract" />
@@ -6827,7 +7014,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.43-2022-04-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.43-2022-04-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4523-12541-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.43' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.49' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.43:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4523-12541-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.43' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.5.49' and @extension = '2022-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.193' and @root != '2.16.840.1.113883.10.20.5.6.192' and @root != '2.16.840.1.113883.10.20.5.6.185' and not(@root = '2.16.840.1.113883.10.20.5.6.221' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.271' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.272' and @extension = '2022-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.43:2022-04-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.43-2022-04-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.43' and @extension='2022-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.43-2022-04-01-errors-CL-abstract" />
@@ -6874,7 +7062,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.293-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.293-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12684-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.293:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12684-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.6.293:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.293-2023-02-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.293' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.293-2023-02-01-errors-CL-abstract" />
@@ -6897,7 +7086,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.37-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.37-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12685-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.37' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.37:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12685-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.5.37' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.5.37:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.37-2023-02-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.37' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.37-2023-02-01-errors-CL-abstract" />
@@ -6935,7 +7125,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.37-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.37-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12686-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.37' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.37' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.41' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.133' and @root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.124' and @root != '2.16.840.1.113883.10.20.5.6.203' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.37:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12686-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.37' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.37' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.125' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.169' and @root != '2.16.840.1.113883.10.20.5.6.172' and @root != '2.16.840.1.113883.10.20.5.6.115' and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.293' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.41' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.181' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.157' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.140' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.230' and @extension = '2015-10-01') and not(@root = '2.16.840.1.113883.10.20.5.6.239' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.141' and not(@root = '2.16.840.1.113883.10.20.5.6.149' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.168' and @root != '2.16.840.1.113883.10.20.5.6.134' and not(@root = '2.16.840.1.113883.10.20.5.6.219' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.133' and @root != '2.16.840.1.113883.10.20.5.6.121' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.124' and @root != '2.16.840.1.113883.10.20.5.6.203' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.37:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.37-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.37' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.37-2023-02-01-errors-CL-abstract" />
@@ -6971,7 +7162,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.56-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.56-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12687-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.56' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.67' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.5.68' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.56:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12687-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.56' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.67' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.259' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.5.68' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.56:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.56-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.56' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.56-2023-02-01-errors-CL-abstract" />
@@ -7005,7 +7197,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.31-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.31-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12688-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.31' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.32' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.31:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12688-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.31' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.32' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.188' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.187' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.266' and @extension = '2020-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.201' and @extension = '2020-04-01') and @root != '2.16.840.1.113883.10.20.5.6.190' and @root != '2.16.840.1.113883.10.20.22.4.1' and @root != '2.16.840.1.113883.10.20.5.6.189' and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.6.177' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.200' and @extension = '2016-08-01') and not(@root = '2.16.840.1.113883.10.20.5.6.186' and @extension = '2016-08-01') and @root != '2.16.840.1.113883.10.20.5.6.175' and not(@root = '2.16.840.1.113883.10.20.5.6.202' and @extension = '2020-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.31:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.31-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.31' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.31-2023-02-01-errors-CL-abstract" />
@@ -7044,7 +7237,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.32-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.32-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12689-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.32' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.33' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.5.38' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.32:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12689-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.32' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.33' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.245' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.247' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.246' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.250' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.252' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.251' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.253' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.5.38' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.32:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.32-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.32' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.32-2023-02-01-errors-CL-abstract" />
@@ -7079,7 +7273,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.36-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.36-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12690-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.36' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.34' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.5.42' and @root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.36:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12690-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.36' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.34' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.116' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.179' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.130' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.183' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.162' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.16' and not(@root = '2.16.840.1.113883.10.20.5.6.118' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.19' and not(@root = '2.16.840.1.113883.10.20.5.6.216' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.6.167' and @root != '2.16.840.1.113883.10.20.5.6.163' and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.6.217' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.5.42' and @root != '2.16.840.1.113883.10.20.5.6.155' and @root != '2.16.840.1.113883.10.20.5.6.159' and @root != '2.16.840.1.113883.10.20.5.6.158' and @root != '2.16.840.1.113883.10.20.5.6.129' and @root != '2.16.840.1.113883.10.20.5.6.148'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.36:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.36-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.36' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.36-2023-02-01-errors-CL-abstract" />
@@ -7114,7 +7309,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.38-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.38-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12691-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.38' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.46' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.5.44' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.38:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12691-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.38' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.46' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.146' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.165' and @root != '2.16.840.1.113883.10.20.5.6.164' and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.6.222' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.223' and @extension = '2014-12-01') and @root != '2.16.840.1.113883.10.20.22.4.1' and not(@root = '2.16.840.1.113883.10.20.5.6.224' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.225' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.226' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.5.44' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.151' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.228' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.218' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.227' and @extension = '2014-12-01') and not(@root = '2.16.840.1.113883.10.20.5.6.220' and @extension = '2014-12-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.38:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.38-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.38' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.38-2023-02-01-errors-CL-abstract" />
@@ -7146,7 +7342,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.35.2-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.35.2-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12692-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.35.2' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.43.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204' and @root != '2.16.840.1.113883.10.20.5.5.35' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.35.2:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12692-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.35.2' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.43.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.153.2' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.112' and @root != '2.16.840.1.113883.10.20.22.4.16' and @root != '2.16.840.1.113883.10.20.5.6.166' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.117' and @root != '2.16.840.1.113883.10.20.5.6.204' and @root != '2.16.840.1.113883.10.20.5.5.35' and @root != '2.16.840.1.113883.10.20.5.6.156' and @root != '2.16.840.1.113883.10.20.5.6.174' and @root != '2.16.840.1.113883.10.20.5.6.128' and @root != '2.16.840.1.113883.10.20.5.6.170' and @root != '2.16.840.1.113883.10.20.5.6.123' and @root != '2.16.840.1.113883.10.20.5.6.131' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.173' and @root != '2.16.840.1.113883.10.20.5.6.113' and @root != '2.16.840.1.113883.10.20.5.6.127'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.35.2:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.35.2-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.35.2' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.35.2-2023-02-01-errors-CL-abstract" />
@@ -7182,7 +7379,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.33.2-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.33.2-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12693-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.33.2' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.39.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.5.6.206' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.33.2:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12693-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.33.2' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.39.2' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.205' and @root != '2.16.840.1.113883.10.20.5.6.206' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.33.2:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.33.2-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.33.2' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.33.2-2023-02-01-errors-CL-abstract" />
@@ -7221,7 +7419,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.34-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.34-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12694-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.34' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.36' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132' and @root != '2.16.840.1.113883.10.20.5.5.40' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.34:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12694-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.34' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.5.36' and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.171' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.6.132' and @root != '2.16.840.1.113883.10.20.5.5.40' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.34:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.34-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.34' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.34-2023-02-01-errors-CL-abstract" />
@@ -7264,7 +7463,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.58-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.58-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12695-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.58' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.72' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.71' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.58:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12695-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.58' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.72' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.71' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.262' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.49'])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.58:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.58-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.58' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.58-2023-02-01-errors-CL-abstract" />
@@ -7301,7 +7501,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.53-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.53-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12696-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.53' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.64' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and not(@root = '2.16.840.1.113883.10.20.5.6.257' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.65' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.53:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12696-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.53' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.64' and @extension = '2018-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and not(@root = '2.16.840.1.113883.10.20.5.6.257' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.65' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.137' and @root != '2.16.840.1.113883.10.20.22.4.27' and @root != '2.16.840.1.113883.10.20.5.6.138' and @root != '2.16.840.1.113883.10.20.5.6.122' and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.6.255' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.53:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.53-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.53' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.53-2023-02-01-errors-CL-abstract" />
@@ -7333,7 +7534,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.54-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.54-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12697-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.54' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.66' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.54:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12697-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.54' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.66' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.212' and @extension = '2019-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.208' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.54:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.54-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.54' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.54-2023-02-01-errors-CL-abstract" />
@@ -7366,7 +7568,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.57-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.57-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12698-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.57' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.69' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.5.70' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.57:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12698-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.57' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.69' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.6.263' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and not(@root = '2.16.840.1.113883.10.20.5.6.261' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.13' and not(@root = '2.16.840.1.113883.10.20.5.6.265' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.22.4.14' and not(@root = '2.16.840.1.113883.10.20.5.5.70' and @extension = '2019-04-01') and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.57:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.57-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.57' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.57-2023-02-01-errors-CL-abstract" />
@@ -7405,7 +7608,8 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.51-2023-02-01-CLOSEDTEMPLATE">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.51-2023-02-01-errors-CL-abstract" abstract="true">
       <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4545-12699-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.51' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.59' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.60' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.51:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+<!-- <sch:assert id="a-4545-12699-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.51' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.4.27' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.59' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.6.139' and @root != '2.16.840.1.113883.10.20.22.4.4' and @root != '2.16.840.1.113883.10.20.5.6.180' and @root != '2.16.840.1.113883.10.20.5.6.119' and @root != '2.16.840.1.113883.10.20.22.4.19' and @root != '2.16.840.1.113883.10.20.5.6.135' and @root != '2.16.840.1.113883.10.20.5.6.160' and @root != '2.16.840.1.113883.10.20.5.6.114' and @root != '2.16.840.1.113883.10.20.5.6.144' and @root != '2.16.840.1.113883.10.20.5.6.120' and @root != '2.16.840.1.113883.10.20.22.4.79' and @root != '2.16.840.1.113883.10.20.5.6.136' and @root != '2.16.840.1.113883.10.20.5.6.150' and @root != '2.16.840.1.113883.10.20.5.6.154' and @root != '2.16.840.1.113883.10.20.22.4.14' and @root != '2.16.840.1.113883.10.20.5.5.45' and @root != '2.16.840.1.113883.10.20.5.6.182' and @root != '2.16.840.1.113883.10.20.5.6.145' and @root != '2.16.840.1.113883.10.20.22.4.2' and @root != '2.16.840.1.113883.10.20.5.6.147' and @root != '2.16.840.1.113883.10.20.5.6.126' and @root != '2.16.840.1.113883.10.20.5.6.142' and not(@root = '2.16.840.1.113883.10.20.5.5.60' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.244' and @extension = '2017-04-01') and @root != '2.16.840.1.113883.10.20.22.4.12' and not(@root = '2.16.840.1.113883.10.20.5.6.248' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.5.80' and @extension = '2021-01-01') and not(@root = '2.16.840.1.113883.10.20.5.6.270' and @extension = '2021-01-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.51:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert>
+ -->
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.51-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.51' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.51-2023-02-01-errors-CL-abstract" />
