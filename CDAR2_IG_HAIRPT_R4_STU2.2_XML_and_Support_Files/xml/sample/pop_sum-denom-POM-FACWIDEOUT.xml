@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Prevention Process and Outcome Measures Monthly Monitoring Denominator (POM) sample report (FACWIDEIN)
+        Filename: pop_sum-denom-POM.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_STU2.2 (HAI R4 STU2.2) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Comments precede their subject -->
+
+    <!-- This is a population-summary report. -->
+    <realmCode code="US" />
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+    <!-- Published in HAI IG R4D2 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.4.2" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- Conformant to the HAI Population Summary Report Generic Constraints  -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+    <!-- Conformant to the Prevention Process and Outcome Measures (POM) Summary Report (V4)  -->
+    <templateId extension="2022-04-01" root="2.16.840.1.113883.10.20.5.43" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id extension="20202201" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+    <code code="51897-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare Associated Infection Report" />
+    <title>Prevention Process and Outcome Measures (POM) Monthly Monitoring</title>
+    <!-- Document-creation date -->
+    <effectiveTime value="20080701" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <setId extension="33" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- This is a population summary report -->
+            <id nullFlavor="NA" />
+        </patientRole>
+    </recordTarget>
+    <!-- The author of a population summary report is the software forming the message. -->
+    <author>
+        <time value="20080701" />
+        <assignedAuthor>
+            <id extension="aSoftwareID" root="2.16.840.1.113883.3.117.1.1.5.2.1.1" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20080701" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <!-- The group participant in a population-summary report-->
+    <participant contextControlCode="OP" typeCode="SBJ">
+        <associatedEntity classCode="PRS">
+            <code code="389109008" codeSystem="2.16.840.1.113883.6.96" displayName="group" />
+        </associatedEntity>
+    </participant>
+    <!-- The location participant (facility) -->
+    <participant contextControlCode="OP" typeCode="LOC">
+        <associatedEntity classCode="SDLOC">
+
+            <!--ID of facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+        </associatedEntity>
+    </participant>
+    <!-- The period reported -->
+    <documentationOf>
+        <serviceEvent classCode="CASE">
+            <code code="1884-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Summary data reporting Active Surveillance Testing" />
+            <effectiveTime>
+                <!-- the first day of the period reported -->
+                <low value="20080601" />
+                <!-- the last day of the period reported -->
+                <high value="20080630" />
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+            Summary Data Section (POM) (V3)
+         ******************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId extension="2022-04-01" root="2.16.840.1.113883.10.20.5.5.49" />
+                    <code code="51900-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summary Section" />
+                    <title>Summary Data</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content styleCode="Bold">Facility Location</content>
+                                    </td>
+                                    <td>FACWIDEOUT Facility-wide Outpatient (FacWIDEOut)</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of encounters</td>
+                                    <td>75</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of observations in which hand hygiene was indicated</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of observations in which hand hygiene was performed</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of observations in which the use of gown and gloves was indicated</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of observations in which gown and gloves were used</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Active surveillance testing (AST) organism monitored</td>
+                                    <td> Methicillin resistant Staphylococcus aureus (organism)</td>
+                                </tr>
+                                <tr>
+                                    <td>Timing of active surveillance testing (AST)</td>
+                                    <td> On admission only</td>
+                                </tr>
+                                <tr>
+                                    <td>Active surveillance testing (AST) eligible patients</td>
+                                    <td> All patients</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of patients eligible for monitoring at admission/transfer in</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of patients on which monitoring was performed at admission/transfer in</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of patients eligible for monitoring at discharge/transfer out</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of patients on which monitoring was performed at discharge/transfer out</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Prevalent cases identified (clinical positive)</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Prevalent cases previously known</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Incident cases</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>C. difficile primary testing method used most often for this quarter</td>
+                                    <td> GDHNAAT - GDH plus NAAT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+
+                            <!-- Summary Encounter (POM) (R1) -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.193" />
+                            <!-- the location id and type -->
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <!-- In-facility locations, Facwidein, and Facwideout require the root with a extension and code element. -->
+                                    <id extension="FACWIDEOUT" root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                                    <code code="1251-8" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" displayName="FACWIDEOUT" />
+                                </participantRole>
+                            </participant>
+                            <!-- Total Facility Encounters -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="1863-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of encounters" />
+                                    <statusCode code="completed" />
+                                    <value value="75" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- If the report is facility-wide, inpatient, NHSN requires
+                          two additional observations here, constructed as above
+                          but with different codes:
+                            1830-9 Number of Patient Days as adjusted for C.Diff reporting
+                            1831-7 Number of Admissions as adjusted for C.Diff reporting
+                          
+                          If the report is not facility-wide, NHSN will collect
+                          but does not require the surveillance details shown below. -->
+                            <!-- If monitoring MDRO facility-wide Inpatient, NHSN requires additional observations:
+                                (constructed above but with different codes):
+                                MDRO Patient Days  1827-5 Number of Patient Days adjusted for MDRO reporting (for inpatient location)
+                                MDRO Admissions    1828-3 Number of Admissions adjusted for MDRO reporting (for inpatient location) -->
+                            <!-- ***** As of R3D3 - the following is not longer required: ***
+                                If monitoring MDRO facility-wide Outpatient, NHSN requires additional observation:
+                                (constructed above but with different codes):
+                                MDRO Encounters    1829-1 Number of Encounters adjusted for MDRO reporting (for outpatient location) -->
+                            <!-- *** As of R3D3 - the following is no longer required *** -->
+                            <!-- C.Diff Encounters (FACWIDEOUT) -->
+                            <!--<entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-\- Summary Data Observation POM -\->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1832-5"
+                    displayName="Number of encounters adjusted for C.Diff reporting" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="26" />
+                </observation>
+              </entryRelationship>-->
+                            <!-- *** As of R3D3 - the following is no longer required *** -->
+                            <!-- MDRO Encounters (FACWIDEOUT) -->
+                            <!--<entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-\- Summary Data Observation POM -\->
+                  <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                  <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1829-3"
+                    displayName="Number of encounters adjusted for MDRO reporting" />
+                  <statusCode code="completed" />
+                  <value xsi:type="INT" value="22" />
+                </observation>
+              </entryRelationship>-->
+                            <!-- Number hand hygiene indicated -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="1864-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of observations in which hand hygiene was indicated" />
+                                    <statusCode code="completed" />
+                                    <value value="30" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number hand hygiene performed -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="1865-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of observations in which hand hygiene was performed" />
+                                    <statusCode code="completed" />
+                                    <value value="30" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number gown and gloves indicated -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="1866-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of observations in which gown and gloves were indicated" />
+                                    <statusCode code="completed" />
+                                    <value value="30" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number gown and gloves used -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="1867-1 " codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of observations in which gown and gloves were used" />
+                                    <statusCode code="completed" />
+                                    <value value="30" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- MRSA was monitored -->
+                            <entryRelationship negationInd="false" typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Summary Data Observation POM -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.192" />
+                                    <code code="3193-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="AST Organism Monitored" />
+                                    <statusCode code="completed" />
+                                    <value code="115329001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="MRSA" xsi:type="CD" />
+                                    <!-- Timing of AST -->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1870-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Timing" />
+                                            <!-- OnAdmission or OnAdmissionAndDischarge -->
+                                            <statusCode code="completed" />
+                                            <value code="2201-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="On admission only" xsi:type="CD" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Criterion for AST -->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1871-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Eligibility Criterion" />
+                                            <statusCode code="completed" />
+                                            <!-- All or NHxOnly -->
+                                            <value code="2301-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="All patients" xsi:type="CD" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number eligible on admission-->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1872-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of patients eligible on admission" />
+                                            <statusCode code="completed" />
+                                            <value value="20" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number performed on admission-->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1873-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number performed on admission" />
+                                            <statusCode code="completed" />
+                                            <value value="19" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number eligible on discharge/transfer -->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1874-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of patients eligible on discharge/transfer" />
+                                            <statusCode code="completed" />
+                                            <value value="15" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number performed on discharge/transfer-->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1875-4" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number performed on discharge/transfer" />
+                                            <statusCode code="completed" />
+                                            <value value="15" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number prevalent cases AST/clinical positive-->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1876-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Prevalent cases identified (clinical positive)" />
+                                            <statusCode code="completed" />
+                                            <value value="2" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number prevalent cases previously known-->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1877-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Prevalent cases previously known" />
+                                            <statusCode code="completed" />
+                                            <value value="0" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- Number incident cases -->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="1878-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Incident cases" />
+                                            <statusCode code="completed" />
+                                            <value value="0" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                            <!-- end of AST for MRSA data -->
+                        </encounter>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Primary C. Difficile Testing Method This Quarter -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- Primary C. Difficile Testing Method This Quarter -->
+                            <templateId extension="2014-12-01" root="2.16.840.1.113883.10.20.5.6.221" />
+                            <id nullFlavor="NA" />
+                            <code code="2029-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="C. difficile primary testing method used most often for this quarter" />
+                            <statusCode code="completed" />
+                            <value code="2034-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="GDHNAAT - GDH plus NAAT" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          Report No Events Section
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D3] Report No Events Section -->
+                    <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.5.62" />
+                    <code code="90252-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report No Events Section" />
+                    <title>Report No Events</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Report No Events: Infection Surveillance: MRSA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D3] Report No Events -->
+                            <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.6.249" />
+                            <code code="3029-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Report no infection surveillance events - Methicillin-resistant Staphylococcus aureus" />
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
