@@ -697,9 +697,9 @@
               <!-- *************************************************************************************************** -->
 
               <!-- Blood product summaries 
-                  There SHALL be exactly 123 Blood Product Usage Summary Observation (V2) 
-                  entryRelationships (one for each value in the value set NHSN Summary
-                  Blood Product Usage (urn:oid:2.16.840.1.114222.4.11.7353))
+                  There shall be one Blood Product Usage Summary Observation (V2) 
+                  entryRelationship for each value in the value set NHSN Summary
+                  Blood Product Usage (urn:oid:2.16.840.1.114222.4.11.7353)
              -->
 
               <!-- *************************************************************************************************** -->
