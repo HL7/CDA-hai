@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<axsl:stylesheet xmlns:axsl="http://www.w3.org/1999/XSL/Transform" xmlns:sch="http://purl.oclc.org/dsdl/schematron" version="1.0" xmlns:voc="http://www.lantanagroup.com/voc" voc:dummy-for-xmlns="" xmlns:svs="urn:ihe:iti:svs:2008" svs:dummy-for-xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy-for-xmlns="" xmlns:sdtc="urn:hl7-org:sdtc" sdtc:dummy-for-xmlns="" xmlns:cda="urn:hl7-org:v3" cda:dummy-for-xmlns="">
-<axsl:output indent="yes" standalone="yes" omit-xml-declaration="no" method="xml"/>
-<axsl:template mode="schematron-get-full-path" match="*|@*">
-<axsl:apply-templates mode="schematron-get-full-path" select="parent::*"/>
-<axsl:text>/</axsl:text>
-<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
-<axsl:value-of select="name()"/>
-<axsl:text>[</axsl:text>
-<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
-<axsl:text>]</axsl:text>
-</axsl:template>
-<axsl:template match="/">
-<schematron-output phase="manual" schemaVersion="" title="">
-<ns prefix="voc" uri="http://www.lantanagroup.com/voc"/>
-<ns prefix="svs" uri="urn:ihe:iti:svs:2008"/>
-<ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
-<ns prefix="sdtc" uri="urn:hl7-org:sdtc"/>
-<ns prefix="cda" uri="urn:hl7-org:v3"/>
-</schematron-output>
-</axsl:template>
-<axsl:template priority="-1" match="text()"/>
-</axsl:stylesheet>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:voc="http://www.lantanagroup.com/voc"
+                xmlns:svs="urn:ihe:iti:svs:2008"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:sdtc="urn:hl7-org:sdtc"
+                xmlns:cda="urn:hl7-org:v3"
+                version="1.0"
+                voc:dummy-for-xmlns=""
+                svs:dummy-for-xmlns=""
+                xsi:dummy-for-xmlns=""
+                sdtc:dummy-for-xmlns=""
+                cda:dummy-for-xmlns="">
+   <xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+   <xsl:template match="*|@*" mode="schematron-get-full-path">
+      <xsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+      <xsl:text>/</xsl:text>
+      <xsl:if test="count(. | ../@*) = count(../@*)">@</xsl:if>
+      <xsl:value-of select="name()"/>
+      <xsl:text>[</xsl:text>
+      <xsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+      <xsl:text>]</xsl:text>
+   </xsl:template>
+   <xsl:template match="/">
+      <schematron-output title="" schemaVersion="" phase="manual">
+         <ns uri="http://www.lantanagroup.com/voc" prefix="voc"/>
+         <ns uri="urn:ihe:iti:svs:2008" prefix="svs"/>
+         <ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
+         <ns uri="urn:hl7-org:sdtc" prefix="sdtc"/>
+         <ns uri="urn:hl7-org:v3" prefix="cda"/>
+      </schematron-output>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1"/>
+</xsl:stylesheet>
