@@ -141,7 +141,7 @@
             <component>
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-                    <templateId extension="2020-04-01" root="2.16.840.1.113883.10.20.5.5.32" />
+                    <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.5.32" />
                     <code code="18769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Findings section" />
                     <title>Findings</title>
                     <text xmlns:sdtc="urn:hl7-org:sdtc">
@@ -350,7 +350,7 @@
                     <entry typeCode="DRIV">
                         <procedure classCode="PROC" moodCode="EVN">
                             <!-- [HAI R3N1] Specimen Collection Procedure (ARO) (V4) -->
-                            <templateId extension="2020-04-01" root="2.16.840.1.113883.10.20.5.6.188" />
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.188" />
                             <!-- Date specimen collected -->
                             <effectiveTime value="20200121" />
                             <specimen>
@@ -394,7 +394,7 @@
                             <entryRelationship inversionInd="true" typeCode="COMP">
                                 <organizer classCode="CLUSTER" moodCode="EVN">
                                     <!-- [HAI R3N1] Isolate Susceptibility Tests Organizer (V4)  -->
-                                    <templateId extension="2020-04-01" root="2.16.840.1.113883.10.20.5.6.201" />
+                                    <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.201" />
                                     <id nullFlavor="NA" />
                                     <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microbiology Studies" />
                                     <statusCode code="completed" />
