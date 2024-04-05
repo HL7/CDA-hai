@@ -93,30 +93,6 @@
             <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
         </assignedEntity>
     </legalAuthenticator>
-
-    <!-- ************************************************************************ -->
-    <!-- Interpreter Used by Patient This Encounter -->
-    <!-- Can only use any participation here (using perfomer) -->
-    <!--<participant typeCode="PRF">
-        <associatedEntity classCode="">
-            <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
-        </associatedEntity>
-    </participant>-->
-    <!-- ************************************************************************ -->
-
-    <!-- ************************************************************************ -->
-    <!-- Interpreter Used by Patient This Encounter -->
-    <documentationOf>
-        <serviceEvent>
-            <performer typeCode="PRF">
-                <assignedEntity>
-                    <id nullFlavor="NI"/>
-                    <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
-                </assignedEntity>
-            </performer>
-        </serviceEvent>
-    </documentationOf>
-    <!-- ************************************************************************ -->
     
     <!-- The related document that this document has replaced -->
     <relatedDocument typeCode="RPLC">
@@ -141,14 +117,6 @@
                 <!-- Or, if outpatient, use the Date Specimen Collected -->
                 <low value="20200121" />
             </effectiveTime>
-            <!-- ************************************************************************ -->
-            <!-- Interpreter Used by Patient This Encounter -->
-            <!-- Can only use typeCode=admitter, attender, consultant, discharger, referrer here. Could possibly use "consultant", but the def'n is "an advising practitioner participating in the encounter by performing evaluations and making recommendations" -->
-            <!--<encounterParticipant typeCode="">
-                <assignedEntity>
-                    <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
-                </assignedEntity>
-            </encounterParticipant>-->
             <!-- Facility ID -->
             <!-- (The in-facility location where specimen was collected,
               and date specimen collected, are recorded with the
@@ -159,6 +127,9 @@
                     <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
                 </healthCareFacility>
             </location>
+            <!-- This is an alternative to the Interpreter Used by Patient This Encounter Observation in the 
+                 NHSN Social History Section - to be decided which option through the ballot process 
+                 See Volume 1 "Questions for Ballot Commenters" -->
             <!-- If sdtc:specialArrangementCode is present and @code="int" then an interpreter was used in this encounter,
                  if sdtc:specialArragementCode is not present (or is present but @code!="int" then an interpreter was not used in this encounter -->
             <sdtc:specialArrangementCode code="int" codeSystem="2.16.840.1.113883.4.642.1.1090" codeSystemName="Special arrangements" displayName="Interpreter" />
@@ -833,7 +804,9 @@
                         </observation>
                     </entry>
 
-                    <!-- Could also add this as an alternative to a participant -->
+                    <!-- This is an alternative to having sdtc:specialArrangementCode in the encompassingEncounter in the header
+                         to be decided which option through the ballot process
+                         See Volume 1 "Questions for Ballot Commenters" -->
                     <entry typeCode="DRIV">
                         <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
                             If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
