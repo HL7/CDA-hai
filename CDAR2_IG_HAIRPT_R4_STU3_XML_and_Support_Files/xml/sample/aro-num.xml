@@ -493,8 +493,6 @@
                                         </organizer>
                                     </component>-->
                                     
-                                    <!-- If no gene or protein tests were run then we need a code to report that no tests were run - need to be able to assert that no tests were run -->
-                                    <!-- ******************************************** -->
                                     <!-- This component is for gene and protein presence tests 
                                          (this includes the tests that previously were included in the now-deprecated ARO Staph Aureus Specific Tests Organizer) -->
                                     <!-- [HAI R4STU3] Gene and Protein Presence Tests Organizer -->
@@ -561,7 +559,6 @@
                                             </component>
                                         </organizer>
                                     </component>
-                                    <!-- ******************************************** -->
                                     
                                     <!-- Clarithromycin Susceptibility Testing -->
                                     <component>
