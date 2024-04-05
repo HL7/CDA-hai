@@ -93,6 +93,31 @@
             <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
         </assignedEntity>
     </legalAuthenticator>
+
+    <!-- ************************************************************************ -->
+    <!-- Interpreter Used by Patient This Encounter -->
+    <!-- Can only use any participation here (using perfomer) -->
+    <!--<participant typeCode="PRF">
+        <associatedEntity classCode="">
+            <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
+        </associatedEntity>
+    </participant>-->
+    <!-- ************************************************************************ -->
+
+    <!-- ************************************************************************ -->
+    <!-- Interpreter Used by Patient This Encounter -->
+    <documentationOf>
+        <serviceEvent>
+            <performer typeCode="PRF">
+                <assignedEntity>
+                    <id nullFlavor="NI"/>
+                    <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <!-- ************************************************************************ -->
+    
     <!-- The related document that this document has replaced -->
     <relatedDocument typeCode="RPLC">
         <parentDocument>
@@ -105,6 +130,8 @@
             <versionNumber value="1" />
         </parentDocument>
     </relatedDocument>
+    
+
     <componentOf>
         <encompassingEncounter>
             <!-- An outpatient encounter -->
@@ -114,6 +141,14 @@
                 <!-- Or, if outpatient, use the Date Specimen Collected -->
                 <low value="20200121" />
             </effectiveTime>
+            <!-- ************************************************************************ -->
+            <!-- Interpreter Used by Patient This Encounter -->
+            <!-- Can only use typeCode=admitter, attender, consultant, discharger, referrer here. Could possibly use "consultant", but the def'n is "an advising practitioner participating in the encounter by performing evaluations and making recommendations" -->
+            <!--<encounterParticipant typeCode="">
+                <assignedEntity>
+                    <code code="INTPRTER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="interpreter" />
+                </assignedEntity>
+            </encounterParticipant>-->
             <!-- Facility ID -->
             <!-- (The in-facility location where specimen was collected,
               and date specimen collected, are recorded with the
@@ -129,6 +164,7 @@
             <sdtc:specialArrangementCode code="int" codeSystem="2.16.840.1.113883.4.642.1.1090" codeSystemName="Special arrangements" displayName="Interpreter" />
         </encompassingEncounter>
     </componentOf>
+
     <!-- ********************************************************
      Structured Body
      ******************************************************** -->
@@ -136,7 +172,7 @@
         <structuredBody>
 
             <!-- ********************************************************
-                Findings Section in an ARO Report (V4)
+                Findings Section in an ARO Report (V5)
               ******************************************************** -->
             <component>
                 <section>
@@ -226,42 +262,42 @@
                                                                                                     <col width="20%" />
                                                                                                     <thead>
                                                                                                         <tr>
-                                                                                                            <th>Test</th>
-                                                                                                            <th>Method</th>
-                                                                                                            <th>Result</th>
-                                                                                                            <th>Interpretation</th>
+                                                                                                         <th>Test</th>
+                                                                                                         <th>Method</th>
+                                                                                                         <th>Result</th>
+                                                                                                         <th>Interpretation</th>
                                                                                                         </tr>
                                                                                                     </thead>
                                                                                                     <tbody>
                                                                                                         <tr>
-                                                                                                            <td>Clarithromycin [Susceptibility]</td>
-                                                                                                            <td>Bacterial susceptibility panel by Gradient strip</td>
-                                                                                                            <td>Greater than 5.0 ug/ml</td>
-                                                                                                            <td>Resistant</td>
+                                                                                                         <td>Clarithromycin [Susceptibility]</td>
+                                                                                                         <td>Bacterial susceptibility panel by Gradient strip</td>
+                                                                                                         <td>Greater than 5.0 ug/ml</td>
+                                                                                                         <td>Resistant</td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td>Clarithromycin [Susceptibility]</td>
-                                                                                                            <td>Not Tested: Bacterial susceptibility panel by Disk diffusion (KB)</td>
-                                                                                                            <td>Not Applicable</td>
-                                                                                                            <td>Not Applicable</td>
+                                                                                                         <td>Clarithromycin [Susceptibility]</td>
+                                                                                                         <td>Not Tested: Bacterial susceptibility panel by Disk diffusion (KB)</td>
+                                                                                                         <td>Not Applicable</td>
+                                                                                                         <td>Not Applicable</td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td>Clarithromycin [Susceptibility]</td>
-                                                                                                            <td>Not Tested: Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)</td>
-                                                                                                            <td>Not Applicable</td>
-                                                                                                            <td>Not Applicable</td>
+                                                                                                         <td>Clarithromycin [Susceptibility]</td>
+                                                                                                         <td>Not Tested: Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)</td>
+                                                                                                         <td>Not Applicable</td>
+                                                                                                         <td>Not Applicable</td>
                                                                                                         </tr>
                                                                                                     </tbody>
                                                                                                 </table>
                                                                                                 <table border="1">
                                                                                                     <thead>
                                                                                                         <tr>
-                                                                                                            <th align="left">Final Interpretation Result</th>
+                                                                                                         <th align="left">Final Interpretation Result</th>
                                                                                                         </tr>
                                                                                                     </thead>
                                                                                                     <tbody>
                                                                                                         <tr>
-                                                                                                            <td>Resistant</td>
+                                                                                                         <td>Resistant</td>
                                                                                                         </tr>
                                                                                                     </tbody>
                                                                                                 </table>
@@ -289,42 +325,42 @@
                                                                                                     <col width="20%" />
                                                                                                     <thead>
                                                                                                         <tr>
-                                                                                                            <th>Test</th>
-                                                                                                            <th>Method</th>
-                                                                                                            <th>Result</th>
-                                                                                                            <th>Interpretation</th>
+                                                                                                         <th>Test</th>
+                                                                                                         <th>Method</th>
+                                                                                                         <th>Result</th>
+                                                                                                         <th>Interpretation</th>
                                                                                                         </tr>
                                                                                                     </thead>
                                                                                                     <tbody>
                                                                                                         <tr>
-                                                                                                            <td>Vancomycin [Susceptibility]</td>
-                                                                                                            <td>Bacterial susceptibility panel by Gradient strip</td>
-                                                                                                            <td>Less than 0.1 ug/ml</td>
-                                                                                                            <td>Susceptible</td>
+                                                                                                         <td>Vancomycin [Susceptibility]</td>
+                                                                                                         <td>Bacterial susceptibility panel by Gradient strip</td>
+                                                                                                         <td>Less than 0.1 ug/ml</td>
+                                                                                                         <td>Susceptible</td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td>Vancomycin [Susceptibility]</td>
-                                                                                                            <td>Bacterial susceptibility panel by Disk diffusion (KB)</td>
-                                                                                                            <td>Exactly equal to </td>
-                                                                                                            <td>Intermediate</td>
+                                                                                                         <td>Vancomycin [Susceptibility]</td>
+                                                                                                         <td>Bacterial susceptibility panel by Disk diffusion (KB)</td>
+                                                                                                         <td>Exactly equal to </td>
+                                                                                                         <td>Intermediate</td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td>Vancomycin [Susceptibility]</td>
-                                                                                                            <td>Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)</td>
-                                                                                                            <td>Less than 0.1 ug/ml</td>
-                                                                                                            <td>Susceptible</td>
+                                                                                                         <td>Vancomycin [Susceptibility]</td>
+                                                                                                         <td>Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)</td>
+                                                                                                         <td>Less than 0.1 ug/ml</td>
+                                                                                                         <td>Susceptible</td>
                                                                                                         </tr>
                                                                                                     </tbody>
                                                                                                 </table>
                                                                                                 <table border="1">
                                                                                                     <thead>
                                                                                                         <tr>
-                                                                                                            <th align="left">Final Interpretation Result</th>
+                                                                                                         <th align="left">Final Interpretation Result</th>
                                                                                                         </tr>
                                                                                                     </thead>
                                                                                                     <tbody>
                                                                                                         <tr>
-                                                                                                            <td>Susceptible</td>
+                                                                                                         <td>Susceptible</td>
                                                                                                         </tr>
                                                                                                     </tbody>
                                                                                                 </table>
@@ -349,7 +385,8 @@
                     </text>
                     <entry typeCode="DRIV">
                         <procedure classCode="PROC" moodCode="EVN">
-                            <!-- [HAI R3N1] Specimen Collection Procedure (ARO) (V4) -->
+                            <!-- SG: QUESTION: would there be a different Specimen Collection procedure for the gene marker testing or would it be the same? Assuming same for now-->
+                            <!-- [HAI R4STU3] Specimen Collection Procedure (ARO) (V5) -->
                             <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.188" />
                             <!-- Date specimen collected -->
                             <effectiveTime value="20200121" />
@@ -361,6 +398,7 @@
                                     </specimenPlayingEntity>
                                 </specimenRole>
                             </specimen>
+                            <!-- SG: QUESTION: would there be a different Specimen Collection Encounter for the gene marker testing or would it be the same? Assuming same for now -->
                             <!-- [HAI R3N1] Specimen Collection Encounter (ARO) -->
                             <entryRelationship inversionInd="true" typeCode="COMP">
                                 <encounter classCode="ENC" moodCode="EVN">
@@ -393,7 +431,7 @@
                             <!-- [HAI R3N1] Isolate Susceptibility Tests Organizer (V4)  -->
                             <entryRelationship inversionInd="true" typeCode="COMP">
                                 <organizer classCode="CLUSTER" moodCode="EVN">
-                                    <!-- [HAI R3N1] Isolate Susceptibility Tests Organizer (V4)  -->
+                                    <!-- [HAI R4STU3] Isolate Susceptibility Tests Organizer (V5)  -->
                                     <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.201" />
                                     <id nullFlavor="NA" />
                                     <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microbiology Studies" />
@@ -410,40 +448,112 @@
                                             </playingEntity>
                                         </participantRole>
                                     </participant>
-                                    <!-- This component is included only if the pathogen identified is Staph. aureus -->
-                                    <!-- [HAI R1] ARO Staph Aureus Specific Tests Organizer -->
+                                    <!-- This ARO Staph Aureus Specific component has been DEPRECATED and should not be used, 
+                                         it has been replaced by the Gene and Protein Presence Tests Organizer -->
+                                    <!--<!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Organizer (DEPRECATED) -\->
                                     <component>
                                         <organizer classCode="CLUSTER" moodCode="EVN">
-                                            <!-- [C-CDA R1.1] Result Organizer -->
+                                            <!-\- [C-CDA R1.1] Result Organizer -\->
                                             <templateId root="2.16.840.1.113883.10.20.22.4.1" />
-                                            <!-- [HAI R1] ARO Staph Aureus Specific Tests Organizer -->
-                                            <templateId root="2.16.840.1.113883.10.20.5.6.190" />
+                                            <!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Organizer (DEPRECATED)-\->
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.190" extension="2024-05-01" />
                                             <id nullFlavor="NA" />
                                             <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microbiology studies" />
                                             <statusCode code="completed" />
-                                            <!-- [HAI R1] ARO Staph Aureus Specific Tests Result Observation -->
+                                            <!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Result Observation (DEPRECATED) -\->
                                             <component>
                                                 <observation classCode="OBS" moodCode="EVN">
-                                                    <!-- [C-CDA R1.1] Result Observation -->
-                                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
-                                                    <!-- [HAI R1] ARO Staph Aureus Specific Tests Result Observation -->
-                                                    <templateId root="2.16.840.1.113883.10.20.5.6.189" />
+                                                    <!-\- [C-CDA R1.1] Result Observation -\->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                                                    <!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Result Observation (DEPRECATED) -\->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.189" extension="2024-05-01"  />
                                                     <id nullFlavor="NA" />
-                                                    <code code="42721-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination" />
+                                                    <code code="42721-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                        displayName="Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
                                                     <value code="260385009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Negative" xsi:type="CD" />
                                                 </observation>
                                             </component>
-                                            <!-- [HAI R1] ARO Staph Aureus Specific Tests Result Observation -->
+                                            <!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Result Observation (DEPRECATED) -\->
                                             <component>
                                                 <observation classCode="OBS" moodCode="EVN">
-                                                    <!-- [HAI R1] ARO Staph Aureus Specific Tests Result Observation -->
-                                                    <templateId root="2.16.840.1.113883.10.20.5.6.189" />
+                                                    <!-\- [C-CDA R1.1] Result Observation -\->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                                                    <!-\- [HAI R4STU3] ARO Staph Aureus Specific Tests Result Observation (DEPRECATED) -\->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.189" extension="2024-05-01"  />
+                                                    <id nullFlavor="NA" />
+                                                    <code code="48813-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                        displayName="Bacterial methicillin resistance (mecA) gene [Presence] by Probe and target amplification method" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime nullFlavor="NA" />
+                                                    <value code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Positive" xsi:type="CD" />
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </component>-->
+                                    
+                                    <!-- If no gene or protein tests were run then we need a code to report that no tests were run - need to be able to assert that no tests were run -->
+                                    <!-- ******************************************** -->
+                                    <!-- This component is for gene and protein presence tests 
+                                         (this includes the tests that previously were included in the now-deprecated ARO Staph Aureus Specific Tests Organizer) -->
+                                    <!-- [HAI R4STU3] Gene and Protein Presence Tests Organizer -->
+                                    <component>
+                                        <organizer classCode="CLUSTER" moodCode="EVN">
+                                            <!-- [C-CDA R1.1] Result Organizer -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+                                            <!-- [HAI R4STU3] Gene and Protein Presence Tests Organizer -->
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.303" extension="2024-05-01" />
+                                            <id nullFlavor="NA" />
+                                            <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microbiology studies" />
+                                            <statusCode code="completed" />
+                                            <!-- The following commented out component represents an assertion that 
+                                                 no gene or protein presence tests were done
+                                                 If no gene or protein presence tests were done, 
+                                                 set the value of @negationInd to true, 
+                                                 set the value of code to 18725-2 | Microbiology studies, 
+                                                 and set the value of value/@nullFlavor to "NA".-->
+                                            <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                            <component>
+                                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
                                                     <!-- [C-CDA R1.1] Result Observation -->
                                                     <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                                    <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.302" extension="2024-05-01" />
                                                     <id nullFlavor="NA" />
-                                                    <code code="48813-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial methicillin resistance (mecA) gene [Presence] by Probe and target amplification method" />
+                                                    <!-- Use 18725-2 | Microbiology studies for no tests done -->
+                                                    <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                        displayName="Microbiology studies" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime nullFlavor="NA" />
+                                                    <value xsi:type="CD" nullFlavor="NA" />
+                                                </observation>
+                                            </component>
+                                            <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                            <component>
+                                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                                    <!-- [C-CDA R1.1] Result Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                                    <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.302" extension="2024-05-01" />
+                                                    <id nullFlavor="NA" />
+                                                    <code code="42721-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                        displayName="Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime nullFlavor="NA" />
+                                                    <value code="260385009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Negative" xsi:type="CD" />
+                                                </observation>
+                                            </component>
+                                            <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                            <component>
+                                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                                    <!-- [C-CDA R1.1] Result Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                                    <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.302" extension="2024-05-01" />
+                                                    <id nullFlavor="NA" />
+                                                    <code code="48813-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                        displayName="Bacterial methicillin resistance (mecA) gene [Presence] by Probe and target amplification method" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
                                                     <value code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Positive" xsi:type="CD" />
@@ -451,6 +561,8 @@
                                             </component>
                                         </organizer>
                                     </component>
+                                    <!-- ******************************************** -->
+                                    
                                     <!-- Clarithromycin Susceptibility Testing -->
                                     <component>
                                         <organizer classCode="CLUSTER" moodCode="EVN">
@@ -484,7 +596,8 @@
                                                                 <low unit="ug/ml" value="5.0" />
                                                             </value>
                                                             <interpretationCode code="R" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Resistant" />
-                                                            <methodCode code="49589-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Gradient strip (E-test)" />
+                                                            <methodCode code="49589-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Gradient strip (E-test)" />
                                                         </observation>
                                                     </component>
                                                     <!-- This observation specifies the susceptibility test was not done. (NegationInd = true) -->
@@ -500,7 +613,8 @@
                                                             <effectiveTime nullFlavor="NA" />
                                                             <value nullFlavor="NA" xsi:type="IVL_PQ" />
                                                             <interpretationCode nullFlavor="NA" />
-                                                            <methodCode code="50546-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Disk diffusion (KB)" />
+                                                            <methodCode code="50546-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Disk diffusion (KB)" />
                                                         </observation>
                                                     </component>
                                                     <component>
@@ -516,7 +630,8 @@
                                                             <effectiveTime nullFlavor="NA" />
                                                             <value nullFlavor="NA" xsi:type="IVL_PQ" />
                                                             <interpretationCode nullFlavor="NA" />
-                                                            <methodCode code="50545-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)" />
+                                                            <methodCode code="50545-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)" />
                                                         </observation>
                                                     </component>
                                                 </organizer>
@@ -570,7 +685,8 @@
                                                                 <high unit="ug/ml" value="0.1" />
                                                             </value>
                                                             <interpretationCode code="S" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Susceptible" />
-                                                            <methodCode code="49589-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Gradient strip (E-test)" />
+                                                            <methodCode code="49589-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Gradient strip (E-test)" />
                                                         </observation>
                                                     </component>
                                                     <component>
@@ -587,7 +703,8 @@
                                                                 <center unit="mm" value="2.5" />
                                                             </value>
                                                             <interpretationCode code="I" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Intermediate" />
-                                                            <methodCode code="50546-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Disk diffusion (KB)" />
+                                                            <methodCode code="50546-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Disk diffusion (KB)" />
                                                         </observation>
                                                     </component>
                                                     <component>
@@ -604,7 +721,8 @@
                                                                 <high unit="ug/ml" value="0.1" />
                                                             </value>
                                                             <interpretationCode code="S" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Susceptible" />
-                                                            <methodCode code="50545-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)" />
+                                                            <methodCode code="50545-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                                                displayName="Bacterial susceptibility panel by Minimum inhibitory concentration (MIC)" />
                                                         </observation>
                                                     </component>
                                                 </organizer>
@@ -627,6 +745,10 @@
                                     </component>
                                 </organizer>
                             </entryRelationship>
+
+
+                            
+
                         </procedure>
                     </entry>
                 </section>
@@ -646,14 +768,14 @@
                     <text>
                         <list>
                             <item>Gender identity<list>
-                                <item>Identifies as female gender (finding)</item>
-                            </list>
+                                    <item>Identifies as female gender (finding)</item>
+                                </list>
                             </item>
                         </list>
                         <list>
                             <item>Birth Sex<list>
-                                <item>Male</item>
-                            </list>
+                                    <item>Male</item>
+                                </list>
                             </item>
                         </list>
                         <list>
@@ -669,7 +791,7 @@
                             </item>
                         </list>
                     </text>
-                    
+
                     <entry>
                         <!-- Gender Identity Observation -->
                         <observation classCode="OBS" moodCode="EVN">
@@ -697,7 +819,7 @@
                             <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
                         </observation>
                     </entry>
-                    
+
                     <entry typeCode="DRIV">
                         <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff.
                             If the person needs an interpreter, set the value of @negationInd to false. If the person does not need an interpreter, 
@@ -713,7 +835,7 @@
                             <value xsi:type="CD" code="54588-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interpreter needed" />
                         </observation>
                     </entry>
-                    
+
                     <!-- Could also add this as an alternative to a participant -->
                     <entry typeCode="DRIV">
                         <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
