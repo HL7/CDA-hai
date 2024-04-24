@@ -13,8 +13,7 @@
         For more information see www.hl7.org, Structured Documents Working Group
 -->
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="urn:hl7-org:v3 ../../../../../../../../SVN/strucdoc/CDA_SDTC/infrastructure/cda/CDA_SDTC.xsd" xmlns="urn:hl7-org:v3"
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
  xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
 
   <!-- Comments precede their subject. -->
