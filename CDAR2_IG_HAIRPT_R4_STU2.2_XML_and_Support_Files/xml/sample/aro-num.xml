@@ -628,7 +628,7 @@
             ******************************************************** 
             NHSN Social History Section (V2)
             ******************************************************** 
-      -->
+            -->
             <component>
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.5.4.26" />
@@ -662,7 +662,7 @@
                             <code code="76691-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gender identity" />
                             <statusCode code="completed" />
                             <effectiveTime>
-                                <low value="20210703" />
+                                <low nullFlavor="NI" />
                             </effectiveTime>
                             <value code="446141000124107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Identifies as female gender (finding)" xsi:type="CD" />
                         </observation>
