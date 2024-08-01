@@ -498,8 +498,8 @@
                         <act classCode="ACT" moodCode="EVN">
                             <!-- [HAI R3D3] Report No Events -->
                             <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
-                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3029-6"
-                                displayName="Report no infection surveillance events - Methicillin-resistant Staphylococcus aureus" />
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="3029-6" displayName="Report no infection surveillance events - Methicillin-resistant Staphylococcus aureus"
+                             />
                         </act>
                     </entry>
                 </section>

@@ -15,478 +15,477 @@
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc">
 
-  <!-- Comments precede their subject -->
+    <!-- Comments precede their subject -->
 
-  <!-- This is a single-patient record. -->
-  <realmCode code="US" />
-  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
-  <!-- Published in HAI IG R4D2.1 -->
-  <templateId root="2.16.840.1.113883.10.20.5.7.4.2.1" />
-  <!-- Conformant to Healthcare Associated Infection Report -->
-  <templateId root="2.16.840.1.113883.10.20.5.4.25" />
-  <!-- [HAI R4D2.1] Conformant to HAI Single-Person Report Generic Constraints (V3) -->
-  <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-02-01" />
-  <!-- [HAI R4D2.1] Conformant to the HAI Procedure Denominator Report (V4) -->
-  <templateId root="2.16.840.1.113883.10.20.5.35.2" extension="2023-02-01" />
-  <!-- Document ID (extension) is scoped by vendor/software -->
-  <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
-  <title>Denominator for Procedure Report</title>
-  <effectiveTime value="20080801" />
-  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
-  <languageCode code="en-US" />
-  <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
-  <!-- the original -->
-  <versionNumber value="1" />
-  <recordTarget>
-    <patientRole>
-      <!-- Patient ID - scoped by facility -->
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
-      <!-- Secondary ID - scoped by facility -->
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654321" />
-      <patient>
-        <name>
-          <family>Nuclear</family>
-          <given>Ned</given>
-        </name>
-        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
-        <birthTime value="19541125" />
-        <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+    <!-- This is a single-patient record. -->
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <!-- Published in HAI IG R4D2.1 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.4.2.1" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- [HAI R4D2.1] Conformant to HAI Single-Person Report Generic Constraints (V3) -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-02-01" />
+    <!-- [HAI R4D2.1] Conformant to the HAI Procedure Denominator Report (V4) -->
+    <templateId root="2.16.840.1.113883.10.20.5.35.2" extension="2023-02-01" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+    <title>Denominator for Procedure Report</title>
+    <effectiveTime value="20080801" />
+    <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+    <languageCode code="en-US" />
+    <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- Patient ID - scoped by facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
+            <!-- Secondary ID - scoped by facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654321" />
+            <patient>
+                <name>
+                    <family>Nuclear</family>
+                    <given>Ned</given>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+                <birthTime value="19541125" />
+                <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
              See commented out example below -->
-        <!--<raceCode nullFlavor="ASKU "/>-->
-        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
-        <!-- Added ability to record multiple races -->
-        <sdtc:raceCode code="1002-5" displayName="American Indian/Alaska Native" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
-        <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+                <!--<raceCode nullFlavor="ASKU "/>-->
+                <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+                <!-- Added ability to record multiple races -->
+                <sdtc:raceCode code="1002-5" displayName="American Indian/Alaska Native" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+                <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
              See commented out example below -->
-        <!--<ethnicGroupCode nullFlavor="UNK" />-->
-        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
-      </patient>
-    </patientRole>
-  </recordTarget>
-  <!-- scoped by facility. -->
-  <author>
-    <time value="20061213" />
-    <assignedAuthor>
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
-    </assignedAuthor>
-  </author>
-  <!-- The custodian of the CDA document is NHSN -->
-  <custodian>
-    <assignedCustodian>
-      <representedCustodianOrganization>
-        <id root="2.16.840.1.114222.4.3.2.11" />
-      </representedCustodianOrganization>
-    </assignedCustodian>
-  </custodian>
-  <!-- Scoped by facility - is the ICP -->
-  <legalAuthenticator>
-    <time value="20061224" />
-    <signatureCode code="S" />
-    <assignedEntity>
-      <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
-    </assignedEntity>
-  </legalAuthenticator>
-  <componentOf>
-    <encompassingEncounter>
-      <!-- Facility-generated Event -->
-      <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" extension="31" />
-      <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="AMB" displayName="Outpatient" />
-      <effectiveTime>
-        <!-- Date Admitted to Facility -->
-        <low value="20080805" />
-      </effectiveTime>
-      <location>
-        <healthCareFacility>
-          <!-- Facility ID -->
-          <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
-        </healthCareFacility>
-      </location>
-    </encompassingEncounter>
-  </componentOf>
-  <!-- ********************************************************
+                <!--<ethnicGroupCode nullFlavor="UNK" />-->
+                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- scoped by facility. -->
+    <author>
+        <time value="20061213" />
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Scoped by facility - is the ICP -->
+    <legalAuthenticator>
+        <time value="20061224" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <componentOf>
+        <encompassingEncounter>
+            <!-- Facility-generated Event -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" extension="31" />
+            <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" code="AMB" displayName="Outpatient" />
+            <effectiveTime>
+                <!-- Date Admitted to Facility -->
+                <low value="20080805" />
+            </effectiveTime>
+            <location>
+                <healthCareFacility>
+                    <!-- Facility ID -->
+                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <!-- ********************************************************
      Structured Body
      ******************************************************** -->
-  <component>
-    <structuredBody>
+    <component>
+        <structuredBody>
 
-      <!-- ********************************************************
+            <!-- ********************************************************
      Infection Risk Factors Section in a Procedure Report
      ******************************************************** -->
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-          <templateId root="2.16.840.1.113883.10.20.5.5.35" />
-          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51898-5" displayName="Risk Factors" />
-          <title>Risk Factors</title>
-          <text xmlns:sdtc="urn:hl7-org:sdtc">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Emergency procedure</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Wound Classification Category</td>
-                  <td> Centers for Disease Control and Prevention Class II/Clean-contaminated (finding)</td>
-                </tr>
-                <tr>
-                  <td>Endoscopy </td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Traumatic injury (disorder)</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Diabetes mellitus (disorder)</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Body Height</td>
-                  <td>180 cm</td>
-                </tr>
-                <tr>
-                  <td>Body Weight</td>
-                  <td>65 kg</td>
-                </tr>
-                <tr>
-                  <td>Duration of Labor</td>
-                  <td>6 h</td>
-                </tr>
-              </tbody>
-            </table>
-          </text>
-          <entry typeCode="DRIV">
-            <procedure classCode="PROC" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.5.6.156" />
-              <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
-              <!-- Emergency procedure-->
-              <methodCode codeSystem="2.16.840.1.113883.6.96" code="373110003" displayName="emergency" />
-              <!-- Wound Class Observation -->
-              <entryRelationship typeCode="COMP">
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- [C-CDA R1.1] Problem Observation -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                  <!-- [HAI R1] Wound Class Observation  -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.174" />
-                  <id nullFlavor="NA" />
-                  <code codeSystem="2.16.840.1.113883.6.96" code="420089007" displayName="Wound Classification Category" />
-                  <statusCode code="completed" />
-                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="418115006" displayName="CDC Wound Class II/Clean Contaminated" />
-                </observation>
-              </entryRelationship>
-              <!-- Endoscope (not negated = was used) -->
-              <entryRelationship typeCode="COMP">
-                <!-- Endoscope Used Clinical Statement -->
-                <procedure classCode="PROC" moodCode="EVN" negationInd="false">
-                  <!-- [C-CDA R1.1] Procedure Activity Procedure. -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
-                  <!-- [HAI R1] Endoscope Used Clinical Statement -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.128" />
-                  <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="423827005" displayName="Endoscopy" />
-                  <statusCode code="completed" />
-                </procedure>
-              </entryRelationship>
-            </procedure>
-          </entry>
-          <entry typeCode="DRIV">
-            <!-- Trauma Observation -->
-            <observation classCode="OBS" moodCode="EVN" negationInd="false">
-              <!-- [C-CDA R1.1] Problem Observation -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-              <!-- [HAI R1] Trauma Observation -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.170" />
-              <id nullFlavor="NA" />
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-              <statusCode code="completed" />
-              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="417746004" displayName="Trauma" />
-            </observation>
-          </entry>
-          <entry typeCode="DRIV">
-            <!-- Diabetes Mellitus Observation -->
-            <observation classCode="OBS" moodCode="EVN" negationInd="true">
-              <!-- [C-CDA R1.1] Problem Observation -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-              <!-- [HAI R1] Diabetes Mellitus Observation -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.123" />
-              <id nullFlavor="NA" />
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-              <statusCode code="completed" />
-              <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="73211009" displayName="Diabetes mellitus" />
-            </observation>
-          </entry>
-          <entry typeCode="DRIV">
-            <!-- Height Observation -->
-            <observation classCode="OBS" moodCode="EVN" negationInd="false">
-              <!-- [C-CDA R1.1] Vital Sign Observation -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.27" />
-              <!-- [HAI R1] Height Observation -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.131" />
-              <id nullFlavor="NA" />
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50373000" displayName="Body Height" />
-              <statusCode code="completed" />
-              <effectiveTime nullFlavor="NA" />
-              <value xsi:type="PQ" value="180" unit="cm" />
-            </observation>
-          </entry>
-          <entry typeCode="DRIV">
-            <observation classCode="OBS" moodCode="EVN" negationInd="false">
-              <!-- [C-CDA R1.1] Vital Sign Observation -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.27" />
-              <!-- [HAI R1] Weight Observation -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.173" />
-              <id nullFlavor="NA" />
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27113001" displayName="Body Weight" />
-              <statusCode code="completed" />
-              <effectiveTime nullFlavor="NA" />
-              <value xsi:type="PQ" value="65" unit="kg" />
-            </observation>
-          </entry>
-          <entry typeCode="DRIV">
-            <!-- Duration of Labor Observation -->
-            <observation classCode="OBS" moodCode="EVN">
-              <!-- [HAI R1] Duration of Labor Observation -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.127" />
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="289248003" displayName="Duration of Labor" />
-              <statusCode code="completed" />
-              <value xsi:type="IVL_TS">
-                <width value="6" unit="h" />
-              </value>
-            </observation>
-          </entry>
-        </section>
-      </component>
-      <!-- ********************************************************
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.35" />
+                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51898-5" displayName="Risk Factors" />
+                    <title>Risk Factors</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Emergency procedure</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Wound Classification Category</td>
+                                    <td> Centers for Disease Control and Prevention Class II/Clean-contaminated (finding)</td>
+                                </tr>
+                                <tr>
+                                    <td>Endoscopy </td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Traumatic injury (disorder)</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Diabetes mellitus (disorder)</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Height</td>
+                                    <td>180 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Weight</td>
+                                    <td>65 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Duration of Labor</td>
+                                    <td>6 h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.5.6.156" />
+                            <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
+                            <!-- Emergency procedure-->
+                            <methodCode codeSystem="2.16.840.1.113883.6.96" code="373110003" displayName="emergency" />
+                            <!-- Wound Class Observation -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [C-CDA R1.1] Problem Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R1] Wound Class Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.174" />
+                                    <id nullFlavor="NA" />
+                                    <code codeSystem="2.16.840.1.113883.6.96" code="420089007" displayName="Wound Classification Category" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="418115006" displayName="CDC Wound Class II/Clean Contaminated" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Endoscope (not negated = was used) -->
+                            <entryRelationship typeCode="COMP">
+                                <!-- Endoscope Used Clinical Statement -->
+                                <procedure classCode="PROC" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Procedure Activity Procedure. -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                                    <!-- [HAI R1] Endoscope Used Clinical Statement -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.128" />
+                                    <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
+                                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="423827005" displayName="Endoscopy" />
+                                    <statusCode code="completed" />
+                                </procedure>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Trauma Observation -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Problem Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Trauma Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.170" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="417746004" displayName="Trauma" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Diabetes Mellitus Observation -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [C-CDA R1.1] Problem Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Diabetes Mellitus Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.123" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="73211009" displayName="Diabetes mellitus" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Height Observation -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Vital Sign Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                            <!-- [HAI R1] Height Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.131" />
+                            <id nullFlavor="NA" />
+                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50373000" displayName="Body Height" />
+                            <statusCode code="completed" />
+                            <effectiveTime nullFlavor="NA" />
+                            <value xsi:type="PQ" value="180" unit="cm" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Vital Sign Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                            <!-- [HAI R1] Weight Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.173" />
+                            <id nullFlavor="NA" />
+                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27113001" displayName="Body Weight" />
+                            <statusCode code="completed" />
+                            <effectiveTime nullFlavor="NA" />
+                            <value xsi:type="PQ" value="65" unit="kg" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Duration of Labor Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [HAI R1] Duration of Labor Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.127" />
+                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="289248003" displayName="Duration of Labor" />
+                            <statusCode code="completed" />
+                            <value xsi:type="IVL_TS">
+                                <width value="6" unit="h" />
+                            </value>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <!-- ********************************************************
      Procedures Details Section in a Procedure Report (V2)
      ******************************************************** -->
-      <component>
-        <section>
-          <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-          <templateId root="2.16.840.1.113883.10.20.5.5.43.2" />
-          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Details" />
-          <title>Procedure Details</title>
-          <text xmlns:sdtc="urn:hl7-org:sdtc">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Type of procedure</td>
-                  <td>Limb amputation</td>
-                </tr>
-                <tr>
-                  <td>Procedure date</td>
-                  <td>December 23, 2006</td>
-                </tr>
-                <tr>
-                  <td>Procedure duration</td>
-                  <td>3 h</td>
-                </tr>
-                <tr>
-                  <td>NHSNHipReplacementCode</td>
-                  <td>HPRO: Total: Total Primary</td>
-                </tr>
-                <tr>
-                  <td>NHSNKneeReplacementCode</td>
-                  <td>KPRO: Total: Total Primary</td>
-                </tr>
-                <tr>
-                  <td>NHSNSpinalFusionApproachCode</td>
-                  <td>Anterior and posterior</td>
-                </tr>
-                <tr>
-                  <td>Spinal Fusion Level</td>
-                  <td>Atlas-axis</td>
-                </tr>
-                <tr>
-                  <td>Type of procedure</td>
-                  <td>surgical closure</td>
-                </tr>
-                <tr>
-                  <td>NHSNClosureTechniqueCode</td>
-                  <td>Primary</td>
-                </tr>
-                <tr>
-                  <td>General anesthesia</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Revision associated with prior infection at index joint</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-            </table>
-          </text>
-          <entry typeCode="DRIV">
-            <!-- Procedure Details -->
-            <!-- Procedure Details Clinical Statement in a Procedure Report (V2) -->
-            <procedure classCode="PROC" moodCode="EVN">
-              <!-- [C-CDA R1.1] Procedure Activity Procedure -->
-              <templateId root="2.16.840.1.113883.10.20.22.4.14" />
-              <!-- Procedure Details Clinical Statement in a Procedure Report (V2) -->
-              <templateId root="2.16.840.1.113883.10.20.5.6.153.2" />
-              <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
-              <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2126-1" displayName="Limb amputation">
-                <translation code="0Y6C0Z1" displayName="Detachment at Right Upper Leg, High, Open Approach" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" />
-              </code>
-              <statusCode code="completed" />
-              <!-- The procedure date -->
-              <effectiveTime>
-                <low value="20061223" />
-                <width value="3" unit="h" />
-              </effectiveTime>
-              <!-- ************************ START PRIMARY SURGERY ************************************************************************ -->
-              <!-- MAY contain -->
-              <priorityCode code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Principal" />
-              <!-- MAY contain NA to indicate it is not a primary surgery - but better would be to have a value set 
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.43.2" />
+                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51899-3" displayName="Details" />
+                    <title>Procedure Details</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Type of procedure</td>
+                                    <td>Limb amputation</td>
+                                </tr>
+                                <tr>
+                                    <td>Procedure date</td>
+                                    <td>December 23, 2006</td>
+                                </tr>
+                                <tr>
+                                    <td>Procedure duration</td>
+                                    <td>3 h</td>
+                                </tr>
+                                <tr>
+                                    <td>NHSNHipReplacementCode</td>
+                                    <td>HPRO: Total: Total Primary</td>
+                                </tr>
+                                <tr>
+                                    <td>NHSNKneeReplacementCode</td>
+                                    <td>KPRO: Total: Total Primary</td>
+                                </tr>
+                                <tr>
+                                    <td>NHSNSpinalFusionApproachCode</td>
+                                    <td>Anterior and posterior</td>
+                                </tr>
+                                <tr>
+                                    <td>Spinal Fusion Level</td>
+                                    <td>Atlas-axis</td>
+                                </tr>
+                                <tr>
+                                    <td>Type of procedure</td>
+                                    <td>surgical closure</td>
+                                </tr>
+                                <tr>
+                                    <td>NHSNClosureTechniqueCode</td>
+                                    <td>Primary</td>
+                                </tr>
+                                <tr>
+                                    <td>General anesthesia</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Revision associated with prior infection at index joint</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <!-- Procedure Details -->
+                        <!-- Procedure Details Clinical Statement in a Procedure Report (V2) -->
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                            <!-- Procedure Details Clinical Statement in a Procedure Report (V2) -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.153.2" />
+                            <id root="807007ba-c8f0-4842-9c3c-4a4e4c570849" />
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2126-1" displayName="Limb amputation">
+                                <translation code="0Y6C0Z1" displayName="Detachment at Right Upper Leg, High, Open Approach" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" />
+                            </code>
+                            <statusCode code="completed" />
+                            <!-- The procedure date -->
+                            <effectiveTime>
+                                <low value="20061223" />
+                                <width value="3" unit="h" />
+                            </effectiveTime>
+                            <!-- ************************ START PRIMARY SURGERY ************************************************************************ -->
+                            <!-- MAY contain -->
+                            <priorityCode code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Principal" />
+                            <!-- MAY contain NA to indicate it is not a primary surgery - but better would be to have a value set 
                         that might include secondary and tertiary - this is a bit of a stretch - but similar to some things we have done in consolidation-->
-              <!-- ************************ END PRIMARY SURGERY ************************************************************************ -->
-              <!-- Hip replacement Type -->
-              <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1413-4" displayName="Total: Total Primary Hip Replacement" />
-              <!-- Knee replacement Type -->
-              <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1406-8" displayName="Total: Total Primary Knee Replacement" />
-              <!-- Spinal fusion approach site and level  -->
-              <approachSiteCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1205-4" displayName="anterior posterior" />
-              <!-- Surgeon who performed the procedure -->
-              <performer typeCode="PRF">
-                <assignedEntity classCode="ASSIGNED">
-                  <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654" />
-                </assignedEntity>
-              </performer>
-              <entryRelationship typeCode="COMP">
-                <!-- Spinal Fusion Level Observation -->
-                <observation classCode="OBS" moodCode="EVN">
-                  <!-- Problem Observation -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                  <!-- [HAI R1] Spinal Fusion Level Observation -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.166" />
-                  <id nullFlavor="NA" />
-                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
-                  <statusCode code="completed" />
-                  <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1101-5" displayName="atlas-axis (C1-C2 only)" />
-                </observation>
-              </entryRelationship>
-              <!-- ************************ START CLOSURE TECHNIQUE ************************************************************************ -->
-              <!-- parent template SHALL contain -->
-              <entryRelationship typeCode="COMP">
-                <!-- Closure Technique Procedure -->
-                <procedure classCode="PROC" moodCode="EVN">
-                  <!-- [C-CDA R1.1] Procedure Activity Procedure -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
-                  <!-- [HAI R1] Closure Technique Procedure -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.117" />
-                  <id nullFlavor="NA" />
-                  <!-- SHALL BE THE BELOW CODE -->
-                  <code code="112695004" displayName="surgical closure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-                  <statusCode code="completed" />
-                  <methodCode code="2406-7" displayName="Primary" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
-                </procedure>
-              </entryRelationship>
-              <!-- ************************ END CLOSURE TECHNIQUE ************************************************************************ -->
-              <!-- general anesthesia? not negated = was used -->
-              <entryRelationship typeCode="COMP">
-                <!-- [HAI] Anesthesia Administration Clinical Statement -->
-                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
-                  <!-- [C-CDA R1.1] Medication Activity templteId -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.16" />
-                  <!-- [HAI R1] Anesthesia Administration Clinical Statement -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.112" />
-                  <id nullFlavor="NA" />
-                  <statusCode code="completed" />
-                  <effectiveTime xsi:type="IVL_TS">
-                    <low nullFlavor="NA" />
-                    <high nullFlavor="NA" />
-                  </effectiveTime>
-                  <consumable>
-                    <manufacturedProduct classCode="MANU">
-                      <templateId root="2.16.840.1.113883.10.20.22.4.23" />
-                      <manufacturedMaterial>
-                        <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="84451006" displayName="General anesthesia" />
-                      </manufacturedMaterial>
-                    </manufacturedProduct>
-                  </consumable>
-                </substanceAdministration>
-              </entryRelationship>
-              <entryRelationship typeCode="COMP">
-                <!-- Revision Associated with Prior Infection Observation -->
-                <!-- 
+                            <!-- ************************ END PRIMARY SURGERY ************************************************************************ -->
+                            <!-- Hip replacement Type -->
+                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1413-4" displayName="Total: Total Primary Hip Replacement" />
+                            <!-- Knee replacement Type -->
+                            <methodCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1406-8" displayName="Total: Total Primary Knee Replacement" />
+                            <!-- Spinal fusion approach site and level  -->
+                            <approachSiteCode codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1205-4" displayName="anterior posterior" />
+                            <!-- Surgeon who performed the procedure -->
+                            <performer typeCode="PRF">
+                                <assignedEntity classCode="ASSIGNED">
+                                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="987654" />
+                                </assignedEntity>
+                            </performer>
+                            <entryRelationship typeCode="COMP">
+                                <!-- Spinal Fusion Level Observation -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Problem Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R1] Spinal Fusion Level Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.166" />
+                                    <id nullFlavor="NA" />
+                                    <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="1101-5" displayName="atlas-axis (C1-C2 only)" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- ************************ START CLOSURE TECHNIQUE ************************************************************************ -->
+                            <!-- parent template SHALL contain -->
+                            <entryRelationship typeCode="COMP">
+                                <!-- Closure Technique Procedure -->
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <!-- [C-CDA R1.1] Procedure Activity Procedure -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                                    <!-- [HAI R1] Closure Technique Procedure -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.117" />
+                                    <id nullFlavor="NA" />
+                                    <!-- SHALL BE THE BELOW CODE -->
+                                    <code code="112695004" displayName="surgical closure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                                    <statusCode code="completed" />
+                                    <methodCode code="2406-7" displayName="Primary" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
+                                </procedure>
+                            </entryRelationship>
+                            <!-- ************************ END CLOSURE TECHNIQUE ************************************************************************ -->
+                            <!-- general anesthesia? not negated = was used -->
+                            <entryRelationship typeCode="COMP">
+                                <!-- [HAI] Anesthesia Administration Clinical Statement -->
+                                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Medication Activity templteId -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                                    <!-- [HAI R1] Anesthesia Administration Clinical Statement -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.112" />
+                                    <id nullFlavor="NA" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low nullFlavor="NA" />
+                                        <high nullFlavor="NA" />
+                                    </effectiveTime>
+                                    <consumable>
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial>
+                                                <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="84451006" displayName="General anesthesia" />
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </consumable>
+                                </substanceAdministration>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <!-- Revision Associated with Prior Infection Observation -->
+                                <!-- 
                    If the revision was associated with prior infection at the index joint, 
                    the value of @negationInd SHALL be false. 
                    If the revision was not associated with prior infection at 
                    the index joint, the value of @negationInd SHALL be true. 
                         -->
-                <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                  <!-- [C-CDA R1.1] Problem Observation -->
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
-                  <!-- Revision associated with prior infection Observation -->
-                  <templateId root="2.16.840.1.113883.10.20.5.6.204" />
-                  <id nullFlavor="NA" />
-                  <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
-                  <statusCode code="completed" />
-                  <value xsi:type="CD" code="1239-3" displayName="Revision associated with prior infection at index joint" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
-                </observation>
-              </entryRelationship>
-            </procedure>
-          </entry>
-        </section>
-      </component>
-      
-        <!-- 
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Problem Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- Revision associated with prior infection Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.204" />
+                                    <id nullFlavor="NA" />
+                                    <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" code="1239-3" displayName="Revision associated with prior infection at index joint" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" />
+                                </observation>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                </section>
+            </component>
+
+            <!-- 
             ******************************************************** 
             NHSN Social History Section
             ******************************************************** 
       -->
-        <component>
-          <section>
-            <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-            <!-- [HAI R4D2] NHSN Social History Section -->
-            <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
-            <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
-            <title>NHSN Social History Section</title>
-            <text>
-              <list>
-                <item>Gender identity<list>
-                  <item>Identifies as female gender (finding)</item>
-                </list>
-                </item>
-              </list>
-              <list>
-                <item>Birth Sex<list>
-                  <item>Male</item>
-                </list>
-                </item>
-              </list>
-            </text>
-            
-            <entry>
-              <!-- Gender Identity Observation -->
-              <observation classCode="OBS" moodCode="EVN">
-                <!-- [C-CDA R2.1] Social History Observation (V4) -->
-                <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01" />
-                <!-- [C-CDA CG] Gender Identity Observation (V3) -->
-                <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
-                <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                <statusCode code="completed" />
-                <effectiveTime>
-                  <low value="20210703" />
-                </effectiveTime>
-                <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
-              </observation>
-            </entry>
-            <entry>
-              <!-- Birth Sex Observation -->
-              <observation classCode="OBS" moodCode="EVN">
-                <!-- [C-CDA 2.1] Birth Sex Observation -->
-                <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
-                <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                <statusCode code="completed" />
-                <value xsi:type="CD" code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
-              </observation>
-            </entry>
-          </section>
-      </component>
-    </structuredBody>
-  </component>
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R4D2] NHSN Social History Section -->
+                    <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+                    <title>NHSN Social History Section</title>
+                    <text>
+                        <list>
+                            <item>Gender identity<list>
+                                    <item>Identifies as female gender (finding)</item>
+                                </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Birth Sex<list>
+                                    <item>Male</item>
+                                </list>
+                            </item>
+                        </list>
+                    </text>
+
+                    <entry>
+                        <!-- Gender Identity Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [C-CDA R2.1] Social History Observation (V4) -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01" />
+                            <!-- [C-CDA CG] Gender Identity Observation (V3) -->
+                            <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
+                            <id nullFlavor="NA" />
+                            <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low value="20210703" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                        </observation>
+                    </entry>
+                    <entry>
+                        <!-- Birth Sex Observation -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [C-CDA 2.1] Birth Sex Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
+                            <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
 </ClinicalDocument>
