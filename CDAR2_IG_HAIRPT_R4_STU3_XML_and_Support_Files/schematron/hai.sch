@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 8/1/2024
+Schematron generated from Trifolia on 8/28/2024
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -6766,7 +6766,7 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
       <sch:assert id="a-5554-22425" test="cda:recordTarget/cda:patientRole/cda:patient/cda:administrativeGenderCode[@code]">This administrativeGenderCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Administrative Gender (HL7 V3) urn:oid:2.16.840.1.113883.1.11.1 DYNAMIC (CONF:5554-22425).</sch:assert>
       <sch:assert id="a-5554-22427" test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime[@value]">This birthTime SHALL contain exactly one [1..1] @value (CONF:5554-22427).</sch:assert>
       <sch:assert id="a-5554-30800" test="cda:recordTarget/cda:patientRole/cda:patient[count(cda:languageCommunication) &gt; 0]">This patient SHALL contain at least one [1..*] languageCommunication (CONF:5554-30800).</sch:assert>
-      <sch:assert id="a-5554-30801" test="cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication[count(cda:languageCode)=1]">Such languageCommunications SHALL contain exactly one [1..1] languageCode, which SHALL be selected from ValueSet Language urn:oid:2.16.840.1.113883.1.11.11526 DYNAMIC (CONF:5554-30801).</sch:assert>
+      <sch:assert id="a-5554-30801" test="cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication[count(cda:languageCode)=1]">Such languageCommunications SHALL contain exactly one [1..1] languageCode, which SHALL be selected from ValueSet NHSN Abridged Primary Language List urn:oid:2.16.840.1.114222.24.7.1 DYNAMIC (CONF:5554-30801).</sch:assert>
       <sch:assert id="a-5554-31032" test="count(cda:componentOf[count(cda:encompassingEncounter)=1])=1">SHALL contain exactly one [1..1] componentOf (CONF:5554-31032) such that it SHALL contain exactly one [1..1] encompassingEncounter (CONF:5554-31033).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.4.27-2024-05-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.4.27' and @extension='2024-05-01']]">
@@ -7316,7 +7316,7 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
       <sch:assert id="a-5554-31051" test="cda:value[@xsi:type='CD'][@codeSystem='2.16.840.1.113883.6.1']">This value SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:5554-31051).</sch:assert>
       <sch:assert id="a-5554-31054" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:5554-31054).</sch:assert>
       <sch:assert id="a-5554-31055" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:5554-31055).</sch:assert>
-      <sch:assert id="a-5554-31056" test="@negationInd">SHALL contain exactly one [1..1] @negationInd (CONF:5554-31056).</sch:assert>
+      <sch:assert id="a-5554-31121-c" test="not(@nullFlavor and @negationInd) and (@nullFlavor or @negationInd)">One of @negationInd or @nullFlavor (but not both) must be present (CONF:5554-31121).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.300' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-errors-abstract" />
@@ -7370,7 +7370,7 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
       <sch:assert id="a-5554-31088" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:5554-31088).</sch:assert>
       <sch:assert id="a-5554-31089" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:5554-31089).</sch:assert>
       <sch:assert id="a-5554-31091" test="cda:id[@nullFlavor='NA']">This id SHALL contain exactly one [1..1] @nullFlavor="NA" (CONF:5554-31091).</sch:assert>
-      <sch:assert id="a-5554-31092" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:5554-31092).</sch:assert>
+      <sch:assert id="a-5554-31092" test="count(cda:code)=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet NHSNGenotypicTests urn:oid:2.16.840.1.114222.24.7.280 DYNAMIC (CONF:5554-31092).</sch:assert>
       <sch:assert id="a-5554-31093" test="cda:statusCode[@code='completed']">This statusCode SHALL contain exactly one [1..1] @code="completed" (CONF:5554-31093).</sch:assert>
       <sch:assert id="a-5554-31094" test="cda:effectiveTime[@nullFlavor='NA']">This effectiveTime SHALL contain exactly one [1..1] @nullFlavor="NA" (CONF:5554-31094).</sch:assert>
       <sch:assert id="a-5554-31095" test="count(cda:value[@xsi:type='CD'])=1">SHALL contain exactly one [1..1] value with @xsi:type="CD", where the code SHALL be selected from ValueSet NHSNGenotypicTestInterpretation urn:oid:2.16.840.1.113883.10.20.5.9.50 DYNAMIC (CONF:5554-31095).</sch:assert>
@@ -9708,7 +9708,7 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings-abstract" abstract="true">
-      <sch:assert test="."></sch:assert>
+      <sch:assert id="a-5554-31056" test="@negationInd">SHOULD contain zero or one [0..1] @negationInd (CONF:5554-31056).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.300' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings-abstract" />
@@ -9725,7 +9725,7 @@ If the value is &gt; 0 and the type of product is not one of those listed above,
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.302-2024-05-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.302-2024-05-01-warnings-abstract" abstract="true">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.2-warnings-abstract" />
-      <sch:assert test="."></sch:assert>
+      <sch:assert id="a-5554-31092-v" test="count(cda:code)=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet NHSNGenotypicTests urn:oid:2.16.840.1.114222.24.7.280 DYNAMIC (CONF:5554-31092).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.302-2024-05-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.302' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.302-2024-05-01-warnings-abstract" />
