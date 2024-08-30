@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 8/28/2024
+Schematron generated from Trifolia on 8/29/2024
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -11,6 +11,7 @@ Schematron generated from Trifolia on 8/28/2024
   <sch:ns prefix="sdtc" uri="urn:hl7-org:sdtc" />
   <sch:ns prefix="cda" uri="urn:hl7-org:v3" />
   <sch:phase id="errors">
+    <sch:active pattern="p-validate_document-level-templateId-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.16-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.1-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors" />
@@ -716,6 +717,39 @@ Schematron generated from Trifolia on 8/28/2024
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.190-2024-05-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.189-2024-05-01-warnings" />
   </sch:phase>
+  <sch:pattern id="p-validate_document-level-templateId-errors">
+    <sch:rule id="r-validate_document-level-templateId-errors-abstract" abstract="true">
+      <sch:assert test="cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.56'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.46'][@extension = '2019-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.44'][@extension = '2015-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.31'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.32'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.36'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.37'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.38'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.35.2'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.33.2'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.34'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.50'][@extension = '2017-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.49'][@extension = '2016-08-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.40'][@extension = '2018-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.58'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.53'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.41'][@extension = '2018-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.55'][@extension = '2019-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.54'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.57'][@extension = '2024-05-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.43'][@extension = '2022-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.42'][@extension = '2018-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.45'][@extension = '2018-04-01'] or                              cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.51'][@extension = '2024-05-01']">SHALL contain exactly one of the
+            following report level templateIds: 
+            Outpatient Procedure Component Denominator for Procedure Report: templateId[@root = '2.16.840.1.113883.10.20.5.56'][@extension = '2024-05-01'] or
+            Antimicrobial Resistance Option (ARO) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.46'][@extension = '2019-04-01'] or
+            Antimicrobial Use (AUP) Summary Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.44'][@extension = '2015-04-01'] or
+            HAI AUR Antimicrobial Resistance Option (ARO) Report (V4): templateId[@root = '2.16.840.1.113883.10.20.5.31'][@extension = '2024-05-01'] or
+            HAI Bloodstream Infection Report (BSI) (V3): templateId[@root = '2.16.840.1.113883.10.20.5.32'][@extension = '2024-05-01'] or
+            HAI Central-Line Insertion Practice Numerator Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.36'][@extension = '2024-05-01'] or
+            HAI Evidence of Infection (Dialysis) Report (V6): templateId[@root = '2.16.840.1.113883.10.20.5.37'][@extension = '2024-05-01'] or
+            HAI Laboratory-Identified Organism (LIO) Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.38'][@extension = '2024-05-01'] or
+            HAI Procedure Denominator Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.35.2'][@extension = '2024-05-01'] or
+            HAI Surgical Site Infection Report (SSI) (V2): templateId[@root = '2.16.840.1.113883.10.20.5.33.2'][@extension = '2024-05-01'] or
+            HAI Urinary Tract Infection Numerator Report (UTI): templateId[@root = '2.16.840.1.113883.10.20.5.34'][@extension = '2024-05-01'] or
+            Healthcare Personnel Influenza Vaccination (HP-FLU) Summary Report: templateId[@root = '2.16.840.1.113883.10.20.5.50'][@extension = '2017-04-01'] or
+            Hemovigilance (HV) Summary Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.49'][@extension = '2016-08-01'] or
+            Intensive Care Unit (ICU) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.40'][@extension = '2018-04-01'] or
+            Late Onset Sepsis/Meningitis Denominator (LOS/Men Denom) Report: templateId[@root = '2.16.840.1.113883.10.20.5.58'][@extension = '2024-05-01'] or
+            Late Onset Sepsis/Meningitis Event (LOS) Report (V2): templateId[@root = '2.16.840.1.113883.10.20.5.53'][@extension = '2024-05-01'] or
+            Neonatal Intensive Care Unit (NICU) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.41'][@extension = '2018-04-01'] or
+            Outpatient Procedure Component Denominator for Same Day Outcome Measures Report: templateId[@root = '2.16.840.1.113883.10.20.5.55'][@extension = '2019-04-01'] or
+            Outpatient Procedure Component Same Day Outcome Measures Event Report: templateId[@root = '2.16.840.1.113883.10.20.5.54'][@extension = '2024-05-01'] or
+            Outpatient Procedure Surgical Site Infection (SSI) Event Report: templateId[@root = '2.16.840.1.113883.10.20.5.57'][@extension = '2024-05-01'] or
+            Prevention Process and Outcome Measures (POM) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.43'][@extension = '2022-04-01'] or
+            Specialty Care Area (SCA) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.42'][@extension = '2018-04-01'] or
+            Vascular Access Type Report (VAT) Summary Report (V3): templateId[@root = '2.16.840.1.113883.10.20.5.45'][@extension = '2018-04-01'] or
+            Ventilator Associated Event (VAE) Report: templateId[@root = '2.16.840.1.113883.10.20.5.51'][@extension = '2024-05-01']".</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-validate_document-level-templateId-errors" context="/">
+      <sch:extends rule="r-validate_document-level-templateId-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.16-errors">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.16-errors-abstract" abstract="true">
       <sch:assert id="a-81-7496" test="@classCode='SBADM'">SHALL contain exactly one [1..1] @classCode="SBADM" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:81-7496).</sch:assert>
