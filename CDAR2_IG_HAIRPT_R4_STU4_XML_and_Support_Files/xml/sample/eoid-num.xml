@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: HAI Evidence of Infection (Dialysis) Report (V4) sample
+        Filename: eoid-num.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_STU4 (HAI R4 STU4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Comments precede their subject -->
+
+    <!-- This is a single-patient record. -->
+    <realmCode code="US" />
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+    <!-- Published in HAI IG R4STU4 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.4.4" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- [HAI R4STU4] Conformant to HAI Single-Person Report Generic Constraints (V6) -->
+    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.4.27" />
+    <!-- [HAI R4STU4] Conformant to the HAI Evidence of Infection (Dialysis) Report (V11) -->
+    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.37" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id extension="20202201" root="2.16.840.1.113883.3.117.1.1.5.2.1.2" />
+    <code code="51897-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare Associated Infection Report" />
+    <title>Evidence of Infection (Dialysis) Report</title>
+    <effectiveTime value="20220807" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <setId extension="31" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- Fake root for sample. -->
+            <id extension="12345" root="2.16.840.1.113883.19.5" />
+            <patient>
+                <name>
+                    <family>Nuclear</family>
+                    <given>Ned</given>
+                </name>
+                <birthTime value="19541125" />
+                <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<raceCode nullFlavor="ASKU "/>-->
+                <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White" />
+                <!-- Added ability to record multiple races -->
+                <sdtc:raceCode code="1002-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="American Indian/Alaska Native" />
+                <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<ethnicGroupCode nullFlavor="UNK" />-->
+                <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Hispanic or Latino" />
+                <!-- Added ability to record multiple ethnicities -->
+                <sdtc:ethnicGroupCode code="2156-8" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Costa Rican" />
+                <languageCommunication>
+                    <languageCode code="eng" />
+                    <preferenceInd value="true" />
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- Author/authenticator may be software or may be
+      someone in the role of "infection control professional".
+      This author is scoped by facility. -->
+    <author>
+        <time value="20220807" />
+        <assignedAuthor>
+            <id extension="anAuthorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20220807" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <componentOf>
+        <encompassingEncounter>
+            <!-- Facility-generated Event/Procedure number -->
+            <id extension="31" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" />
+            <!-- An outpatient encounter -->
+            <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="Outpatient" />
+            <effectiveTime>
+                <!-- The Evidence of Infection (Dialysis) Report
+             is submitted only for outpatients; admission
+             date is Not applicable -->
+                <low nullFlavor="NA" />
+            </effectiveTime>
+            <location>
+                <healthCareFacility>
+                    <!-- Facility ID -->
+                    <id extension="9W" root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                    <code code="1153-6" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" displayName="Outpatient Hemodialysis Clinic" />
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <!-- ********************************************************
+      Structured Body
+      ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+        Risk Factors Section in an Evidence of Infection (Dialysis) Report (V5)
+        ******************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId extension="2023-12-01" root="2.16.840.1.113883.10.20.5.5.37" />
+                    <code code="51898-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Risk Factors" />
+                    <title>Risk Factors</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>End stage renal failure on dialysis (disorder)</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Transient patient</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content styleCode="Italics">Vascular Access Types</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>...Surgically constructed arteriovenous fistula</td>
+                                    <td>Yes. Placed on August , 2022<br />Buttonhole cannulation: Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>...Surgically constructed arteriovenous graft (finding)</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>...Tunneled (dialysis)</td>
+                                    <td>Yes. Placed on August , 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>...Non-tunneled (dialysis)</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>...Catheter-graft hybrid</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>...Other</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Vascular Access Type Used on Day of Event</td>
+                                    <td>Non-tunneled (dialysis)</td>
+                                </tr>
+                                <!-- The Dialyzer Reused Observation was removed from the IG in R4D2 -->
+                                <!--<tr>
+                                    <td>Patient's dialyzer is reused</td>
+                                    <td>Yes</td>
+                                </tr>-->
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Problem Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Dialysis Patient Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.125" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value code="236435004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="End-stage renal failure, on dialysis" xsi:type="CD" />
+                            <entryRelationship typeCode="COMP">
+                                <!-- [HAI] Transient Patient Observation -->
+                                <!-- If the patient is a transient patient, not usually seen at the
+                       service location submitting the report, set @negationInd to "true". -->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Problem Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R1] Transient Patient Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.169" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <value code="2304-4" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Transient patient" xsi:type="CD" />
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Problem Observation Type -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text>Vascular access type comment goes in this element</text>
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low value="202208" />
+                            </effectiveTime>
+                            <value code="438503005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Surgically constructed arteriovenous fistula" xsi:type="CD" />
+                            <!-- If a fistula is present, specify whether buttonhole cannulation is being used -->
+                            <entryRelationship typeCode="COMP">
+                                <!-- [HAI] Buttonhole Cannulation Observation -->
+                                <!-- Buttonhole cannulation is used, @negationInd="false" -->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Procedure Activity Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.13" />
+                                    <!-- [HAI R1] Buttonhole Cannulation Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.115" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <value code="2308-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Buttonhole cannulation" xsi:type="CD" />
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [C-CDA R1.1] Problem Observation  -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text>Vascular access type comment goes in this element</text>
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low value="202208" />
+                            </effectiveTime>
+                            <value code="439218000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Surgically constructed arteriovenous graft" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Problem Observation Type -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text>Vascular access type comment goes in this element</text>
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low value="202108" />
+                            </effectiveTime>
+                            <value code="1117-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Tunneled central line, dialysis" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [C-CDA R1.1] Problem Observation Type -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text>Vascular access type comment goes in this element</text>
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low value="202208" />
+                            </effectiveTime>
+                            <value code="1119-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Non-tunneled central line, dialysis" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [C-CDA R1.1] Problem Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text>Vascular access type comment goes in this element</text>
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low value="202208" />
+                            </effectiveTime>
+                            <value code="1969-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Catheter-graft hybrid" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- When the vascular access type was present set the value of @negationInd to false 
+              and record the access placement date in effectiveTime/low/@value. 
+              When the vascular access type was absent, set the value of 
+              @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [C-CDA R1.1] Problem Observation Type -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R1] Vascular Access Type Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.172" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <!-- Access placement date; may be unknown @nullFlavor="NI" -->
+                            <effectiveTime>
+                                <low nullFlavor="NI" />
+                            </effectiveTime>
+                            <value nullFlavor="OTH" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                            <!-- [HAI R1] Vascular Access Type Used on Day of Event Observation -->
+                            <templateId extension="2023-02-01" root="2.16.840.1.113883.10.20.5.6.293" />
+                            <code code="72050-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dialysis access" />
+                            <statusCode code="completed" />
+                            <value code="1119-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Non-tunneled central line, dialysis" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <!-- The Dialyzer Reused Observation was removed from the IG in R4D2 -->
+                    <!--<entry typeCode="DRIV">
+                        <!-\- When the patient's dialyzer is reused, set the value of @negationInd to false. 
+              When the patient's dialyzer is not reused, set the value of @negationInd to true. -\->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-\- [HAI R3D1] Dialyzer Reused Observation -\->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.231" extension="2015-10-01" />
+                            <code codeSystem="2.16.840.1.113883.5.4" code="ASSERTION" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" code="2334-1" displayName="Patient's dialyzer is reused" />
+                        </observation>
+                    </entry>-->
+                </section>
+            </component>
+            <!-- ********************************************************
+        Details Section in an Evidence of Infection (Dialysis) Report (V5)
+        ******************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.5.41" />
+                    <code code="51899-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Details" />
+                    <title>Event Details</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Infection (dialysis event) began </td>
+                                    <td>on or after the date the patient was admitted to the clinic.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content styleCode="Italics">Infection Indicators</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of earliest indicator</td>
+                                    <td>April 4, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>...Pus, redness, or increased swelling</td>
+                                    <td>Yes<br />Vascular access site(s): <br />Site of non-tunneled central line, dialysis</td>
+                                </tr>
+                                <tr>
+                                    <td>...Intravenous antibiotic therapy</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>....Antibiotic started</td>
+                                    <td>vancomycin</td>
+                                </tr>
+                                <tr>
+                                    <td>....Type of Antimicrobial Start</td>
+                                    <td>New antibiotic start</td>
+                                </tr>
+                                <tr>
+                                    <td>....Blood sample collected for culture</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>...Intravenous injection of antifungal substance </td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>...Positive blood culture</td>
+                                    <td>Yes<br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>......Suspected source of pathogen</td>
+                                    <td>Vascular access</td>
+                                </tr>
+                                <tr>
+                                    <td>Where was the positive blood culture collected</td>
+                                    <td> Dialysis Clinic</td>
+                                </tr>
+                                <tr>
+                                    <td>Criteria of diagnosis</td>
+                                    <td>Infectious disease of lung (disorder): Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Loss of vascular access</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Hospital Admission </td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Dead (finding)</td>
+                                    <td>No Information</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+
+                            <!-- [HAI R1] Dialysis Clinic Admission Clinical Statement -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.124" />
+                            <!-- the id of the encompassingEncounter (hooks back to encompassing encounter) -->
+                            <!-- Facility-generated Event/Procedure number -->
+                            <id extension="31" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" />
+                            <entryRelationship inversionInd="true" typeCode="SAS">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <value code="40733004" codeSystem="2.16.840.1.113883.6.96" displayName="Infection" xsi:type="CD" />
+                                </observation>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Infection Indicator Organizer (V4) -->
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <!-- [HAI R3D4] Infection Indicator Organizer (V5) -->
+                            <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.181" />
+                            <id nullFlavor="NA" />
+                            <statusCode code="completed" />
+                            <!-- earliest date when one of the infection indicators was observed -->
+                            <effectiveTime>
+                                <low value="20220404" />
+                            </effectiveTime>
+                            <!-- Four components are required -->
+                            <!-- Pus, redness, or increased swelling at a vascular access site -->
+                            <!-- If the infection indicator was present, set @negationInd="false" -->
+                            <component>
+                                <!-- Pus, Redness, or Increased Swelling Observation -->
+                                <!-- If the infection indicator was present, set the value of @negationInd to false 
+                  and record the event date in effectiveTime/low/@value. 
+                  If the infection indicator was not present, set the value of
+                  @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Problem Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R3D4] Pus, Redness, or Increased Swelling Observation (V2) -->
+                                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.157" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <!-- If the infection indicator was present (negationInd='true'), record the event date in effectiveTime/low/@value. 
+                  If the infection indicator was not present (negationInd='true'), set effectiveTime/low/@nullFlavor='NA'. -->
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="20220405" />
+                                    </effectiveTime>
+                                    <value code="2305-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Pus, redness, or increased swelling" xsi:type="CD" />
+                                    <participant typeCode="DEV">
+                                        <participantRole classCode="MANU">
+                                            <playingDevice>
+                                                <code code="2321-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Site of non-tunneled central line, dialysis" />
+                                            </playingDevice>
+                                        </participantRole>
+                                    </participant>
+                                </observation>
+                            </component>
+                            <!-- IV Antibiotic Start -->
+                            <component>
+                                <!-- IV Antibiotic Start Clinical Statement  -->
+                                <!-- When the IV antibiotic was started, set the value of @negationInd to false and 
+                  record the start time in effectiveTime/low/@value. When the IV antibiotic was not 
+                  started, set the value of @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Medication Activity -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                                    <!-- [HAI R3D4] Antibiotic Start Clinical Statement (V4) -->
+                                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.140" />
+                                    <id nullFlavor="NA" />
+                                    <code code="281790008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Intravenous antibiotic therapy" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="20220404" />
+                                        <high nullFlavor="NA" />
+                                    </effectiveTime>
+                                    <!-- The antibiotic started was IV Vancomycin -->
+                                    <consumable>
+                                        <manufacturedProduct classCode="MANU">
+                                            <!-- [C-CDA R1.1] Medication Information] -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial>
+                                                <code code="11124" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Vancomycin" />
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </consumable>
+                                    <entryRelationship typeCode="REFR">
+                                        <!-- Type of Antimicrobial Start Observation -->
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <!-- [HAI R3D1] Type of Antimicrobial Start Observation -->
+                                            <templateId extension="2015-10-01" root="2.16.840.1.113883.10.20.5.6.230" />
+                                            <code code="2335-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="New outpatient start or continuation of inpatient course" />
+                                            <statusCode code="completed" />
+                                            <value code="2336-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="New antimicrobial start" xsi:type="CD" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- If type of antimicrobial start is "new antimicrobial start" 2336-6 then specify
+                        whether or not blood sample collected for culture -->
+                                    <!-- [HAI] Blood Sample Collected for Culture Observation -->
+                                    <entryRelationship typeCode="REFR">
+                                        <!-- Blood sample was collected so @negationInd="false" -->
+                                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                            <!-- [HAI R3D1.1] Blood Sample Collected for Culture Observation -->
+                                            <templateId extension="2016-08-01" root="2.16.840.1.113883.10.20.5.6.239" />
+                                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                            <statusCode code="completed" />
+                                            <value code="2339-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Blood sample collected for culture" xsi:type="CD" />
+                                        </observation>
+                                    </entryRelationship>
+                                </substanceAdministration>
+                            </component>
+                            <!-- IV Antifungal Start -->
+                            <component>
+                                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Medication Activity -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                                    <!-- [HAI R1] IV Antifungal Start Clinical Statement -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.141" />
+                                    <id nullFlavor="NA" />
+                                    <code code="2306-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Intravenous injection of antifungal substance" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low nullFlavor="NA" />
+                                        <high nullFlavor="NA" />
+                                    </effectiveTime>
+                                    <!-- This element is required by CDA, but NHSN does not collect information about what the antifungal was -->
+                                    <consumable>
+                                        <manufacturedProduct classCode="MANU">
+                                            <!-- [C-CDA R1.1] Medication Information] -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial>
+                                                <code nullFlavor="NI" />
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </consumable>
+                                </substanceAdministration>
+                            </component>
+                            <!-- Positive Blood Culture -->
+                            <!-- If there is a positive blood culture, (@negationInd="false")
+                   a Findings Section is required (far) below. -->
+                            <component>
+                                <!-- When the positive blood culture was present, set the value of @negationInd to false 
+                  and record the event date in effectiveTime/@low. When the positive blood culture was 
+                  not present, set the value of @negationInd to true and set effectiveTime/low/@nullFlavor='NA'. -->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- [C-CDA R1.1] Problem Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R3D4] Positive Blood Culture Observation (V3)  -->
+                                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.149" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="20220405" />
+                                    </effectiveTime>
+                                    <value code="1955-4" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Positive blood culture" xsi:type="CD" />
+                                    <!-- Suspected Source of Pathogen -->
+                                    <entryRelationship inversionInd="true" typeCode="CAUS">
+                                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                            <!-- [C-CDA R1.1] Problem Observation  -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                            <!-- [HAI R1] Suspected Source of Pathogen  -->
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.168" />
+                                            <id nullFlavor="NA" />
+                                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                            <statusCode code="completed" />
+                                            <value code="2319-2" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Vascular access" xsi:type="CD" />
+                                            <!-- Imputability = possible  (a "suspected" source) -->
+                                            <entryRelationship typeCode="COMP">
+                                                <!-- Imputability Observation -->
+                                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                                    <!-- [C-CDA R1.1] Problem Observation  -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                                    <!-- [HAI R1] Imputability Observation -->
+                                                    <templateId root="2.16.840.1.113883.10.20.5.6.134" />
+                                                    <id nullFlavor="NA" />
+                                                    <code code="2307-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Imputability of positive blood culture to the suspected source" />
+                                                    <statusCode code="completed" />
+                                                    <value code="60022001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Possible" xsi:type="CD" />
+                                                </observation>
+                                            </entryRelationship>
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- [HAI] Blood Collection Location -->
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <!-- [HAI R2D2.1] Blood Collection Location  -->
+                                            <templateId extension="2014-12-01" root="2.16.840.1.113883.10.20.5.6.219" />
+                                            <code code="2331-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Where was the positive blood culture collected" />
+                                            <statusCode code="completed" />
+                                            <value code="2333-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Dialysis Clinic" xsi:type="CD" />
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <!-- [HAI R1] Criteria of Diagnosis Organizer -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.180" />
+                            <statusCode code="completed" />
+                            <!-- one component for each Criterion of Diagnosis Observation -->
+                            <component>
+                                <!-- Criteria of Diagnosis Observation -->
+                                <!-- if the criterion was present, @negationInd="false" -->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <!-- Signs and Symptoms Observation -->
+                                    <!-- [C-CDA R1.1] Indication  -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19" />
+                                    <!-- [HAI R1] Criteria of Diagnosis Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.119" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <value code="128601007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Respiratory infection (including pneumonia)" xsi:type="CD" />
+                                    <!-- To record a criterion not included in the NHSNCriterionOfDiagnosisCode value set, 
+                              the value of @xsi:type SHALL be ST and a text value SHALL be present.-->
+                                    <!--<value xsi:type="ST">An itchy sensation</value>
+                          displayName="Respiratory infection (including pneumonia)"/> -->
+                                </observation>
+                            </component>
+                            <!-- ... additional observations here, one for each concept to be reported,
+                              each with a negation indicator ... -->
+                        </organizer>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Problem Observation Type -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                            <!-- [HAI R2D1] Loss of Vascular Access Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.203" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value code="2325-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Loss of vascular access" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- act/@negationInd="false" if the patient was hospitalized.
+                     If not known, act/@nullFlavor="UNK" -->
+                        <act classCode="ACT" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R1] Hospital Admission Clinical Statement -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.133" />
+                            <id nullFlavor="NA" />
+                            <code code="32485007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hospital Admission" />
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- if the patient died, @negationInd="false". If there is not information about
+                     whether the patient died, @nullFlavor="NI" -->
+                        <!-- Death Observation in an Evidence of Infection (Dialysis) Report  -->
+                        <observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+                            <!-- [C-CDA R1.1] Deceased Observation  -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.79" />
+                            <!-- [HAI R1] Death Observation in an Evidence of Infection (Dialysis) Report  -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.121" />
+                            <id nullFlavor="NA" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="NA" />
+                            </effectiveTime>
+                            <value code="419099009" codeSystem="2.16.840.1.113883.6.96" displayName="Dead" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <!-- ********************************************************
+        Findings Section in an Infection-Type Report
+        ******************************************************** -->
+            <!-- If a positive blood culture was obtained, include a Findings Section -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.45" />
+                    <code code="18769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Findings" />
+                    <title>Findings</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Microorganism identified</td>
+                                    <td>Clostridium symbiosum (organism)</td>
+                                </tr>
+                                <tr>
+                                    <td>Pathogen Ranking</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Clarithromycin [Susceptibility]</td>
+                                    <td> Not Applicable Resistant</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <!-- [HAI R1] Findings Organizer -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.182" />
+                            <id nullFlavor="NA" />
+                            <statusCode code="completed" />
+                            <!-- The organism -->
+                            <component>
+                                <!-- Pathogen Identified Observation -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [C-CDA R1.1] Result Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                    <!-- [HAI R1] Pathogen Identified Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.145" />
+                                    <id nullFlavor="NA" />
+                                    <code code="41852-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microorganism identified" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime nullFlavor="NA" />
+                                    <value code="48321006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Clostridium symbiosum (organism)" xsi:type="CD" />
+                                </observation>
+                            </component>
+                            <!-- pathogen ranking -->
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [C-CDA R1.1] Problem Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R1] Pathogen Ranking Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.147" />
+                                    <id nullFlavor="NA" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <value code="1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Pathogen rank 1" xsi:type="CO" />
+                                </observation>
+                            </component>
+                            <!-- An antimicrobial resistance finding is required if the pathogen is bacterial -->
+                            <!-- Drug-susceptibility test observation -->
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [C-CDA R1.1] Result Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                    <!-- [HAI R1] Drug-Susceptibility Test Observation  -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.126" />
+                                    <id nullFlavor="NA" />
+                                    <code code="18907-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clarithro Susc Islt" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime nullFlavor="NA" />
+                                    <value nullFlavor="NA" xsi:type="CD" />
+                                    <interpretationCode code="R" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 ObservationInterpretation" displayName="Resistant" />
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+            ******************************************************** 
+            NHSN Social History Section (V3)
+            ******************************************************** 
+            -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R4STU4] NHSN Social History Section (V4) -->
+                    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.5.81" />
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+                    <title>NHSN Social History Section (V3)</title>
+                    <text>
+                        <list>
+                            <item>Sex<list>
+                                <item>Male</item>
+                            </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Needed<list>
+                                <item>Yes</item>
+                            </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Used by Patient This Encounter<list>
+                                <item>Yes</item>
+                            </list>
+                            </item>
+                        </list>
+                    </text>
+                    <entry>
+                        <!-- Sex -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [HAI R4D4] Sex -->
+                            <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.305" />
+                            <code code="46098-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex" />
+                            <statusCode code="completed" />
+                            <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff.
+                            If the person needs an interpreter, set the value of @negationInd to false. If the person does not need an interpreter, 
+                            set the value of @negationInd to true. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU3] Interpreter Needed Observation -->
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="54588-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interpreter needed" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
+                            If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
+                            set the value of @negationInd to true. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU3] Interpreter Used by Patient This Encounter Observation -->
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.301" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="314431000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Interpreter present (finding)" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

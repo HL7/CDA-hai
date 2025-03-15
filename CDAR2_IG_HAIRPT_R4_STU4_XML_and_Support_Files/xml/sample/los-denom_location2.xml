@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Late Onset Sepsis/ Meningitis Denominator
+        Filename: los-denom_location2.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_STU4 (HAI R4 STU4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Comments precede their subject -->
+
+    <!-- This is a single-patient record. -->
+    <realmCode code="US" />
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+    <!-- Published in HAI IG R4STU4 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.4.4" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- [HAI R4STU4] Conformant to HAI Single-Person Report Generic Constraints (V6) -->
+    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.4.27" />
+    <!-- [HAI R4STU4] Late Onset Sepsis/Meningitis Denominator (LOS/Men Denom) Report (V6) -->
+    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.58" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id extension="20202202" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+    <code code="51897-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare Associated Infection Report" />
+    <title>Late Onset Sepsis/ Meningitis Denominator</title>
+    <effectiveTime value="20190130" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <setId extension="32" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- Patient ID - scoped by facility -->
+            <id extension="123456" root="2.16.840.1.113883.3.117.1.1.5.1.1.1" />
+            <!-- Secondary ID - scoped by facility -->
+            <id extension="987654321" root="2.16.840.1.113883.3.117.1.1.5.1.1.1" />
+            <patient>
+                <name>
+                    <family>Nuclear</family>
+                    <given>Ned</given>
+                </name>
+                <birthTime value="20190101" />
+                <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<raceCode nullFlavor="ASKU "/>-->
+                <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White" />
+                <!-- Added ability to record multiple races -->
+                <sdtc:raceCode code="1002-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="American Indian/Alaska Native" />
+                <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<ethnicGroupCode nullFlavor="UNK" />-->
+                <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Hispanic or Latino" />
+                <!-- Added ability to record multiple ethnicities -->
+                <sdtc:ethnicGroupCode code="2156-8" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Costa Rican" />
+                <languageCommunication>
+                    <languageCode code="eng" />
+                    <preferenceInd value="true" />
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- scoped by facility. -->
+    <author>
+        <time value="20190130" />
+        <assignedAuthor>
+            <id extension="anAuthorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Scoped by facility -->
+    <legalAuthenticator>
+        <time value="20190130" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <documentationOf>
+        <serviceEvent>
+            <effectiveTime>
+                <!-- the first day of the period reported -->
+                <low value="20190101" />
+                <!-- the last day of the period reported -->
+                <high value="20190131" />
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    <componentOf>
+        <encompassingEncounter>
+            <code code="IMP" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="inpatient encounter" />
+            <effectiveTime>
+                <!-- Date Admitted to Facility -->
+                <!-- This is the date admitted to the facility - this date would be the same over all CDAs relating to this admission
+             There could be multiple CDAs - if the patient was transferred multiple times within the facility - but all these
+             CDAs would have the same date here
+             The specific location information is held in the Location Encounter in the body of the document -->
+                <low value="20190101" />
+            </effectiveTime>
+            <location>
+                <healthCareFacility>
+                    <!-- This only contains the Facility ID (no location information is recorded here) -->
+                    <!-- Facility ID -->
+                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <!-- ********************************************************
+        Structured Body
+       ******************************************************** -->
+    <component>
+        <structuredBody>
+            <!-- 
+          ********************************************************
+          Risk Factors Section in a LOS/Men Denominator
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D4] Risk Factors Section in a LOS/Men Denominator -->
+                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.5.72" />
+                    <code code="51898-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Risk Factors" />
+                    <title>Risk Factors</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Birth weight</td>
+                                    <td>700 g</td>
+                                </tr>
+                                <tr>
+                                    <td>Gestational age at birth</td>
+                                    <td>276 d</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [C-CDA R1.1] Vital Sign Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                            <!-- [HAI] Infection Risk Factors Measurement Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.137" />
+                            <id nullFlavor="NA" />
+                            <code code="364589006" codeSystem="2.16.840.1.113883.6.96" displayName="Birth weight" />
+                            <statusCode code="completed" />
+                            <effectiveTime nullFlavor="NA" />
+                            <value unit="g" value="700" xsi:type="PQ" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R3D4] Gestational Age Observation (V2) -->
+                            <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.255" />
+                            <code code="76516-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gestational age at birth" />
+                            <value unit="d" value="276" xsi:type="PQ" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          Encounters Section in a LOS/MEN Denominator
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D4] Encounters Section in a LOS/MEN Denominator -->
+                    <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.5.71" />
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Encounters" />
+                    <title>Location Within Facility Encounter</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>Neonatal Critical Care(Level II/III)</td>
+                                </tr>
+                                <tr>
+                                    <td>Date admitted or transferred to location</td>
+                                    <td>January 1, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of discharge or transfer</td>
+                                    <td>January 2, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Disposition of infant</td>
+                                    <td>Discharged from hospital (finding)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <!-- [HAI R3D3] Location Within Facility Encounter -->
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <!-- [C-CDA R1.1] Encounter activity -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+                            <!-- [HAI R3D4] Location Within Facility Encounter -->
+                            <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.5.6.262" />
+                            <id nullFlavor="NA" />
+                            <code code="IMP" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode" displayName="inpatient encounter" />
+                            <effectiveTime>
+                                <!-- Date transferred to this location (this is the second location of this patient). -->
+                                <low value="20190101" />
+                                <!-- Date discharged or transferred from this location -->
+                                <!-- This is the date that that patient was discharged from this location (and in this case the date they were discharged from the facility) 
+                     If the infant had no location change, no date is recorded in effectiveTime/high -->
+                                <high value="20190102" />
+                            </effectiveTime>
+                            <sdtc:dischargeDispositionCode code="183665006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Discharged from hospital (finding)" />
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <!-- Location within facility -->
+                                    <id extension="NICU" root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                                    <!-- Location type -->
+                                    <code code="1039-7" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" displayName="Neonatal Critial care (Level II/III)" />
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          NHSN Comment Section
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- NHSN Comment Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D2] NHSN Comment Section -->
+                    <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.5.5.61" />
+                    <code code="86468-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report comment Section" />
+                    <title>Comment</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Comment</td>
+                                    <td>NHSN text comment that is less than 2000 characters.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D2] NHSN Comment -->
+                            <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.5.6.243" />
+                            <code code="86467-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report comment Narrative" />
+                            <!-- Less than 2000 characters -->
+                            <text>NHSN text comment that is less than 2000 characters.</text>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+            ******************************************************** 
+            NHSN Social History Section (V3)
+            ******************************************************** 
+            -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R4STU4] NHSN Social History Section (V4) -->
+                    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.5.81" />
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+                    <title>NHSN Social History Section (V3)</title>
+                    <text>
+                        <list>
+                            <item>Sex<list>
+                                <item>Male</item>
+                            </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Needed<list>
+                                <item>Yes</item>
+                            </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Used by Patient This Encounter<list>
+                                <item>Yes</item>
+                            </list>
+                            </item>
+                        </list>
+                    </text>
+                    <entry>
+                        <!-- Sex -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [HAI R4D4] Sex -->
+                            <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.305" />
+                            <code code="46098-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex" />
+                            <statusCode code="completed" />
+                            <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff.
+                            If the person needs an interpreter, set the value of @negationInd to false. If the person does not need an interpreter, 
+                            set the value of @negationInd to true. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU3] Interpreter Needed Observation -->
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="54588-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interpreter needed" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
+                            If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
+                            set the value of @negationInd to true. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU3] Interpreter Used by Patient This Encounter Observation -->
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.301" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="314431000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Interpreter present (finding)" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
