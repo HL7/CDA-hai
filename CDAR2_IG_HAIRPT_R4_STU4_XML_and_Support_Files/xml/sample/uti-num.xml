@@ -14,9 +14,7 @@
 -->
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
     <!-- Comments precede their subject -->
-
     <!-- This is a single-patient record. -->
     <realmCode code="US" />
     <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
@@ -639,6 +637,14 @@
                                     <td>Neurogenic Bladder</td>
                                     <td>Yes</td>
                                 </tr>
+                                <tr>
+                                    <td>Neurogenic Bladder Diagnosis</td>
+                                    <td>Uninhibited neuropathic bladder, not elsewhere classified</td>
+                                </tr>
+                                <tr>
+                                    <td>Spinal Cord Injury Diagnosis</td>
+                                    <td>Tropical spastic paraplegia</td>
+                                </tr>
                             </tbody>
                         </table>
                     </text>
@@ -694,6 +700,9 @@
                         <!-- This clinical statement represents whether the patient has neurogenic bladder.
                              If the patient does have neurogenic bladder, set the value of @negationInd to false. 
                              If the patient does not have neurogenic bladder, set the value of @negationInd to true.
+                             
+                             If the patient does have neurogenic bladder (@negationInd=false), 
+                             both the Neurogenic Bladder Diagnosis AND the Spinal Cord Injury Diagnosis SHALL be present
                         -->
                         <observation moodCode="EVN" classCode="OBS" negationInd="false">
                             <!-- C-CDA Problem Observation templateId -->
@@ -703,7 +712,46 @@
                             <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
-                            <value xsi:type="CD" code="398064005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Neurogenic urinary bladder (finding)" />
+                            <value xsi:type="CD" code="398064005" 
+                                codeSystem="2.16.840.1.113883.6.96" 
+                                codeSystemName="SNOMED CT" 
+                                displayName="Neurogenic urinary bladder (finding)" />
+                            <entryRelationship typeCode="COMP">
+                                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                                    <!-- C-CDA Problem Observation templateId -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R4D4] Neurogenic Bladder Diagnosis -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.306" extension="2025-05-01" />
+                                    <id nullFlavor="NA" />
+                                    <code code="55607006" 
+                                        displayName="Problem (finding)" 
+                                        codeSystem="2.16.840.1.113883.6.96" 
+                                        codeSystemName="SNOMED CT" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" code="N31.0" 
+                                        codeSystem="2.16.840.1.113883.6.90" 
+                                        codeSystemName="ICD10CM" 
+                                        displayName="Uninhibited neuropathic bladder, not elsewhere classified" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                                    <!-- C-CDA Problem Observation templateId -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <!-- [HAI R4D4] Spinal Cord Injury Diagnosis -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.307" extension="2025-05-01" />
+                                    <id nullFlavor="NA" />
+                                    <code code="55607006" 
+                                        displayName="Problem (finding)" 
+                                        codeSystem="2.16.840.1.113883.6.96" 
+                                        codeSystemName="SNOMED CT" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" code="G04.1" 
+                                        codeSystem="2.16.840.1.113883.6.90" 
+                                        codeSystemName="ICD10CM" 
+                                        displayName="Tropical spastic paraplegia" />
+                                </observation>
+                            </entryRelationship>
                         </observation>
                     </entry>
                 </section>
