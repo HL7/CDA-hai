@@ -478,17 +478,16 @@
                             <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
                         </observation>
                     </entry>
-                    
                     <entry typeCode="DRIV">
-                        <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff.
-                            If the person needs an interpreter, set the value of @negationInd to false. If the person does not need an interpreter, 
-                            set the value of @negationInd to true. -->
+                        <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff. -->
                         <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                            <!-- [HAI R4STU3] Interpreter Needed Observation -->
-                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
-                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
-                            <statusCode code="completed" />
-                            <value xsi:type="CD" code="54588-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interpreter needed" />
+                            <!-- [HAI R4STU4] Interpreter Needed (V2) Observation -->
+                            <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
+                            <code code="54588-9" codeSystem="2.16.840.1.113883.6.1" />
+                            <effectiveTime>
+                                <low nullFlavor="NA"/>
+                            </effectiveTime>
+                            <value xsi:type="CD" code="373066001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Yes (qualifier value)" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
