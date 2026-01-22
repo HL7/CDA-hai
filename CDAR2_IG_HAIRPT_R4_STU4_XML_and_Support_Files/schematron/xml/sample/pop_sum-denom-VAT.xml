@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Summary data - denominator for chronic hemodialysis patients
+        Filename: pop_sum-denom-VAT.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_STU4 (HAI R4 STU4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Comments precede their subject -->
+
+    <!-- This is a population-summary report. -->
+    <realmCode code="US" />
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+    <!-- Published in HAI IG R3D3 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.3.3" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- Conformant to the HAI Population Summary Report Generic  -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+    <!-- Conformant to the Vascular Access Type Report (VAT) Summary Report  -->
+    <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.45" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id extension="20202201" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+    <code code="51897-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare Associated Infection Report" />
+    <title>Maintenance Hemodialysis Patients Stratified by Vascular Access Type Report</title>
+    <!-- Document-creation date -->
+    <effectiveTime value="20080701" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <!-- succession management -->
+    <setId extension="33" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- This is a population summary report -->
+            <id nullFlavor="NA" />
+        </patientRole>
+    </recordTarget>
+    <!-- The author of a population summary report is the software forming the message. -->
+    <author>
+        <time value="20080701" />
+        <assignedAuthor>
+            <id extension="aSoftwareID" root="2.16.840.1.113883.3.117.1.1.5.2.1.1" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20080701" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <!-- In a population summary report, a participant element SHALL be present
+       representing that the report documents a group -->
+    <participant contextControlCode="OP" typeCode="SBJ">
+        <associatedEntity classCode="PRS">
+            <code code="389109008" codeSystem="2.16.840.1.113883.6.96" displayName="group" />
+        </associatedEntity>
+    </participant>
+    <!-- The location participant (facility) -->
+    <participant contextControlCode="OP" typeCode="LOC">
+        <associatedEntity classCode="SDLOC">
+
+            <!--ID of facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+        </associatedEntity>
+    </participant>
+    <documentationOf>
+        <serviceEvent classCode="CASE">
+            <code code="2316-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Summary data reporting vascular access types for chronic hemodialysis patients" />
+            <effectiveTime>
+                <!-- the first day of the period reported -->
+                <low value="20080601" />
+                <!-- the last day of the period reported -->
+                <high value="20080602" />
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+     Population Summary Section
+     ******************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.50" />
+                    <code code="51900-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summary Section" />
+                    <title>Summary Data</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content styleCode="Bold">Facility Location</content>
+                                    </td>
+                                    <td>9W Outpatient Hemodialysis Clinic</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of chronic hemodialysis patients: fistula</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of fistula patients who undergo buttonhole cannulation</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of chronic hemodialysis patients: graft</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of chronic hemodialysis patients: tunneled central line</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of chronic hemodialysis patients: non-tunneled central line</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of chronic hemodialysis patients: other access device</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of Chronic Hemodialysis Patients, with vascular access, for whom diazlyers are reused</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+
+                            <!-- Summary Encounter (VAT) -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.196" />
+                            <!-- the in-facility location ID and type -->
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <!-- the facility OID scopes the in-facility location ID -->
+                                    <id extension="9W" root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                                    <code code="1153-6" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" displayName="Outpatient Hemodialysis Clinic" />
+                                </participantRole>
+                            </participant>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.195" />
+                                    <code code="2310-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of Chronic Hemodialysis Patients, vascular access type is fistula" />
+                                    <statusCode code="completed" />
+                                    <value value="100" xsi:type="INT" />
+                                    <entryRelationship typeCode="COMP">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                            <code code="2311-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of chronic hemodialysis patients, vascular access type is fistula, buttonhole cannulation" />
+                                            <statusCode code="completed" />
+                                            <value value="100" xsi:type="INT" />
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.195" />
+                                    <code code="2312-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of Chronic Hemodialysis Patients, vascular access type is graft" />
+                                    <statusCode code="completed" />
+                                    <value value="25" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.195" />
+                                    <code code="2313-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of Chronic Hemodialysis Patients, vascular access type is tunneled central line, dialysis" />
+                                    <statusCode code="completed" />
+                                    <value value="26" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.195" />
+                                    <code code="2314-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of Chronic Hemodialysis Patients, vascular access type is non-tunneled central line, dialysis" />
+                                    <statusCode code="completed" />
+                                    <value value="27" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.195" />
+                                    <code code="2315-0" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of Chronic Hemodialysis Patients, vascular access type is Other" />
+                                    <statusCode code="completed" />
+                                    <value value="0" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          Report No Events Section
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D3] Report No Events Section -->
+                    <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.5.62" />
+                    <code code="90252-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report No Events Section" />
+                    <title>Report No Events</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Report No Events: Dialysis: intravenous antimicrobial start</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D3] Report No Events -->
+                            <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.6.249" />
+                            <code code="3052-8" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Report no events for IV antimicrobial start" />
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+      ********************************************************
+      NHSN Comment Section
+      ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D2] NHSN Comment Section -->
+                    <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.5.5.61" />
+                    <code code="86468-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report comment Section" />
+                    <title>Comment</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Comment</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                                        viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                        Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend
+                                        sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec,
+                                        imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D2] NHSN Comment -->
+                            <templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.5.6.243" />
+                            <code code="86467-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report comment Narrative" />
+                            <!-- Less than 2000 characters -->
+                            <text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
+                                metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</text>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

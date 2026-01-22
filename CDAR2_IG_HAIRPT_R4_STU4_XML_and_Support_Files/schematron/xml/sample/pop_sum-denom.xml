@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Denominator for Intensive Care Unit (ICU)/Other Locations (not NICU or SCA)
+        Filename: pop_sum-denom.xml
+        
+        Specification: CDAR2_IG_HAIRPT_R4_STU4 (HAI R4 STU4) 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+        For more information see www.hl7.org, Structured Documents Working Group
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Comments precede their subject -->
+
+    <!-- This is a population-summary report. -->
+    <realmCode code="US" />
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+    <!-- Published in HAI IG R3D3 -->
+    <templateId root="2.16.840.1.113883.10.20.5.7.3.3" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- Conformant to the HAI Population Summary Report Generic Constraints Summary Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+    <!-- Conformant to Intensive Care Unit (ICU) Summary Report (V3) -->
+    <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.40" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id extension="20202201" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+    <code code="51897-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Healthcare Associated Infection Report" />
+    <title>Denominator for Intensive Care Unit (ICU)/Other Locations (not NICU or SCA) Report</title>
+    <!-- Document-creation date -->
+    <effectiveTime value="20080701" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <!-- succession management -->
+    <setId extension="33" root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- This is a population summary report -->
+            <id nullFlavor="NA" />
+        </patientRole>
+    </recordTarget>
+    <!-- The author of a population summary report is the software forming the message. -->
+    <author>
+        <time value="20080701" />
+        <assignedAuthor>
+            <id extension="aSoftwareID" root="2.16.840.1.113883.3.117.1.1.5.2.1.1" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20080701" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id extension="aLegalAuthenticatorID" root="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <!-- In a population summary report, a participant element SHALL be present
+       representing that the report documents a group -->
+    <participant contextControlCode="OP" typeCode="SBJ">
+        <associatedEntity classCode="PRS">
+            <code code="389109008" codeSystem="2.16.840.1.113883.6.96" displayName="group" />
+        </associatedEntity>
+    </participant>
+    <!-- The location participant (facility) -->
+    <participant contextControlCode="OP" typeCode="LOC">
+        <associatedEntity classCode="SDLOC">
+
+            <!--ID of facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+        </associatedEntity>
+    </participant>
+    <documentationOf>
+        <serviceEvent classCode="CASE">
+            <code code="1879-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Summary data reporting catheter and ventilator use in a ICU" />
+            <effectiveTime>
+                <!-- the first day of the period reported -->
+                <low value="20080601" />
+                <!-- the last day of the period reported -->
+                <high value="20080630" />
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+     Summary Data Section
+     ******************************************************** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.47" />
+                    <code code="51900-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summary Section" />
+                    <title>Summary Data</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content styleCode="Bold">Facility Location</content>
+                                    </td>
+                                    <td>9W Medical-Surgical Critical Care</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of patient days</td>
+                                    <td>100 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of central line days</td>
+                                    <td>25 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of urinary catheter days</td>
+                                    <td>26 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of ventilator days</td>
+                                    <td>27 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of airway pressure release ventilation (APRV) days</td>
+                                    <td>5 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of new episodes of mechanical ventilation (EMV)</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+
+                            <!-- [HAI] Summary Data -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.184" />
+                            <!-- the in-facility location ID and type -->
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <!-- the facility OID scopes the in-facility location ID -->
+                                    <id extension="9W" root="2.16.840.1.113883.3.117.1.1.5.1.1" />
+                                    <code code="1029-8" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" displayName="Medical/Surgical Critical Care" />
+                                </participantRole>
+                            </participant>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1851-5" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Patient Days" />
+                                    <statusCode code="completed" />
+                                    <value unit="d" value="100" xsi:type="PQ" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1833-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Central Line Days" />
+                                    <statusCode code="completed" />
+                                    <value unit="d" value="25" xsi:type="PQ" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1853-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Urinary Catheter Days" />
+                                    <statusCode code="completed" />
+                                    <value unit="d" value="26" xsi:type="PQ" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1852-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Ventilator Days" />
+                                    <statusCode code="completed" />
+                                    <value unit="d" value="27" xsi:type="PQ" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1834-1" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of APRV Days" />
+                                    <statusCode code="completed" />
+                                    <value unit="d" value="5" xsi:type="PQ" />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.5.6.185" />
+                                    <code code="1826-7" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Number of new episodes of mechanical ventilation" />
+                                    <statusCode code="completed" />
+                                    <value value="25" xsi:type="INT" />
+                                </observation>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          Report No Events Section
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R3D3] Report No Events Section -->
+                    <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.5.62" />
+                    <code code="90252-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Report No Events Section" />
+                    <title>Report No Events</title>
+                    <text xmlns:sdtc="urn:hl7-org:sdtc">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Report No Events: ICU: CLABSI</td>
+                                </tr>
+                                <tr>
+                                    <td>Report No Events: ICU: PedVAE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D3] Report No Events -->
+                            <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.6.249" />
+                            <code code="3010-6" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Report no events for ICU Central Line Associated Blood Stream Infection (CLABSI)" />
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R3D3] Report No Events -->
+                            <templateId extension="2018-04-01" root="2.16.840.1.113883.10.20.5.6.249" />
+                            <code code="1338-3" codeSystem="2.16.840.1.113883.6.277" codeSystemName="CDCNHSN" displayName="Report no events for ICU Pediatric Ventilator-Associated Pneumonia (PedVAE)" />
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
