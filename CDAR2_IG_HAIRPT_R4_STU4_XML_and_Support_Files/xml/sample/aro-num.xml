@@ -194,11 +194,11 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td>Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination</td>
-                                                                                    <td>Negative (qualifier value)</td>
+                                                                                    <td>Detected</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td>Methicillin resistance mecA gene [Presence] by Molecular method</td>
-                                                                                    <td>Positive (qualifier value)</td>
+                                                                                    <td>Invalid result</td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -505,7 +505,7 @@
                                                         displayName="Oxacillin Resistant Staphylococcus sp isolate [Presence] in Isolate by Latex agglutination" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
-                                                    <value code="260385009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Negative" xsi:type="CD" />
+                                                    <value code="260373001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Detected" xsi:type="CD" />
                                                 </observation>
                                             </component>
                                             <!-- [HAI R4STU3] Gene and Protein Presence Tests Result Observation -->
@@ -520,7 +520,7 @@
                                                         displayName="Bacterial methicillin resistance (mecA) gene [Presence] by Probe and target amplification method" />
                                                     <statusCode code="completed" />
                                                     <effectiveTime nullFlavor="NA" />
-                                                    <value code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Positive" xsi:type="CD" />
+                                                    <value code="455371000124106" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Invalid result" xsi:type="CD" />
                                                 </observation>
                                             </component>
                                         </organizer>
