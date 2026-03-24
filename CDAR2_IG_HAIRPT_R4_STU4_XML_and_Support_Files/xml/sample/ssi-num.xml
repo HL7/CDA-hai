@@ -917,7 +917,7 @@
                             <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.305" />
                             <code code="46098-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex" />
                             <statusCode code="completed" />
-                            <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
+                            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="248153007" displayName="Male (finding)" />
                         </observation>
                     </entry>
                     <entry typeCode="DRIV">
